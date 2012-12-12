@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x18e8a20" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x18e8a20" />
+  <item nodeId="node-0x18e8a20">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+LinkedInAdventure
+An Interactive Fiction by Colin Miller
+Release 1 / Serial number 121212 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Login Screen
+A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
+
+You can see a login button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">NO</temporary>
+    <children>
+      <child nodeId="node-0x9cdf520" />
+      <child nodeId="node-0x83a9950" />
+      <child nodeId="node-0x1b8d870" />
+      <child nodeId="node-0x1dcada0" />
+      <child nodeId="node-0x9ce1160" />
+      <child nodeId="node-0x9cae6e0" />
+      <child nodeId="node-0x1d23c10" />
+      <child nodeId="node-0x9c025c0" />
+      <child nodeId="node-0xd142e10" />
+    </children>
+  </item>
+  <item nodeId="node-0xd142e10">
+    <command xml:space="preserve">fuck</command>
+    <result xml:space="preserve">Potty mouth.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="37">YES</temporary>
+    <children>
+      <child nodeId="node-0x9c7e110" />
+    </children>
+  </item>
+  <item nodeId="node-0x9c7e110">
+    <command xml:space="preserve">shit</command>
+    <result xml:space="preserve">Real adventurers do not use such language.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="24">YES</temporary>
+  </item>
+  <item nodeId="node-0x9c025c0">
+    <command xml:space="preserve">pussy</command>
+    <result xml:space="preserve">Potty mouth.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d23c10">
+    <command xml:space="preserve">go login</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="14">YES</temporary>
+    <children>
+      <child nodeId="node-0x1daaba0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1daaba0">
+    <command xml:space="preserve">click taco</command>
+    <result xml:space="preserve">the taco is not a thing on which can be clicked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="13">YES</temporary>
+  </item>
+  <item nodeId="node-0x9cae6e0">
+    <command xml:space="preserve">l button</command>
+    <result xml:space="preserve">The login button will probably go somewhere if clicked on.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0x9cdf9f0" />
+      <child nodeId="node-0x9c0d250" />
+    </children>
+  </item>
+  <item nodeId="node-0x9c0d250">
+    <command xml:space="preserve">go button</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="17">YES</temporary>
+    <children>
+      <child nodeId="node-0xd13b850" />
+      <child nodeId="node-0x9cb5050" />
+    </children>
+  </item>
+  <item nodeId="node-0x9cb5050">
+    <command xml:space="preserve">click taco</command>
+    <result xml:space="preserve">the taco is not a thing on which one can click.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="16">YES</temporary>
+  </item>
+  <item nodeId="node-0xd13b850">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">LinkedIn Homepage
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
+  </item>
+  <item nodeId="node-0x9cdf9f0">
+    <command xml:space="preserve">click on login</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="9">YES</temporary>
+  </item>
+  <item nodeId="node-0x9ce1160">
+    <command xml:space="preserve">blink</command>
+    <result xml:space="preserve">You blink.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x83b0960" />
+    </children>
+  </item>
+  <item nodeId="node-0x83b0960">
+    <command xml:space="preserve">shit</command>
+    <result xml:space="preserve">Real adventurers do not use such language.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x9c232f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x9c232f0">
+    <command xml:space="preserve">fuck</command>
+    <result xml:space="preserve">Real adventurers do not use such language.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d117e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d117e0">
+    <command xml:space="preserve">piss</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x18a33b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x18a33b0">
+    <command xml:space="preserve">pussy</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x1cbeb30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1cbeb30">
+    <command xml:space="preserve">penis</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x9ce5750" />
+    </children>
+  </item>
+  <item nodeId="node-0x9ce5750">
+    <command xml:space="preserve">cunt</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x9c0b690" />
+    </children>
+  </item>
+  <item nodeId="node-0x9c0b690">
+    <command xml:space="preserve">asshole</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0xd646580" />
+    </children>
+  </item>
+  <item nodeId="node-0xd646580">
+    <command xml:space="preserve">cum</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="35">YES</temporary>
+    <children>
+      <child nodeId="node-0x835ed50" />
+    </children>
+  </item>
+  <item nodeId="node-0x835ed50">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren&apos;t in anything at the moment.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="34">YES</temporary>
+  </item>
+  <item nodeId="node-0x1dcada0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">LinkedIn Homepage
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="4">YES</temporary>
+  </item>
+  <item nodeId="node-0x1b8d870">
+    <command xml:space="preserve">fuck button</command>
+    <result xml:space="preserve">You fuck the login button
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0xd63ef20" />
+    </children>
+  </item>
+  <item nodeId="node-0xd63ef20">
+    <command xml:space="preserve">go button</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="41">YES</temporary>
+    <children>
+      <child nodeId="node-0xd646e20" />
+    </children>
+  </item>
+  <item nodeId="node-0xd646e20">
+    <command xml:space="preserve">fuck taco</command>
+    <result xml:space="preserve">You fuck the taco
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="40">YES</temporary>
+  </item>
+  <item nodeId="node-0x83a9950">
+    <command xml:space="preserve">g login</command>
+    <result xml:space="preserve">You can hardly repeat that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="23">YES</temporary>
+    <children>
+      <child nodeId="node-0x834ac40" />
+    </children>
+  </item>
+  <item nodeId="node-0x834ac40">
+    <command xml:space="preserve">go login</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="23">YES</temporary>
+    <children>
+      <child nodeId="node-0x9ce75c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x9ce75c0">
+    <command xml:space="preserve">l taco</command>
+    <result xml:space="preserve">This taco is made of tasty meat and cheese with a tortilla curled around it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="23">YES</temporary>
+    <children>
+      <child nodeId="node-0x9ce2430" />
+    </children>
+  </item>
+  <item nodeId="node-0x9ce2430">
+    <command xml:space="preserve">eat taco</command>
+    <result xml:space="preserve">(first taking the taco)
+You eat the taco. Not bad.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="23">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c52fb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c52fb0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">LinkedIn Homepage
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="23">YES</temporary>
+    <children>
+      <child nodeId="node-0x9ce3710" />
+    </children>
+  </item>
+  <item nodeId="node-0x9ce3710">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">LinkedIn Homepage
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="22">YES</temporary>
+  </item>
+  <item nodeId="node-0x9cdf520">
+    <command xml:space="preserve">click login</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="12">YES</temporary>
+    <children>
+      <child nodeId="node-0x834ba10" />
+      <child nodeId="node-0x18ce180" />
+    </children>
+  </item>
+  <item nodeId="node-0x18ce180">
+    <command xml:space="preserve">click on taco</command>
+    <result xml:space="preserve">You cannot click on The taco
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="11">YES</temporary>
+  </item>
+  <item nodeId="node-0x834ba10">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Login Screen
+You can see a login button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="4">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d688a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d688a0">
+    <command xml:space="preserve">l button</command>
+    <result xml:space="preserve">The login button will probably go somewhere if clicked on.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="3">YES</temporary>
+  </item>
+</Skein>
