@@ -32,21 +32,21 @@
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>24</integer>
+        <key>Line</key><integer>43</integer>
         <key>Title</key><string>Chapter 2 Modifying Current Things</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>28</integer>
+        <key>Line</key><integer>47</integer>
         <key>Title</key><string>Part 2 The World</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>30</integer>
+        <key>Line</key><integer>49</integer>
         <key>Title</key><string>Chapter 1 Login</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
