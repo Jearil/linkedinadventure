@@ -1,292 +1,36 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x18e8a20" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x1e7d390" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x144e0970" />
-  <item nodeId="node-0x18e8a20">
+  <activeNode nodeId="node-0x11298490" />
+  <item nodeId="node-0x1e7d390">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 
 LinkedInAdventure
-An Interactive Fiction by Colin Miller
-Release 1 / Serial number 121212 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+An Interactive Fiction by Colin Miller The story headline is &quot;An interactive adventure featuring the wonders of LinkedIn&quot;
+Release 1 / Serial number 121213 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
+Darkness
+You stand (float?) in what seems to be an empty black void. Your life feels somewhat hallow, as if there&apos;s been something missing that you can&apos;t quite identify. A dim light receeds to the north, a faint glimmer of hope amidst the darnkess. 
 
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="119">NO</temporary>
-    <children>
-      <child nodeId="node-0xd63acb0" />
-      <child nodeId="node-0x14474ff0" />
-      <child nodeId="node-0xd6811a0" />
-      <child nodeId="node-0x1450a830" />
-      <child nodeId="node-0x1d2bf70" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d2bf70">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
+You are likely to be eaten by a Grue.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="109">YES</temporary>
+    <temporary score="126">NO</temporary>
     <children>
-      <child nodeId="node-0xd6843c0" />
-      <child nodeId="node-0x1447a690" />
-      <child nodeId="node-0x145e66e0" />
-      <child nodeId="node-0x14481610" />
+      <child nodeId="node-0x1e7c230" />
+      <child nodeId="node-0x1d7eaa0" />
+      <child nodeId="node-0x1e7ca80" />
+      <child nodeId="node-0x1e7c550" />
+      <child nodeId="node-0x1e7cf10" />
+      <child nodeId="node-0x1ebf2f0" />
     </children>
   </item>
-  <item nodeId="node-0x14481610">
-    <command xml:space="preserve">click link</command>
-    <result xml:space="preserve">
-LinkedIn Homepage
-You can see a taco here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="98">YES</temporary>
-    <children>
-      <child nodeId="node-0x144478d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x144478d0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="98">YES</temporary>
-    <children>
-      <child nodeId="node-0x14493900" />
-    </children>
-  </item>
-  <item nodeId="node-0x14493900">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="98">YES</temporary>
-    <children>
-      <child nodeId="node-0x14460810" />
-      <child nodeId="node-0x1443a0f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1443a0f0">
-    <command xml:space="preserve">click link</command>
-    <result xml:space="preserve">
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="98">YES</temporary>
-    <children>
-      <child nodeId="node-0x144ca670" />
-    </children>
-  </item>
-  <item nodeId="node-0x144ca670">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="97">YES</temporary>
-  </item>
-  <item nodeId="node-0x14460810">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="91">YES</temporary>
-  </item>
-  <item nodeId="node-0x145e66e0">
-    <command xml:space="preserve">click login</command>
-    <result xml:space="preserve">
-LinkedIn Homepage
-You can see a taco here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b85c20" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b85c20">
-    <command xml:space="preserve">click logout</command>
-    <result xml:space="preserve">
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x1440d6b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1440d6b0">
-    <command xml:space="preserve">click login</command>
-    <result xml:space="preserve">
-LinkedIn Homepage
-You can see a taco here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0xd12aea0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd12aea0">
-    <command xml:space="preserve">click login</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x144d4690" />
-    </children>
-  </item>
-  <item nodeId="node-0x144d4690">
-    <command xml:space="preserve">click link</command>
-    <result xml:space="preserve">
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x144d1ff0" />
-    </children>
-  </item>
-  <item nodeId="node-0x144d1ff0">
-    <command xml:space="preserve">click link</command>
-    <result xml:space="preserve">Which do you mean, the login button or the signup button?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="108">YES</temporary>
-  </item>
-  <item nodeId="node-0x1447a690">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="87">YES</temporary>
-    <children>
-      <child nodeId="node-0x13b87cd0" />
-      <child nodeId="node-0x1cf4bb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1cf4bb0">
-    <command xml:space="preserve">click button</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="81">YES</temporary>
-    <children>
-      <child nodeId="node-0xd6e3670" />
-    </children>
-  </item>
-  <item nodeId="node-0xd6e3670">
-    <command xml:space="preserve">click login</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="80">YES</temporary>
-  </item>
-  <item nodeId="node-0x13b87cd0">
-    <command xml:space="preserve">click link</command>
-    <result xml:space="preserve">
-LinkedIn Homepage
-You can see a taco here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="87">YES</temporary>
-    <children>
-      <child nodeId="node-0x9c21db0" />
-    </children>
-  </item>
-  <item nodeId="node-0x9c21db0">
-    <command xml:space="preserve">click link</command>
-    <result xml:space="preserve">
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="86">YES</temporary>
-  </item>
-  <item nodeId="node-0xd6843c0">
-    <command xml:space="preserve">go button</command>
-    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0xd614fa0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd614fa0">
-    <command xml:space="preserve">click button</command>
-    <result xml:space="preserve">Login Screen (in the login button)
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="68">YES</temporary>
-    <children>
-      <child nodeId="node-0xd6d7f10" />
-    </children>
-  </item>
-  <item nodeId="node-0xd6d7f10">
-    <command xml:space="preserve">click button</command>
-    <result xml:space="preserve">Login Screen (in the login button)
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="67">YES</temporary>
-  </item>
-  <item nodeId="node-0x1450a830">
+  <item nodeId="node-0x1ebf2f0">
     <command xml:space="preserve">click exit</command>
     <result xml:space="preserve">
 Office
@@ -297,12 +41,12 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>NO</changed>
     <temporary score="119">YES</temporary>
     <children>
-      <child nodeId="node-0x144c0610" />
-      <child nodeId="node-0x144e5ab0" />
-      <child nodeId="node-0x144e0970" />
+      <child nodeId="node-0x1e7cfb0" />
+      <child nodeId="node-0x1e7d170" />
+      <child nodeId="node-0x1e7d1c0" />
     </children>
   </item>
-  <item nodeId="node-0x144e0970">
+  <item nodeId="node-0x1e7d1c0">
     <command xml:space="preserve">turn computer on</command>
     <result xml:space="preserve">Login Screen
 A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
@@ -314,7 +58,7 @@ You switch the computer on.
     <changed>YES</changed>
     <temporary score="118">YES</temporary>
   </item>
-  <item nodeId="node-0x144e5ab0">
+  <item nodeId="node-0x1e7d170">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bathroom
@@ -325,10 +69,10 @@ This bathroom hasn&apos;t been cleaned in years.
     <changed>YES</changed>
     <temporary score="117">YES</temporary>
     <children>
-      <child nodeId="node-0x144e06d0" />
+      <child nodeId="node-0x1e7d120" />
     </children>
   </item>
-  <item nodeId="node-0x144e06d0">
+  <item nodeId="node-0x1e7d120">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Office
@@ -339,10 +83,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="117">YES</temporary>
     <children>
-      <child nodeId="node-0xd155020" />
+      <child nodeId="node-0x1e7d0d0" />
     </children>
   </item>
-  <item nodeId="node-0xd155020">
+  <item nodeId="node-0x1e7d0d0">
     <command xml:space="preserve">use computer</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -351,10 +95,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="117">YES</temporary>
     <children>
-      <child nodeId="node-0x144c4760" />
+      <child nodeId="node-0x1e7d000" />
     </children>
   </item>
-  <item nodeId="node-0x144c4760">
+  <item nodeId="node-0x1e7d000">
     <command xml:space="preserve">turn computer on</command>
     <result xml:space="preserve">You switch the computer on.
 
@@ -363,7 +107,7 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
   </item>
-  <item nodeId="node-0x144c0610">
+  <item nodeId="node-0x1e7cfb0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Office
 This is a standard computer office. There&apos;s a desk with a computer and a chair on it.
@@ -373,10 +117,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0x14469a10" />
+      <child nodeId="node-0x1e7cf60" />
     </children>
   </item>
-  <item nodeId="node-0x14469a10">
+  <item nodeId="node-0x1e7cf60">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -385,7 +129,744 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="111">YES</temporary>
   </item>
-  <item nodeId="node-0xd6811a0">
+  <item nodeId="node-0x1e7cf10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You stumble into the light.
+
+Enlightenment
+Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
+
+ To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don&apos;t want to go there).
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="126">YES</temporary>
+    <children>
+      <child nodeId="node-0x1eb3ae0" />
+      <child nodeId="node-0x1e7cc30" />
+      <child nodeId="node-0x1e7cec0" />
+      <child nodeId="node-0x112ecce0" />
+      <child nodeId="node-0xa53d540" />
+      <child nodeId="node-0x112cf730" />
+      <child nodeId="node-0xa556860" />
+    </children>
+  </item>
+  <item nodeId="node-0xa556860">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Dangerous Pit
+For some reason you jumped onto a platform in the center of a pit of snakes. The area is dark and has an opressive feel to it. Hisses come from the snakes below you, but also from the walls. They sound like failure.
+
+You can see some snakes here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="96">YES</temporary>
+    <children>
+      <child nodeId="node-0xa569180" />
+      <child nodeId="node-0xa501b70" />
+      <child nodeId="node-0xa552970" />
+      <child nodeId="node-0xa50a360" />
+    </children>
+  </item>
+  <item nodeId="node-0xa50a360">
+    <command xml:space="preserve">get snake</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="85">YES</temporary>
+    <children>
+      <child nodeId="node-0xa5f7140" />
+    </children>
+  </item>
+  <item nodeId="node-0xa5f7140">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Dangerous Pit
+You can see some snakes here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="85">YES</temporary>
+    <children>
+      <child nodeId="node-0xa567250" />
+    </children>
+  </item>
+  <item nodeId="node-0xa567250">
+    <command xml:space="preserve">take snakes</command>
+    <result xml:space="preserve">Before you can move, a pile of snakes lashes out at you and sink their teeth into your flesh. Burning pain of poison flashes through your system before your body seizes up. You&apos;re only regret is that you never followed through with working on LinkedIn Adventure.
+
+
+ *** YOU DIED ***
+
+
+    *** The End ***
+
+
+In that game you scored -10000 out of a possible 20, in 4 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="85">YES</temporary>
+    <children>
+      <child nodeId="node-0xa5135b0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa5135b0">
+    <command xml:space="preserve">restart</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="84">YES</temporary>
+  </item>
+  <item nodeId="node-0xa552970">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">As you attempt to make your way back to enlightenment you accidently trip over your shoe laces and fall into the pit. (bad break)Before you can move, a pile of snakes lashes out at you and sink their teeth into your flesh. Burning pain of poison flashes through your system before your body seizes up. You&apos;re only regret is that you never followed through with working on LinkedIn Adventure.
+
+
+ *** YOU DIED ***
+
+
+    *** The End ***
+
+
+In that game you scored -10000 out of a possible 20, in 3 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="96">YES</temporary>
+    <children>
+      <child nodeId="node-0xa563f80" />
+      <child nodeId="node-0xa507170" />
+    </children>
+  </item>
+  <item nodeId="node-0xa507170">
+    <command xml:space="preserve">restart</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="95">YES</temporary>
+  </item>
+  <item nodeId="node-0xa563f80">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Dangerous Pit
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="79">YES</temporary>
+    <children>
+      <child nodeId="node-0xa51cb70" />
+    </children>
+  </item>
+  <item nodeId="node-0xa51cb70">
+    <command xml:space="preserve">touch snake</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="79">YES</temporary>
+    <children>
+      <child nodeId="node-0xa545380" />
+    </children>
+  </item>
+  <item nodeId="node-0xa545380">
+    <command xml:space="preserve">get snake</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="78">YES</temporary>
+  </item>
+  <item nodeId="node-0xa501b70">
+    <command xml:space="preserve">attack snakes</command>
+    <result xml:space="preserve">Before you can move, a pile of snakes lashes out at you and sink their teeth into your flesh. Burning pain of poison flashes through your system before your body seizes up. You&apos;re only regret is that you never followed through with working on LinkedIn Adventure.
+
+
+ *** YOU DIED ***
+
+
+    *** The End ***
+
+
+In that game you scored -10000 out of a possible 20, in 3 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="91">YES</temporary>
+  </item>
+  <item nodeId="node-0xa569180">
+    <command xml:space="preserve">kick snakes</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="89">YES</temporary>
+    <children>
+      <child nodeId="node-0x9da5f30" />
+    </children>
+  </item>
+  <item nodeId="node-0x9da5f30">
+    <command xml:space="preserve">attack snakes</command>
+    <result xml:space="preserve">Before you can move, a pile of snakes lashes out at you and sink their teeth into your flesh. Burning pain of poison flashes through your system before your body seizes up. You&apos;re only regret is that you never followed through with working on LinkedIn Adventure.
+
+
+ *** YOU DIED ***
+
+
+    *** The End ***
+
+
+In that game you scored -10000 out of a possible 20, in 3 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="88">YES</temporary>
+  </item>
+  <item nodeId="node-0x112cf730">
+    <command xml:space="preserve">search</command>
+    <result xml:space="preserve">(Around)
+You find a delicious taco.
+
+[Your score has just gone up by ten points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="126">YES</temporary>
+    <children>
+      <child nodeId="node-0xa51f5c0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa51f5c0">
+    <command xml:space="preserve">pet taco</command>
+    <result xml:space="preserve">You can&apos;t pet the delicious taco
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="126">YES</temporary>
+    <children>
+      <child nodeId="node-0x112c8980" />
+    </children>
+  </item>
+  <item nodeId="node-0x112c8980">
+    <command xml:space="preserve">pet grue</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="126">YES</temporary>
+    <children>
+      <child nodeId="node-0x112dbc40" />
+    </children>
+  </item>
+  <item nodeId="node-0x112dbc40">
+    <command xml:space="preserve">pet myself</command>
+    <result xml:space="preserve">You can&apos;t pet yourself
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="126">YES</temporary>
+    <children>
+      <child nodeId="node-0x112eca70" />
+    </children>
+  </item>
+  <item nodeId="node-0x112eca70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Dangerous Pit
+For some reason you jumped onto a platform in the center of a pit of snakes. The area is dark and has an opressive feel to it. Hisses come from the snakes below you, but also from the walls. They sound like failure.
+
+You can see some snakes here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="126">YES</temporary>
+    <children>
+      <child nodeId="node-0x11298490" />
+    </children>
+  </item>
+  <item nodeId="node-0x11298490">
+    <command xml:space="preserve">pet snakes</command>
+    <result xml:space="preserve">Before you can move, a pile of snakes lashes out at you and sink their teeth into your flesh. Burning pain of poison flashes through your system before your body seizes up. You&apos;re only regret is that you never followed through with working on LinkedIn Adventure.
+
+
+ *** YOU DIED ***
+
+
+    *** The End ***
+
+
+In that game you scored -9990 out of a possible 20, in 6 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="125">YES</temporary>
+  </item>
+  <item nodeId="node-0xa53d540">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Kennel
+Why is this even here? How did you go up from what was basically a room of pure light? Did you float? Looking around you see a bunch of empty cages and some newspaper on the ground.
+
+An awesome puppy.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0xa5f3680" />
+    </children>
+  </item>
+  <item nodeId="node-0xa5f3680">
+    <command xml:space="preserve">pet puppy</command>
+    <result xml:space="preserve">You pet the puppy who licks you and wags his tail. How wonderful.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0x112caf20" />
+    </children>
+  </item>
+  <item nodeId="node-0x112caf20">
+    <command xml:space="preserve">pet puppy</command>
+    <result xml:space="preserve">You continue to pet the puppy who continues to wag his tail excitedly.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0x112cee90" />
+    </children>
+  </item>
+  <item nodeId="node-0x112cee90">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+Enlightenment
+Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sue where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
+
+ To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don&apos;t want to go there).
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0x112cc190" />
+    </children>
+  </item>
+  <item nodeId="node-0x112cc190">
+    <command xml:space="preserve">search</command>
+    <result xml:space="preserve">(Around)
+You find a delicious taco.
+
+[Your score has just gone up by ten points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0x112cf0e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x112cf0e0">
+    <command xml:space="preserve">eat taco</command>
+    <result xml:space="preserve">(first taking the delicious taco)
+You now have no more taco which is a sad thing.
+
+[Your score has just gone down by five points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b62b20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b62b20">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Dangerous Pit
+For some reason you jumped onto a platform in the center of a pit of snakes. The area is dark and has an opressive feel to it. Hisses come from the snakes below you, but also from the walls. They sound like failure.
+
+You can see some snakes here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0x11286310" />
+    </children>
+  </item>
+  <item nodeId="node-0x11286310">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">As you attempt to make your way back to enlightenment you accidently trip over your shoe laces and fall into the pit. (bad break)Before you can move, a pile of snakes lashes out at you and sink their teeth into your flesh. Burning pain of poison flashes through your system before your body seizes up. You&apos;re only regret is that you never followed through with working on LinkedIn Adventure.
+
+
+ *** YOU DIED ***
+
+
+    *** The End ***
+
+
+In that game you scored -9990 out of a possible 20, in 9 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
+    <children>
+      <child nodeId="node-0x1127e7e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1127e7e0">
+    <command xml:space="preserve">restart</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="105">YES</temporary>
+  </item>
+  <item nodeId="node-0x112ecce0">
+    <command xml:space="preserve">eat taco</command>
+    <result xml:space="preserve">(first taking the delicious taco)
+What taco? Man, don&apos;t you wish there were a taco here?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x1b6c590" />
+    </children>
+  </item>
+  <item nodeId="node-0x1b6c590">
+    <command xml:space="preserve">search</command>
+    <result xml:space="preserve">(Around)
+You find a delicious taco.
+
+[Your score has just gone up by ten points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x112c06b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x112c06b0">
+    <command xml:space="preserve">take taco</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0xa5646e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa5646e0">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">
+Kennel
+Why is this even here? How did you go up from what was basically a room of pure light? Did you float? Looking around you see a bunch of empty cages and some newspaper on the ground.
+
+An awesome puppy.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x112c3a40" />
+    </children>
+  </item>
+  <item nodeId="node-0x112c3a40">
+    <command xml:space="preserve">pet puppy</command>
+    <result xml:space="preserve">You pet the puppy who licks you and wags his tail. How wonderful.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0xa4106e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4106e0">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">
+Enlightenment
+Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sue where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
+
+ To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don&apos;t want to go there).
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x112f8ce0" />
+    </children>
+  </item>
+  <item nodeId="node-0x112f8ce0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Vahalla
+Congradulations! You&apos;ve decided to work on LinkedIn Adventure! You should send a message to Colin Miller (cmiller@linkedin.com) right away and let him know of your profound commitment to this worth cause. Also, cake!
+
+A delicious looking cake.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x112b7260" />
+    </children>
+  </item>
+  <item nodeId="node-0x112b7260">
+    <command xml:space="preserve">take cake</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x112a95f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x112a95f0">
+    <command xml:space="preserve">eat cake</command>
+    <result xml:space="preserve">You take a bite of the cake and find yourself in nirvana.
+
+
+
+    *** The End ***
+
+
+In that game you scored 20 out of a possible 20, in 10 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="115">YES</temporary>
+  </item>
+  <item nodeId="node-0x1e7cec0">
+    <command xml:space="preserve">click link</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="98">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7cdb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7cdb0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="98">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7d050" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7d050">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="98">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7cca0" />
+      <child nodeId="node-0x1e7cd60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7cd60">
+    <command xml:space="preserve">click link</command>
+    <result xml:space="preserve">
+Login Screen
+A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="98">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7cd10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7cd10">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="97">YES</temporary>
+  </item>
+  <item nodeId="node-0x1e7cca0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Login Screen
+A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="91">YES</temporary>
+  </item>
+  <item nodeId="node-0x1e7cc30">
+    <command xml:space="preserve">click login</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7cbc0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7cbc0">
+    <command xml:space="preserve">click logout</command>
+    <result xml:space="preserve">
+Login Screen
+A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7cb50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7cb50">
+    <command xml:space="preserve">click login</command>
+    <result xml:space="preserve">
+LinkedIn Homepage
+You can see a taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7ce60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7ce60">
+    <command xml:space="preserve">click login</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7ce00" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7ce00">
+    <command xml:space="preserve">click link</command>
+    <result xml:space="preserve">
+Login Screen
+A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="109">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e7c940" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e7c940">
+    <command xml:space="preserve">click link</command>
+    <result xml:space="preserve">Which do you mean, the login button or the signup button?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="108">YES</temporary>
+  </item>
+  <item nodeId="node-0x1eb3ae0">
+    <command xml:space="preserve">pet taco</command>
+    <result xml:space="preserve">You can&apos;t pet the delicious taco
+
+*** Run-time problem P10: Since the delicious taco is not allowed the property &quot;been pet&quot;, it is against the rules to try to use it.
+
+You continue to pet the puppy who continues to wag his tail excitedly.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="119">YES</temporary>
+    <children>
+      <child nodeId="node-0x184f2f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x184f2f0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="118">YES</temporary>
+  </item>
+  <item nodeId="node-0x1e7c550">
     <command xml:space="preserve">l self</command>
     <result xml:space="preserve">As good-looking as ever.
 
@@ -394,10 +875,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="102">YES</temporary>
     <children>
-      <child nodeId="node-0xd6f0be0" />
+      <child nodeId="node-0x1e7c4e0" />
     </children>
   </item>
-  <item nodeId="node-0xd6f0be0">
+  <item nodeId="node-0x1e7c4e0">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying nothing.
 
@@ -406,7 +887,7 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="101">YES</temporary>
   </item>
-  <item nodeId="node-0x14474ff0">
+  <item nodeId="node-0x1e7ca80">
     <command xml:space="preserve">lick link</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -415,10 +896,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="100">YES</temporary>
     <children>
-      <child nodeId="node-0x14455330" />
+      <child nodeId="node-0x1e7c9d0" />
     </children>
   </item>
-  <item nodeId="node-0x14455330">
+  <item nodeId="node-0x1e7c9d0">
     <command xml:space="preserve">click link</command>
     <result xml:space="preserve">Which do you mean, the login button or the signup button?
 
@@ -427,7 +908,161 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="99">YES</temporary>
   </item>
-  <item nodeId="node-0xd63acb0">
+  <item nodeId="node-0x1d7eaa0">
+    <command xml:space="preserve">take taco</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0x95d5710" />
+    </children>
+  </item>
+  <item nodeId="node-0x95d5710">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You stumble into the light.
+
+Enlightenment
+Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sue where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xa5e1730" />
+    </children>
+  </item>
+  <item nodeId="node-0xa5e1730">
+    <command xml:space="preserve">take taco</command>
+    <result xml:space="preserve">What taco? Man, don&apos;t you wish there were a taco here?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xa5edc80" />
+    </children>
+  </item>
+  <item nodeId="node-0xa5edc80">
+    <command xml:space="preserve">search</command>
+    <result xml:space="preserve">(Around)
+You find a delicious taco.
+
+[Your score has just gone up by ten points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xa56de80" />
+    </children>
+  </item>
+  <item nodeId="node-0xa56de80">
+    <command xml:space="preserve">search</command>
+    <result xml:space="preserve">(the delicious taco)
+You find nothing of interest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xa5e63d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa5e63d0">
+    <command xml:space="preserve">search around</command>
+    <result xml:space="preserve">You find no additional tacos.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xa401780" />
+    </children>
+  </item>
+  <item nodeId="node-0xa401780">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Enlightenment
+Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sue where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
+
+You can see a delicious taco here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xa548400" />
+    </children>
+  </item>
+  <item nodeId="node-0xa548400">
+    <command xml:space="preserve">take taco</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xdb8bf50" />
+    </children>
+  </item>
+  <item nodeId="node-0xdb8bf50">
+    <command xml:space="preserve">take taco</command>
+    <result xml:space="preserve">You already have that.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0x1dc5d90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1dc5d90">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a delicious taco
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0x95ab6f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x95ab6f0">
+    <command xml:space="preserve">eat taco</command>
+    <result xml:space="preserve">You now have no more taco which is a sad thing.
+
+[Your score has just gone down by five points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="73">YES</temporary>
+    <children>
+      <child nodeId="node-0xa56cd00" />
+    </children>
+  </item>
+  <item nodeId="node-0xa56cd00">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="72">YES</temporary>
+  </item>
+  <item nodeId="node-0x1e7c230">
     <command xml:space="preserve">click button</command>
     <result xml:space="preserve">Login Screen (in the login button)
 A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
@@ -437,10 +1072,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
     <children>
-      <child nodeId="node-0xd6173a0" />
+      <child nodeId="node-0x1e7c1c0" />
     </children>
   </item>
-  <item nodeId="node-0xd6173a0">
+  <item nodeId="node-0x1e7c1c0">
     <command xml:space="preserve">click logout</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -449,10 +1084,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
     <children>
-      <child nodeId="node-0xd663530" />
+      <child nodeId="node-0x1e7c150" />
     </children>
   </item>
-  <item nodeId="node-0xd663530">
+  <item nodeId="node-0x1e7c150">
     <command xml:space="preserve">click logout button</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -461,10 +1096,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
     <children>
-      <child nodeId="node-0xd652900" />
+      <child nodeId="node-0x1e7c0e0" />
     </children>
   </item>
-  <item nodeId="node-0xd652900">
+  <item nodeId="node-0x1e7c0e0">
     <command xml:space="preserve">click login</command>
     <result xml:space="preserve">Login Screen (in the login button)
 A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
@@ -474,10 +1109,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
     <children>
-      <child nodeId="node-0x14480ac0" />
+      <child nodeId="node-0x1e7c070" />
     </children>
   </item>
-  <item nodeId="node-0x14480ac0">
+  <item nodeId="node-0x1e7c070">
     <command xml:space="preserve">click login button</command>
     <result xml:space="preserve">Login Screen (in the login button)
 A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
@@ -487,10 +1122,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
     <children>
-      <child nodeId="node-0xd60d990" />
+      <child nodeId="node-0x1e7c000" />
     </children>
   </item>
-  <item nodeId="node-0xd60d990">
+  <item nodeId="node-0x1e7c000">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Login Screen (in the login button)
 A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
@@ -500,10 +1135,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
     <children>
-      <child nodeId="node-0xd61d650" />
+      <child nodeId="node-0x1e7bf90" />
     </children>
   </item>
-  <item nodeId="node-0xd61d650">
+  <item nodeId="node-0x1e7bf90">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
 
@@ -512,10 +1147,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
     <children>
-      <child nodeId="node-0xd6e45a0" />
+      <child nodeId="node-0x1e7bf20" />
     </children>
   </item>
-  <item nodeId="node-0xd6e45a0">
+  <item nodeId="node-0x1e7bf20">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Going that way doesn&apos;t really make any sense.
 
