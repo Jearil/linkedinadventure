@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x183b000" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0xe1bae80" />
+  <activeNode nodeId="node-0x183b000" />
   <item nodeId="node-0x183b000">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -17,12 +17,14 @@ You are standing in the middle of a large room with vaulted ceilings.  The walls
 
 On the Large Desk are a Webcam and a Bowl of candy (in which is a piece of candy).
 
+On the water cooler are some cups.
+
 You can also see a Receptionist and a Glass Door here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="28">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="32">NO</temporary>
     <children>
       <child nodeId="node-0x183b2a0" />
       <child nodeId="node-0x1e76660" />
@@ -35,7 +37,6 @@ You can also see a Receptionist and a Glass Door here.
       <child nodeId="node-0x829ebe0" />
       <child nodeId="node-0x829eb70" />
       <child nodeId="node-0x829f1a0" />
-      <child nodeId="node-0xa334e50" />
       <child nodeId="node-0x978dcc0" />
       <child nodeId="node-0xd4b0a50" />
       <child nodeId="node-0x829fe50" />
@@ -144,15 +145,29 @@ You can&apos;t, since Up Button leads nowhere.
 Outside Of The Elevator
 Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
 
-You can see Up Button, Down Button, Dance Button and Connect Button here.
+You can see Down Button, Up Button, Dance Button and Connect Button here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="28">YES</temporary>
+    <temporary score="32">YES</temporary>
     <children>
       <child nodeId="node-0xd494610" />
+      <child nodeId="node-0xe1dea20" />
     </children>
+  </item>
+  <item nodeId="node-0xe1dea20">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+The Dungeon Junction
+The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks &quot;Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.&quot;
+
+You can see Down Button and a Helmet here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="31">YES</temporary>
   </item>
   <item nodeId="node-0xd494610">
     <command xml:space="preserve">up</command>
@@ -237,19 +252,6 @@ You can also see a Receptionist and a Glass Door here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="27">YES</temporary>
-  </item>
-  <item nodeId="node-0xa334e50">
-    <command xml:space="preserve">head north</command>
-    <result xml:space="preserve">
-Elevator
-Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
-
-You can see Up Button, Down Button, Dance Button and Connect Button here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="12">YES</temporary>
   </item>
   <item nodeId="node-0x829f1a0">
     <command xml:space="preserve">click exit</command>

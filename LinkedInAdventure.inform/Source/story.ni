@@ -256,7 +256,10 @@ The Bowl of candy is a container.
 A piece of candy is in the Bowl of Candy.
 The piece of candy is edible.
 The Receptionist is in The Reception Area.
-The Large Desk and The Receptionist's Computer are scenery.
+The water cooler is in The reception Area.
+The description of the water cooler is "The water cooler stands in the corner placidly. You feel its non-existent eyes boring into you.  Plastic cups sit on top of it.  A bubble gurgles up to the top making a loud noise."
+Some cups are on the Water Cooler.
+The Large Desk and The Receptionist's Computer and The Water Cooler and Some cups are scenery.
 A Glass Door is a door.
 A Glass Door is east of The Reception Area.
 
@@ -293,11 +296,22 @@ After reading a command when the command prompt is "Please enter your name >":
 	reject the player's command.]
 
 Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
-Up Button is a door.
+Up Button is an open door.
+The Up Button is not openable.
 Up Button is above The Outside Of The Elevator and below The Fancy Hallway.
-Down Button is a door.
-Down Button is below The Outside Of The Elevator.
+Down Button is an open door.
+The Down Button is not openable.
+Down Button is below The Outside Of The Elevator and above The Dungeon Junction.
 Dance Button is in The Outside Of The Elevator.
 Connect Button is in The Outside Of The Elevator.
 The Outside Of The Elevator is north of The Reception Area.
+
+Section 2 The Dungeon
+
+Dungeon Junction is a room. "The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks 'Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.'"
+The Security Guard is in the Dungeon Junction.
+The Security Guard is a person.
+The Security Guard is scenery.
+The Helmet is in the Dungeon Junction.
+The Helmet is wearable.
 
