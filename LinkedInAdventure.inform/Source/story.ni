@@ -16,6 +16,8 @@ Part 1 Making new Kinds
 
 Chapter 1 Links
 
+Section 1 Defining a Link
+
 A link is a kind of door.
 A link is usually open.
 A link is seldom openable.
@@ -27,6 +29,8 @@ Clicking is an action applying to one thing.
 Understand "click [something]" as clicking.
 Understand "click on [something]" as clicking.
 Understand "kick [something]" as attacking.
+
+Section 2 Rules
 
 Carry out clicking:
 	if the noun is a link
@@ -50,6 +54,13 @@ A first check going rule (this is the reject directional travel while online rul
 
 Logging out is an action applying to nothing.
 Understand "logout" as Logging out.
+
+A first check dropping rule (this is the you can't drop stuff when online rule):
+	if location of the player is in The Online Area
+	begin;
+		say "You fumble for a bit and your cell phone beeps sadly. You decide to not drop [the noun] until you log off.";
+		stop the action.;
+	end if;
 
 Check logging out:
 	if location of player is not in The Online Area
@@ -92,11 +103,32 @@ The LinkedIn Application is an app.
 
 Section 2 Touching (apps)
 
+To Login To Linkedin:
+	if the location of the player is in the online area
+	begin;
+		say "You're already online.";
+	otherwise;
+		say "You open up the LinkedIn Application.";
+		now the before login of player is the location of the player;
+		move player to The Login Screen.;
+	end if.
+
 Instead of touching The LinkedIn Application:
-	say "You open up the LinkedIn Application.";
-	now the before login of player is the location of the player;
-	move player to The Login Screen.
-		
+	Login To Linkedin.
+
+Section 3 Additional actions for phone
+
+Activating is an action applying to one thing.
+Understand "use [something]" as activating.
+
+Carry out activating an app:
+	Login To LinkedIn.
+	
+Carry out activating the cell phone:
+	Login To LinkedIn.
+
+Instead of opening the cell phone:
+	Login To LinkedIn.
 
 Chapter 3 Look and Feel
 
@@ -123,6 +155,8 @@ When play begins:
 
 Chapter 4 Making fun Actions
 
+Section 1 Some actions
+
 Dancing is an action applying to nothing.
 Understand "dance" or "groove" or "jig" as dancing.
 
@@ -140,6 +174,31 @@ Carry out licking:
 
 Report Licking:
 	say "You lick [the noun]. It is yours now."
+	
+Section 2 High Fives
+
+A person can be happy or sad.
+A person is usually sad.
+
+High Fiving is an action applying to one thing.
+Understand "high five [something]" as High Fiving.
+
+Check High Fiving:
+	if noun is not a person
+	begin;
+		say "How do you high five [the noun]?".;
+		stop the action.;
+	end if.
+
+Carry out High Fiving:
+	if the noun is sad
+	begin;
+		say "You high five [the noun] with a resounding clap!";
+		increase the score by 1.;
+		now the noun is happy.;
+	otherwise;
+		say "You already high fived [the noun], double high fiving is unprofessional.".;
+	end if.
 	
 Chapter 5 Modifying Current Things
 
@@ -263,6 +322,8 @@ Book 2 The World
 
 Part 1 Online
 
+Chapter 1 LinkedIn
+
 The Login Screen is a room. "A wonderous world of magic awaits you at this special page that reads 'LinkedIn' at the top. A login button beckons to you seductively from the side."
 The Login Screen is in The Online Area.
 
@@ -322,7 +383,7 @@ Some cups are on the Water Cooler.
 [you need to be able to take a cup]
 The Large Desk and The Receptionist's Computer and The Water Cooler and Some cups are scenery.
 A Glass Door is a door.
-A Glass Door is east of The Reception Area.
+A Glass Door is north of The Reception Area and south of Outside Of The Elevator.
 A Glass Door is locked.
 The description of A Glass Door is "The glass door is transparent!  You can see right through it because it’s made of glass… It’s practically magical.  Attached to it is a card reader.".
 A card reader is in The Reception Area.
@@ -381,12 +442,11 @@ The Down Button is not openable.
 Down Button is below The Outside Of The Elevator and above The Dungeon Junction.
 Dance Button is in The Outside Of The Elevator.
 Connect Button is in The Outside Of The Elevator.
-The Outside Of The Elevator is north of The Reception Area.
 
 Section 4 The Basement
 
 [Dungeon Junction]
-Dungeon Junction is a room. "The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks 'Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.'"
+Basement Junction is a room. "The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks 'Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.'"
 In the Dungeon Junction is a man called The Security Guard.
 The Security Guard is scenery.
 The Security Guard wears an umbrella.
@@ -399,9 +459,9 @@ The description of the Security Guard is "The guard is heavily muscled and could
 The description of the helmet is "A grey plastic waste paper basket with eye slits cut into it and a hole for your mouth. It would fit snuggly and keep your head warm. It would provide a small amount of protection while making you look like an idiot at the same time."
 The description of the umbrella is "The umbrella is blue with the LinkedIn logo. It is decently snazzy swag."
 The description of the plate mail is "This armor is made of interlocking paper plates from the cafeteria. It would provide a small amount of protection while making you look ridiculous."
-The dungeon ceiling is in the Dungeon Junction.
-The dungeon floor is in the Dungeon Junction.
-The dungeon walls is in the Dungeon Junction.
+The basement ceiling is in the Basement Junction.
+The basement floor is in the Basement Junction.
+The basement walls is in the Basement Junction.
 The description of the dungeon walls is "The walls are slick with water and slimy mold. It reminds you of your dormitory years."
 The description of the dungeon ceiling is "You look at the ceiling and think beige, they should really paint the ceiling beige."
 The description of the dungeon floor is "The floor is inlaid with arcane symbols. Upon closer inspection you realize that is actually binary code. You now have a better understanding of search algorithms." [gain 15 points when first looking at this]
