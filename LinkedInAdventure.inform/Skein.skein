@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x1828830" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x183b000" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1828830" />
-  <item nodeId="node-0x1828830">
+  <activeNode nodeId="node-0x183b000" />
+  <item nodeId="node-0x183b000">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -10,104 +10,91 @@
 
 LinkedInAdventure
 An Interactive Fiction by Colin Miller The story headline is &quot;An interactive adventure featuring the wonders of LinkedIn&quot;
-Release 1 / Serial number 121213 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 121214 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
-Darkness
-You stand (float?) in what seems to be an empty black void. Your life feels somewhat hallow, as if there&apos;s been something missing that you can&apos;t quite identify. A dim light receeds to the north, a faint glimmer of hope amidst the darnkess. 
-
-You are likely to be eaten by a Grue.
-
-Please enter your name &gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="180">NO</temporary>
-    <children>
-      <child nodeId="node-0x82b14d0" />
-      <child nodeId="node-0x18283a0" />
-      <child nodeId="node-0x82b1460" />
-      <child nodeId="node-0x82b13f0" />
-      <child nodeId="node-0x82b1150" />
-      <child nodeId="node-0x82b0cf0" />
-      <child nodeId="node-0x82b0eb0" />
-      <child nodeId="node-0x82b0d60" />
-      <child nodeId="node-0x82b0820" />
-      <child nodeId="node-0x82b0340" />
-      <child nodeId="node-0x82b02d0" />
-      <child nodeId="node-0x82b0900" />
-      <child nodeId="node-0x1828660" />
-      <child nodeId="node-0x82b1690" />
-    </children>
-  </item>
-  <item nodeId="node-0x82b1690">
-    <command xml:space="preserve">Colin</command>
-    <result xml:space="preserve">Thank you. colin
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="179">YES</temporary>
-    <children>
-      <child nodeId="node-0x82b1700" />
-    </children>
-  </item>
-  <item nodeId="node-0x82b1700">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
 Office
 This is a standard computer office. There&apos;s a desk with a computer and a chair on it.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="172">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="180">NO</temporary>
     <children>
-      <child nodeId="node-0x82b1770" />
+      <child nodeId="node-0x82a0080" />
+      <child nodeId="node-0x183b2a0" />
+      <child nodeId="node-0x829fde0" />
+      <child nodeId="node-0x829fd70" />
+      <child nodeId="node-0x829fad0" />
+      <child nodeId="node-0x829fa60" />
+      <child nodeId="node-0x829f7c0" />
+      <child nodeId="node-0x829f670" />
+      <child nodeId="node-0x829f590" />
+      <child nodeId="node-0x829ebe0" />
+      <child nodeId="node-0x829eb70" />
+      <child nodeId="node-0x829f1a0" />
+      <child nodeId="node-0x183af60" />
+      <child nodeId="node-0x829fe50" />
     </children>
   </item>
-  <item nodeId="node-0x82b1770">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Graveyard
-This small patch of overgrown land has a series of well worn stone markers indicating the final resting place of many failed projects.
-
-You can see a shiny gravestone and a damaged gravestone here.
+  <item nodeId="node-0x829fe50">
+    <command xml:space="preserve">lick grue</command>
+    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="172">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
     <children>
-      <child nodeId="node-0x82b17e0" />
+      <child nodeId="node-0x829fec0" />
     </children>
   </item>
-  <item nodeId="node-0x82b17e0">
-    <command xml:space="preserve">l shiny</command>
-    <result xml:space="preserve">R.I.P. colin
+  <item nodeId="node-0x829fec0">
+    <command xml:space="preserve">kick grue</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="172">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="128">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1850" />
+      <child nodeId="node-0x829ff30" />
     </children>
   </item>
-  <item nodeId="node-0x82b1850">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">Are you sure you want to restart? </result>
+  <item nodeId="node-0x829ff30">
+    <command xml:space="preserve">attack grue</command>
+    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
+
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="172">YES</temporary>
+    <temporary score="128">YES</temporary>
     <children>
-      <child nodeId="node-0x82b18c0" />
+      <child nodeId="node-0x829ffa0" />
     </children>
   </item>
-  <item nodeId="node-0x82b18c0">
-    <command xml:space="preserve">yes</command>
+  <item nodeId="node-0x829ffa0">
+    <command xml:space="preserve">eat grue</command>
+    <result xml:space="preserve">(first taking the Grue)
+Why would you want to do that to a grue? They&apos;re dangerous you know.
+
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="171">YES</temporary>
+    <temporary score="128">YES</temporary>
+    <children>
+      <child nodeId="node-0x82a0010" />
+    </children>
   </item>
-  <item nodeId="node-0x1828660">
+  <item nodeId="node-0x82a0010">
+    <command xml:space="preserve">lick grue</command>
+    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="127">YES</temporary>
+  </item>
+  <item nodeId="node-0x183af60">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You stumble into the light.
 
@@ -121,14 +108,14 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>NO</changed>
     <temporary score="157">YES</temporary>
     <children>
-      <child nodeId="node-0x82af900" />
-      <child nodeId="node-0x82af620" />
-      <child nodeId="node-0x82affc0" />
-      <child nodeId="node-0x82b00a0" />
-      <child nodeId="node-0x82b0430" />
+      <child nodeId="node-0x829ea90" />
+      <child nodeId="node-0x829e780" />
+      <child nodeId="node-0x829e6a0" />
+      <child nodeId="node-0x829e360" />
+      <child nodeId="node-0x829df60" />
     </children>
   </item>
-  <item nodeId="node-0x82b0430">
+  <item nodeId="node-0x829df60">
     <command xml:space="preserve">eat taco</command>
     <result xml:space="preserve">(first taking the delicious taco)
 What taco? Man, don&apos;t you wish there were a taco here?
@@ -138,10 +125,10 @@ What taco? Man, don&apos;t you wish there were a taco here?
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b04a0" />
+      <child nodeId="node-0x829dfb0" />
     </children>
   </item>
-  <item nodeId="node-0x82b04a0">
+  <item nodeId="node-0x829dfb0">
     <command xml:space="preserve">search</command>
     <result xml:space="preserve">(Around)
 You find a delicious taco.
@@ -153,10 +140,10 @@ You find a delicious taco.
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0510" />
+      <child nodeId="node-0x829e000" />
     </children>
   </item>
-  <item nodeId="node-0x82b0510">
+  <item nodeId="node-0x829e000">
     <command xml:space="preserve">take taco</command>
     <result xml:space="preserve">Taken.
 
@@ -165,10 +152,10 @@ You find a delicious taco.
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0580" />
+      <child nodeId="node-0x829e070" />
     </children>
   </item>
-  <item nodeId="node-0x82b0580">
+  <item nodeId="node-0x829e070">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Kennel
@@ -181,10 +168,10 @@ An awesome puppy.
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b05f0" />
+      <child nodeId="node-0x829e1a0" />
     </children>
   </item>
-  <item nodeId="node-0x82b05f0">
+  <item nodeId="node-0x829e1a0">
     <command xml:space="preserve">pet puppy</command>
     <result xml:space="preserve">You pet the puppy who licks you and wags his tail. How wonderful.
 
@@ -195,10 +182,10 @@ An awesome puppy.
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0660" />
+      <child nodeId="node-0x183af00" />
     </children>
   </item>
-  <item nodeId="node-0x82b0660">
+  <item nodeId="node-0x183af00">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">
 Enlightenment
@@ -211,10 +198,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b06d0" />
+      <child nodeId="node-0x829e210" />
     </children>
   </item>
-  <item nodeId="node-0x82b06d0">
+  <item nodeId="node-0x829e210">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Vahalla
@@ -227,10 +214,10 @@ A delicious looking cake.
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0740" />
+      <child nodeId="node-0x829e280" />
     </children>
   </item>
-  <item nodeId="node-0x82b0740">
+  <item nodeId="node-0x829e280">
     <command xml:space="preserve">take cake</command>
     <result xml:space="preserve">Taken.
 
@@ -239,10 +226,10 @@ A delicious looking cake.
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
     <children>
-      <child nodeId="node-0x82b07b0" />
+      <child nodeId="node-0x829e2f0" />
     </children>
   </item>
-  <item nodeId="node-0x82b07b0">
+  <item nodeId="node-0x829e2f0">
     <command xml:space="preserve">eat cake</command>
     <result xml:space="preserve">You take a bite of the cake and find yourself in nirvana.
 
@@ -260,7 +247,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="115">YES</temporary>
   </item>
-  <item nodeId="node-0x82b00a0">
+  <item nodeId="node-0x829e360">
     <command xml:space="preserve">click login</command>
     <result xml:space="preserve">
 LinkedIn Homepage
@@ -271,10 +258,10 @@ You can see a taco here.
     <changed>YES</changed>
     <temporary score="109">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0110" />
+      <child nodeId="node-0x829e3d0" />
     </children>
   </item>
-  <item nodeId="node-0x82b0110">
+  <item nodeId="node-0x829e3d0">
     <command xml:space="preserve">click logout</command>
     <result xml:space="preserve">
 Login Screen
@@ -285,10 +272,10 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>YES</changed>
     <temporary score="109">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0180" />
+      <child nodeId="node-0x829e440" />
     </children>
   </item>
-  <item nodeId="node-0x82b0180">
+  <item nodeId="node-0x829e440">
     <command xml:space="preserve">click login</command>
     <result xml:space="preserve">
 LinkedIn Homepage
@@ -299,10 +286,10 @@ You can see a taco here.
     <changed>YES</changed>
     <temporary score="109">YES</temporary>
     <children>
-      <child nodeId="node-0x82afba0" />
+      <child nodeId="node-0x829e0e0" />
     </children>
   </item>
-  <item nodeId="node-0x82afba0">
+  <item nodeId="node-0x829e0e0">
     <command xml:space="preserve">click login</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -311,10 +298,10 @@ You can see a taco here.
     <changed>YES</changed>
     <temporary score="109">YES</temporary>
     <children>
-      <child nodeId="node-0x82afc10" />
+      <child nodeId="node-0x829e130" />
     </children>
   </item>
-  <item nodeId="node-0x82afc10">
+  <item nodeId="node-0x829e130">
     <command xml:space="preserve">click link</command>
     <result xml:space="preserve">
 Login Screen
@@ -324,20 +311,8 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="109">YES</temporary>
-    <children>
-      <child nodeId="node-0x82afc80" />
-    </children>
   </item>
-  <item nodeId="node-0x82afc80">
-    <command xml:space="preserve">click link</command>
-    <result xml:space="preserve">Which do you mean, the login button or the signup button?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="108">YES</temporary>
-  </item>
-  <item nodeId="node-0x82affc0">
+  <item nodeId="node-0x829e6a0">
     <command xml:space="preserve">pet taco</command>
     <result xml:space="preserve">You can&apos;t pet the delicious taco
 
@@ -350,10 +325,10 @@ You continue to pet the puppy who continues to wag his tail excitedly.
     <changed>YES</changed>
     <temporary score="119">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0030" />
+      <child nodeId="node-0x829e710" />
     </children>
   </item>
-  <item nodeId="node-0x82b0030">
+  <item nodeId="node-0x829e710">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -362,7 +337,7 @@ You continue to pet the puppy who continues to wag his tail excitedly.
     <changed>YES</changed>
     <temporary score="118">YES</temporary>
   </item>
-  <item nodeId="node-0x82af620">
+  <item nodeId="node-0x829e780">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Vahalla
@@ -375,10 +350,10 @@ A delicious looking cake.
     <changed>YES</changed>
     <temporary score="157">YES</temporary>
     <children>
-      <child nodeId="node-0x82af670" />
+      <child nodeId="node-0x829e7f0" />
     </children>
   </item>
-  <item nodeId="node-0x82af670">
+  <item nodeId="node-0x829e7f0">
     <command xml:space="preserve">smell cake</command>
     <result xml:space="preserve">The cake smells mouth watering.
 
@@ -387,10 +362,10 @@ A delicious looking cake.
     <changed>YES</changed>
     <temporary score="157">YES</temporary>
     <children>
-      <child nodeId="node-0x82af6c0" />
+      <child nodeId="node-0x829e860" />
     </children>
   </item>
-  <item nodeId="node-0x82af6c0">
+  <item nodeId="node-0x829e860">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Enlightenment
@@ -403,10 +378,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="157">YES</temporary>
     <children>
-      <child nodeId="node-0x82af710" />
+      <child nodeId="node-0x829e8d0" />
     </children>
   </item>
-  <item nodeId="node-0x82af710">
+  <item nodeId="node-0x829e8d0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Why would you ever want to go back to that empty void? This place is much better. Look, over there is a puppy! 
 
@@ -417,10 +392,10 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>YES</changed>
     <temporary score="157">YES</temporary>
     <children>
-      <child nodeId="node-0x82af760" />
+      <child nodeId="node-0x829e940" />
     </children>
   </item>
-  <item nodeId="node-0x82af760">
+  <item nodeId="node-0x829e940">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You still don&apos;t want to go that way
 &gt;</result>
@@ -428,10 +403,10 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>YES</changed>
     <temporary score="157">YES</temporary>
     <children>
-      <child nodeId="node-0x82af890" />
+      <child nodeId="node-0x829e9b0" />
     </children>
   </item>
-  <item nodeId="node-0x82af890">
+  <item nodeId="node-0x829e9b0">
     <command xml:space="preserve">search taco</command>
     <result xml:space="preserve">You find nothing of interest.
 
@@ -440,10 +415,10 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>YES</changed>
     <temporary score="157">YES</temporary>
     <children>
-      <child nodeId="node-0x18286f0" />
+      <child nodeId="node-0x829ea20" />
     </children>
   </item>
-  <item nodeId="node-0x18286f0">
+  <item nodeId="node-0x829ea20">
     <command xml:space="preserve">search</command>
     <result xml:space="preserve">What do you want to search?
 
@@ -452,7 +427,7 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>YES</changed>
     <temporary score="156">YES</temporary>
   </item>
-  <item nodeId="node-0x82af900">
+  <item nodeId="node-0x829ea90">
     <command xml:space="preserve">search around</command>
     <result xml:space="preserve">You find a delicious taco.
 
@@ -463,10 +438,10 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>NO</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82af970" />
+      <child nodeId="node-0x829e4b0" />
     </children>
   </item>
-  <item nodeId="node-0x82af970">
+  <item nodeId="node-0x829e4b0">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying nothing.
 
@@ -475,10 +450,10 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82af9e0" />
+      <child nodeId="node-0x829e520" />
     </children>
   </item>
-  <item nodeId="node-0x82af9e0">
+  <item nodeId="node-0x829e520">
     <command xml:space="preserve">lick taco</command>
     <result xml:space="preserve">You lick the delicious taco. It is yours now.
 
@@ -487,10 +462,10 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afa50" />
+      <child nodeId="node-0x829e590" />
     </children>
   </item>
-  <item nodeId="node-0x82afa50">
+  <item nodeId="node-0x829e590">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying:
   a delicious taco
@@ -500,10 +475,10 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afac0" />
+      <child nodeId="node-0x829ed40" />
     </children>
   </item>
-  <item nodeId="node-0x82afac0">
+  <item nodeId="node-0x829ed40">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Enlightenment
 Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
@@ -515,10 +490,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afb30" />
+      <child nodeId="node-0x829edb0" />
     </children>
   </item>
-  <item nodeId="node-0x82afb30">
+  <item nodeId="node-0x829edb0">
     <command xml:space="preserve">up</command>
     <result xml:space="preserve">
 Kennel
@@ -531,10 +506,10 @@ An awesome puppy.
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82af7d0" />
+      <child nodeId="node-0x829ee20" />
     </children>
   </item>
-  <item nodeId="node-0x82af7d0">
+  <item nodeId="node-0x829ee20">
     <command xml:space="preserve">lick puppy</command>
     <result xml:space="preserve">I don&apos;t suppose the puppy would care for that.
 
@@ -545,10 +520,10 @@ You lick the puppy. It is yours now.
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82af820" />
+      <child nodeId="node-0x829ee90" />
     </children>
   </item>
-  <item nodeId="node-0x82af820">
+  <item nodeId="node-0x829ee90">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Kennel
 Why is this even here? How did you go up from what was basically a room of pure light? Did you float? Looking around you see a bunch of empty cages and some newspaper on the ground.
@@ -560,10 +535,10 @@ An awesome puppy.
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afd20" />
+      <child nodeId="node-0x829ef00" />
     </children>
   </item>
-  <item nodeId="node-0x82afd20">
+  <item nodeId="node-0x829ef00">
     <command xml:space="preserve">inv</command>
     <result xml:space="preserve">You are carrying:
   a delicious taco
@@ -573,10 +548,10 @@ An awesome puppy.
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afd90" />
+      <child nodeId="node-0x829ef70" />
     </children>
   </item>
-  <item nodeId="node-0x82afd90">
+  <item nodeId="node-0x829ef70">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -585,10 +560,10 @@ An awesome puppy.
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afe00" />
+      <child nodeId="node-0x829efe0" />
     </children>
   </item>
-  <item nodeId="node-0x82afe00">
+  <item nodeId="node-0x829efe0">
     <command xml:space="preserve">down</command>
     <result xml:space="preserve">
 Enlightenment
@@ -601,10 +576,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afe70" />
+      <child nodeId="node-0x829f050" />
     </children>
   </item>
-  <item nodeId="node-0x82afe70">
+  <item nodeId="node-0x829f050">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Vahalla
@@ -617,10 +592,10 @@ A delicious looking cake.
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82afee0" />
+      <child nodeId="node-0x829f0c0" />
     </children>
   </item>
-  <item nodeId="node-0x82afee0">
+  <item nodeId="node-0x829f0c0">
     <command xml:space="preserve">lick cake</command>
     <result xml:space="preserve">You lick the Cake. It is yours now.
 
@@ -629,10 +604,10 @@ A delicious looking cake.
     <changed>YES</changed>
     <temporary score="149">YES</temporary>
     <children>
-      <child nodeId="node-0x82aff50" />
+      <child nodeId="node-0x829f130" />
     </children>
   </item>
-  <item nodeId="node-0x82aff50">
+  <item nodeId="node-0x829f130">
     <command xml:space="preserve">smell cake</command>
     <result xml:space="preserve">You smell nothing unexpected.
 
@@ -641,7 +616,7 @@ A delicious looking cake.
     <changed>YES</changed>
     <temporary score="148">YES</temporary>
   </item>
-  <item nodeId="node-0x82b0900">
+  <item nodeId="node-0x829f1a0">
     <command xml:space="preserve">click exit</command>
     <result xml:space="preserve">
 Office
@@ -652,12 +627,12 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>NO</changed>
     <temporary score="119">YES</temporary>
     <children>
-      <child nodeId="node-0x82b01f0" />
-      <child nodeId="node-0x82b09e0" />
-      <child nodeId="node-0x82b0970" />
+      <child nodeId="node-0x829f440" />
+      <child nodeId="node-0x829f280" />
+      <child nodeId="node-0x829f210" />
     </children>
   </item>
-  <item nodeId="node-0x82b0970">
+  <item nodeId="node-0x829f210">
     <command xml:space="preserve">turn computer on</command>
     <result xml:space="preserve">Login Screen
 A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
@@ -669,7 +644,7 @@ You switch the computer on.
     <changed>YES</changed>
     <temporary score="118">YES</temporary>
   </item>
-  <item nodeId="node-0x82b09e0">
+  <item nodeId="node-0x829f280">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Bathroom
@@ -680,10 +655,10 @@ This bathroom hasn&apos;t been cleaned in years.
     <changed>YES</changed>
     <temporary score="117">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0a50" />
+      <child nodeId="node-0x829f2f0" />
     </children>
   </item>
-  <item nodeId="node-0x82b0a50">
+  <item nodeId="node-0x829f2f0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Office
@@ -694,10 +669,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="117">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0ac0" />
+      <child nodeId="node-0x829f360" />
     </children>
   </item>
-  <item nodeId="node-0x82b0ac0">
+  <item nodeId="node-0x829f360">
     <command xml:space="preserve">use computer</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -706,10 +681,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="117">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0b30" />
+      <child nodeId="node-0x829f3d0" />
     </children>
   </item>
-  <item nodeId="node-0x82b0b30">
+  <item nodeId="node-0x829f3d0">
     <command xml:space="preserve">turn computer on</command>
     <result xml:space="preserve">You switch the computer on.
 
@@ -718,7 +693,7 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="116">YES</temporary>
   </item>
-  <item nodeId="node-0x82b01f0">
+  <item nodeId="node-0x829f440">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Office
 This is a standard computer office. There&apos;s a desk with a computer and a chair on it.
@@ -728,10 +703,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="112">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0260" />
+      <child nodeId="node-0x829eb00" />
     </children>
   </item>
-  <item nodeId="node-0x82b0260">
+  <item nodeId="node-0x829eb00">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -740,7 +715,7 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="111">YES</temporary>
   </item>
-  <item nodeId="node-0x82b02d0">
+  <item nodeId="node-0x829eb70">
     <command xml:space="preserve">Joe</command>
     <result xml:space="preserve">Thank you joe
 &gt;</result>
@@ -748,7 +723,7 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="178">YES</temporary>
   </item>
-  <item nodeId="node-0x82b0340">
+  <item nodeId="node-0x829ebe0">
     <command xml:space="preserve">go towards light</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -757,10 +732,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>YES</changed>
     <temporary score="111">YES</temporary>
     <children>
-      <child nodeId="node-0x82b03b0" />
+      <child nodeId="node-0x829ec50" />
     </children>
   </item>
-  <item nodeId="node-0x82b03b0">
+  <item nodeId="node-0x829ec50">
     <command xml:space="preserve">go light</command>
     <result xml:space="preserve">You stumble into the light.
 
@@ -774,10 +749,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="111">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0ba0" />
+      <child nodeId="node-0x829ecc0" />
     </children>
   </item>
-  <item nodeId="node-0x82b0ba0">
+  <item nodeId="node-0x829ecc0">
     <command xml:space="preserve">reset</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -786,26 +761,26 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="111">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0c10" />
+      <child nodeId="node-0x829f4b0" />
     </children>
   </item>
-  <item nodeId="node-0x82b0c10">
+  <item nodeId="node-0x829f4b0">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="111">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0c80" />
+      <child nodeId="node-0x829f520" />
     </children>
   </item>
-  <item nodeId="node-0x82b0c80">
+  <item nodeId="node-0x829f520">
     <command xml:space="preserve">yes</command>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="110">YES</temporary>
   </item>
-  <item nodeId="node-0x82b0820">
+  <item nodeId="node-0x829f590">
     <command xml:space="preserve">Some Bloke</command>
     <result xml:space="preserve">That&apos;s not a verb I recognise.
 
@@ -814,10 +789,10 @@ Please enter your name &gt;</result>
     <changed>YES</changed>
     <temporary score="159">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0890" />
+      <child nodeId="node-0x829f600" />
     </children>
   </item>
-  <item nodeId="node-0x82b0890">
+  <item nodeId="node-0x829f600">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Darkness
 You stand (float?) in what seems to be an empty black void. Your life feels somewhat hallow, as if there&apos;s been something missing that you can&apos;t quite identify. A dim light receeds to the north, a faint glimmer of hope amidst the darnkess. 
@@ -829,7 +804,7 @@ Please enter your name &gt;</result>
     <changed>YES</changed>
     <temporary score="158">YES</temporary>
   </item>
-  <item nodeId="node-0x82b0d60">
+  <item nodeId="node-0x829f670">
     <command xml:space="preserve">go into light</command>
     <result xml:space="preserve">You stumble into the light.
 
@@ -843,26 +818,26 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0dd0" />
+      <child nodeId="node-0x829f6e0" />
     </children>
   </item>
-  <item nodeId="node-0x82b0dd0">
+  <item nodeId="node-0x829f6e0">
     <command xml:space="preserve">restart</command>
     <result xml:space="preserve">Are you sure you want to restart? </result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0e40" />
+      <child nodeId="node-0x829f750" />
     </children>
   </item>
-  <item nodeId="node-0x82b0e40">
+  <item nodeId="node-0x829f750">
     <command xml:space="preserve">yes</command>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="113">YES</temporary>
   </item>
-  <item nodeId="node-0x82b0eb0">
+  <item nodeId="node-0x829f7c0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Office
@@ -873,10 +848,10 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
     <changed>NO</changed>
     <temporary score="123">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0f20" />
+      <child nodeId="node-0x829f830" />
     </children>
   </item>
-  <item nodeId="node-0x82b0f20">
+  <item nodeId="node-0x829f830">
     <command xml:space="preserve">l computer</command>
     <result xml:space="preserve">Sleek and high tech, this construct of keys, screen, and whirring lights allows one to send signals through a series of tubes to remote locations. Truely a marvel of the modern world.
 
@@ -887,10 +862,10 @@ The computer is currently switched off.
     <changed>YES</changed>
     <temporary score="123">YES</temporary>
     <children>
-      <child nodeId="node-0x82b0f90" />
+      <child nodeId="node-0x829f8a0" />
     </children>
   </item>
-  <item nodeId="node-0x82b0f90">
+  <item nodeId="node-0x829f8a0">
     <command xml:space="preserve">l chair</command>
     <result xml:space="preserve">You see nothing special about the chair.
 
@@ -899,10 +874,10 @@ The computer is currently switched off.
     <changed>YES</changed>
     <temporary score="123">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1000" />
+      <child nodeId="node-0x829f910" />
     </children>
   </item>
-  <item nodeId="node-0x82b1000">
+  <item nodeId="node-0x829f910">
     <command xml:space="preserve">lick computer</command>
     <result xml:space="preserve">You lick the computer. It is yours now.
 
@@ -911,10 +886,10 @@ The computer is currently switched off.
     <changed>YES</changed>
     <temporary score="123">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1070" />
+      <child nodeId="node-0x829f980" />
     </children>
   </item>
-  <item nodeId="node-0x82b1070">
+  <item nodeId="node-0x829f980">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Darkness
@@ -927,10 +902,10 @@ You are likely to be eaten by a Grue.
     <changed>YES</changed>
     <temporary score="123">YES</temporary>
     <children>
-      <child nodeId="node-0x82b10e0" />
+      <child nodeId="node-0x829f9f0" />
     </children>
   </item>
-  <item nodeId="node-0x82b10e0">
+  <item nodeId="node-0x829f9f0">
     <command xml:space="preserve">lick grue</command>
     <result xml:space="preserve">You can&apos;t see any such thing.
 
@@ -939,7 +914,7 @@ You are likely to be eaten by a Grue.
     <changed>YES</changed>
     <temporary score="122">YES</temporary>
   </item>
-  <item nodeId="node-0x82b0cf0">
+  <item nodeId="node-0x829fa60">
     <command xml:space="preserve">dance</command>
     <result xml:space="preserve">A disco ball descends and you groove.
 
@@ -948,7 +923,7 @@ You are likely to be eaten by a Grue.
     <changed>YES</changed>
     <temporary score="114">YES</temporary>
   </item>
-  <item nodeId="node-0x82b1150">
+  <item nodeId="node-0x829fad0">
     <command xml:space="preserve">kick grue</command>
     <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
 
@@ -957,10 +932,10 @@ You are likely to be eaten by a Grue.
     <changed>YES</changed>
     <temporary score="134">YES</temporary>
     <children>
-      <child nodeId="node-0x82b11c0" />
+      <child nodeId="node-0x829fb40" />
     </children>
   </item>
-  <item nodeId="node-0x82b11c0">
+  <item nodeId="node-0x829fb40">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You stumble into the light.
 
@@ -974,10 +949,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="134">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1230" />
+      <child nodeId="node-0x829fbb0" />
     </children>
   </item>
-  <item nodeId="node-0x82b1230">
+  <item nodeId="node-0x829fbb0">
     <command xml:space="preserve">search</command>
     <result xml:space="preserve">What do you want to search?
 
@@ -986,10 +961,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="134">YES</temporary>
     <children>
-      <child nodeId="node-0x82b12a0" />
+      <child nodeId="node-0x829fc20" />
     </children>
   </item>
-  <item nodeId="node-0x82b12a0">
+  <item nodeId="node-0x829fc20">
     <command xml:space="preserve">search around</command>
     <result xml:space="preserve">You find a delicious taco.
 
@@ -1000,10 +975,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="134">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1310" />
+      <child nodeId="node-0x829fc90" />
     </children>
   </item>
-  <item nodeId="node-0x82b1310">
+  <item nodeId="node-0x829fc90">
     <command xml:space="preserve">kick taco</command>
     <result xml:space="preserve">Violence isn&apos;t the answer to this one.
 
@@ -1012,10 +987,10 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="134">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1380" />
+      <child nodeId="node-0x829fd00" />
     </children>
   </item>
-  <item nodeId="node-0x82b1380">
+  <item nodeId="node-0x829fd00">
     <command xml:space="preserve">lick taco</command>
     <result xml:space="preserve">You lick the delicious taco. It is yours now.
 
@@ -1024,7 +999,7 @@ Clarity fills your mind as you realize your sole purpose in life is to create an
     <changed>YES</changed>
     <temporary score="133">YES</temporary>
   </item>
-  <item nodeId="node-0x82b13f0">
+  <item nodeId="node-0x829fd70">
     <command xml:space="preserve">Hi</command>
     <result xml:space="preserve">something interestingThat&apos;s not a verb I recognise.
 
@@ -1033,7 +1008,7 @@ Please enter your name &gt;</result>
     <changed>YES</changed>
     <temporary score="160">YES</temporary>
   </item>
-  <item nodeId="node-0x82b1460">
+  <item nodeId="node-0x829fde0">
     <command xml:space="preserve">hi</command>
     <result xml:space="preserve">something interestingThat&apos;s not a verb I recognise.
 
@@ -1042,65 +1017,76 @@ Please enter your name &gt;</result>
     <changed>YES</changed>
     <temporary score="159">YES</temporary>
   </item>
-  <item nodeId="node-0x18283a0">
-    <command xml:space="preserve">lick grue</command>
-    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
-
+  <item nodeId="node-0x183b2a0">
+    <command xml:space="preserve">Colin</command>
+    <result xml:space="preserve">Thank you. colin
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="128">YES</temporary>
+    <temporary score="179">YES</temporary>
     <children>
-      <child nodeId="node-0x18283f0" />
+      <child nodeId="node-0x183b2f0" />
     </children>
   </item>
-  <item nodeId="node-0x18283f0">
-    <command xml:space="preserve">kick grue</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
+  <item nodeId="node-0x183b2f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Office
+This is a standard computer office. There&apos;s a desk with a computer and a chair on it.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="128">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="172">YES</temporary>
     <children>
-      <child nodeId="node-0x1828880" />
+      <child nodeId="node-0x183b070" />
     </children>
   </item>
-  <item nodeId="node-0x1828880">
-    <command xml:space="preserve">attack grue</command>
-    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
+  <item nodeId="node-0x183b070">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Graveyard
+This small patch of overgrown land has a series of well worn stone markers indicating the final resting place of many failed projects.
+
+You can see a shiny gravestone and a damaged gravestone here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="128">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="172">YES</temporary>
     <children>
-      <child nodeId="node-0x18288f0" />
+      <child nodeId="node-0x183add0" />
     </children>
   </item>
-  <item nodeId="node-0x18288f0">
-    <command xml:space="preserve">eat grue</command>
-    <result xml:space="preserve">(first taking the Grue)
-Why would you want to do that to a grue? They&apos;re dangerous you know.
+  <item nodeId="node-0x183add0">
+    <command xml:space="preserve">l shiny</command>
+    <result xml:space="preserve">R.I.P. colin
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="128">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="172">YES</temporary>
     <children>
-      <child nodeId="node-0x18285f0" />
+      <child nodeId="node-0x183ae20" />
     </children>
   </item>
-  <item nodeId="node-0x18285f0">
-    <command xml:space="preserve">lick grue</command>
-    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
-
-&gt;</result>
+  <item nodeId="node-0x183ae20">
+    <command xml:space="preserve">restart</command>
+    <result xml:space="preserve">Are you sure you want to restart? </result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="127">YES</temporary>
+    <temporary score="172">YES</temporary>
+    <children>
+      <child nodeId="node-0x183ae70" />
+    </children>
   </item>
-  <item nodeId="node-0x82b14d0">
+  <item nodeId="node-0x183ae70">
+    <command xml:space="preserve">yes</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="171">YES</temporary>
+  </item>
+  <item nodeId="node-0x82a0080">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1109,10 +1095,10 @@ Please enter your name &gt;</result>
     <changed>NO</changed>
     <temporary score="178">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1540" />
+      <child nodeId="node-0x82a00f0" />
     </children>
   </item>
-  <item nodeId="node-0x82b1540">
+  <item nodeId="node-0x82a00f0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -1121,11 +1107,11 @@ Please enter your name &gt;</result>
     <changed>NO</changed>
     <temporary score="178">YES</temporary>
     <children>
-      <child nodeId="node-0x82b1620" />
-      <child nodeId="node-0x82b15b0" />
+      <child nodeId="node-0x82a01d0" />
+      <child nodeId="node-0x82a0160" />
     </children>
   </item>
-  <item nodeId="node-0x82b15b0">
+  <item nodeId="node-0x82a0160">
     <command xml:space="preserve">h</command>
     <result xml:space="preserve">Thank you
 &gt;</result>
@@ -1133,7 +1119,7 @@ Please enter your name &gt;</result>
     <changed>YES</changed>
     <temporary score="177">YES</temporary>
   </item>
-  <item nodeId="node-0x82b1620">
+  <item nodeId="node-0x82a01d0">
     <command xml:space="preserve">d</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>

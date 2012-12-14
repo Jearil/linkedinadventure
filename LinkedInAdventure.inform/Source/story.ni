@@ -1,4 +1,4 @@
-"LinkedInAdventure" by Colin Miller
+"LinkedInAdventure" by "Colin Miller, Julie Meridian, Edward Goldstein, Howard Zhao, and Jonathan Newton."
 The story headline is "An interactive adventure featuring the wonders of LinkedIn".
 The story genre is "Action-Adventure".
 The release number is 1.
@@ -7,6 +7,8 @@ The story creation year is 2012.
 
 Include Basic Screen Effects by Emily Short.
 Release along with an interpreter.
+
+The Office is a room.
 
 Part 1 Setting up the World
 
@@ -79,6 +81,9 @@ Report dancing:
 	
 Licking is an action applying to one thing.
 Understand "lick [something]" as Licking.
+
+[Check licking:
+	if ]
 
 Carry out licking:
 	try silently taking the noun.
@@ -259,13 +264,13 @@ The description of the damaged gravestone is "This stone appears to have bullet 
 The Graveyard is south of the Office.
 South of The Darkness is the Office.
 
-When play begins:
+[When play begins:
 	now the command prompt is "Please enter your name >".
 
 After reading a command when the command prompt is "Please enter your name >":
 	now the player's full name is the player's command.;
 	say "Thank you [Player's full name]".;
 	now the command prompt is ">".;
-	reject the player's command.
+	reject the player's command.]
 	
 	
