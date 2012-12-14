@@ -1,32 +1,25 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd4acf60" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1e23230" />
+  <activeNode nodeId="node-0x1e3aa350" />
   <item nodeId="node-0xd4acf60">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 
-LinkedInAdventure
-An interactive adventure featuring the wonders of LinkedIn by Colin Miller, Julie Meridian, Edward Goldstein, Howard Zhao, and Jonathan Newton.
-Release 1 / Serial number 121214 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+It&apos;s a new day, much like any other day at Frobozz Industries. It&apos;s 8:55am and you are mildly delirious from lack of sleep. You spent the previous evening waiting in line to get a new phone, which is quite possibly the most interesting thing to have happened since the last time you got a new phone. You idly wonder if you can convince your boss to expense it as you glance down at it in your hand, feeling very clever for getting the LinkedIn app so you can have a reason to use it at work. Or, at least you can pretend to be while you&apos;re surreptitiously tending your virtual garden during the staff meeting. 
 
-Reception Area
-You are standing in the middle of a large room with vaulted ceilings.  The walls are painted LinkedIn blue and decorated with a multitude of posters.  There is a water cooler in the corner and a few chairs strewn about.  The receptionist is sitting at a large desk and is working on her computer.  On the desk there is a webcam and a bowl of candy.
 
-On the Large Desk are a Webcam and a Bowl of candy (in which is a piece of candy).
 
-You can also see a Receptionist and a Glass Door here.
-
-&gt;</result>
+Please press SPACE to continue.
+</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="95">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="101">NO</temporary>
     <children>
       <child nodeId="node-0xd4acfb0" />
       <child nodeId="node-0xd418860" />
-      <child nodeId="node-0x14bda980" />
       <child nodeId="node-0xd4187f0" />
       <child nodeId="node-0xd43edd0" />
       <child nodeId="node-0xa33b9b0" />
@@ -37,7 +30,8 @@ You can also see a Receptionist and a Glass Door here.
       <child nodeId="node-0xd417ac0" />
       <child nodeId="node-0xd4172d0" />
       <child nodeId="node-0x1d6c9b90" />
-      <child nodeId="node-0x14b93af0" />
+      <child nodeId="node-0x1d66a660" />
+      <child nodeId="node-0x1e3aa350" />
       <child nodeId="node-0xd417f40" />
     </children>
   </item>
@@ -110,51 +104,43 @@ You can see a shiny gravestone and a damaged gravestone here.
     <changed>YES</changed>
     <temporary score="171">YES</temporary>
   </item>
-  <item nodeId="node-0x14b93af0">
-    <command xml:space="preserve">touch login</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
+  <item nodeId="node-0x1e3aa350">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">
+LinkedInAdventure
+An interactive adventure featuring the wonders of LinkedIn by Colin Miller, Julie Meridian, Edward Goldstein, Howard Zhao, and Jonathan Newton.
+Release 1 / Serial number 121214 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="84">YES</temporary>
-    <children>
-      <child nodeId="node-0x1d66bea0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d66bea0">
-    <command xml:space="preserve">touch linkedin</command>
-    <result xml:space="preserve">You open up the LinkedIn Application.
+Reception Area
+You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer..
 
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="84">YES</temporary>
-    <children>
-      <child nodeId="node-0x1d689870" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d689870">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Reception Area
-You are standing in the middle of a large room with vaulted ceilings.  The walls are painted LinkedIn blue and decorated with a multitude of posters.  There is a water cooler in the corner and a few chairs strewn about.  The receptionist is sitting at a large desk and is working on her computer.  On the desk there is a webcam and a bowl of candy.
-
-On the Large Desk are a Webcam and a Bowl of candy (in which is a piece of candy).
+On the Large Desk is a bowl of candy (in which is a piece of candy).
 
 You can also see a Receptionist and a Glass Door here.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="84">YES</temporary>
+    <temporary score="100">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d66a660">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Reception Area
+You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer..
+
+On the Large Desk is a bowl of candy (in which is a piece of candy).
+
+You can also see a Receptionist and a Glass Door here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="100">YES</temporary>
     <children>
-      <child nodeId="node-0x1d699970" />
+      <child nodeId="node-0x14b80130" />
     </children>
   </item>
-  <item nodeId="node-0x1d699970">
+  <item nodeId="node-0x14b80130">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Outside Of The Elevator
@@ -165,29 +151,34 @@ You can see Down Button, Up Button, Dance Button and Connect Button here.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="84">YES</temporary>
+    <temporary score="100">YES</temporary>
     <children>
-      <child nodeId="node-0x1d6ae560" />
+      <child nodeId="node-0x1e3a34f0" />
     </children>
   </item>
-  <item nodeId="node-0x1d6ae560">
-    <command xml:space="preserve">touch linkedin</command>
-    <result xml:space="preserve">You open up the LinkedIn Application.
+  <item nodeId="node-0x1e3a34f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">It&apos;s a new day, much like any other day at Frobozz Industries. It&apos;s 8:55am and you are mildly delirious from lack of sleep. You spent the previous evening waiting in line to get a new phone, which is quite possibly the most interesting thing to have happened since the last time you got a new phone. You idly wonder if you can convince your boss to expense it as you glance down at it in your hand, feeling very clever for getting the LinkedIn app so you can have a reason to use it at work. Or, at least you can pretend to be while you&apos;re surreptitiously tending your virtual garden during the staff meeting. 
 
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
+Reception Area
+You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer..
+
+On the Large Desk is a bowl of candy (in which is a piece of candy).
+
+You can also see a Receptionist and a Glass Door here.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="84">YES</temporary>
+    <temporary score="100">YES</temporary>
     <children>
-      <child nodeId="node-0x1d6cdda0" />
+      <child nodeId="node-0x14b28e40" />
     </children>
   </item>
-  <item nodeId="node-0x1d6cdda0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Outside Of The Elevator
+  <item nodeId="node-0x14b28e40">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Outside Of The Elevator
 Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
 
 You can see Down Button, Up Button, Dance Button and Connect Button here.
@@ -195,7 +186,25 @@ You can see Down Button, Up Button, Dance Button and Connect Button here.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="83">YES</temporary>
+    <temporary score="100">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d6c34d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d6c34d0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Reception Area
+You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer..
+
+On the Large Desk is a bowl of candy (in which is a piece of candy).
+
+You can also see a Receptionist and a Glass Door here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="99">YES</temporary>
   </item>
   <item nodeId="node-0x1d6c9b90">
     <command xml:space="preserve">lout</command>
@@ -710,49 +719,6 @@ Please enter your name &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="160">YES</temporary>
-  </item>
-  <item nodeId="node-0x14bda980">
-    <command xml:space="preserve">touch app</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="77">YES</temporary>
-    <children>
-      <child nodeId="node-0x1d66edb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d66edb0">
-    <command xml:space="preserve">touch application</command>
-    <result xml:space="preserve">The application feels awesome
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="77">YES</temporary>
-    <children>
-      <child nodeId="node-0x14bdb590" />
-    </children>
-  </item>
-  <item nodeId="node-0x14bdb590">
-    <command xml:space="preserve">touch linkedin</command>
-    <result xml:space="preserve">The application feels awesome
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="77">YES</temporary>
-    <children>
-      <child nodeId="node-0x14b3fc40" />
-    </children>
-  </item>
-  <item nodeId="node-0x14b3fc40">
-    <command xml:space="preserve">touch app</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="76">YES</temporary>
   </item>
   <item nodeId="node-0xd418860">
     <command xml:space="preserve">hi</command>

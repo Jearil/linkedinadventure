@@ -88,6 +88,8 @@ Carry out switching on cell phone:
 The LinkedIn Application is part of The Cell Phone.
 The LinkedIn Application is an app.
 
+[push and use cell]
+
 Section 2 Touching (apps)
 
 Instead of touching The LinkedIn Application:
@@ -97,6 +99,8 @@ Instead of touching The LinkedIn Application:
 		
 
 Chapter 3 Look and Feel
+
+Section 1 Colors
 
 To turn screen black:
 	say white letters;
@@ -109,6 +113,13 @@ To leave space:
 	say paragraph break;
 	say paragraph break;
 	say paragraph break.
+
+Section 2
+
+When play begins:
+	say "It's a new day, much like any other day at Frobozz Industries. It's 8:55am and you are mildly delirious from lack of sleep. You spent the previous evening waiting in line to get a new phone, which is quite possibly the most interesting thing to have happened since the last time you got a new phone. You idly wonder if you can convince your boss to expense it as you glance down at it in your hand, feeling very clever for getting the LinkedIn app so you can have a reason to use it at work. Or, at least you can pretend to be while you're surreptitiously tending your virtual garden during the staff meeting. [paragraph break]".;
+	pause the game.
+
 
 Chapter 4 Making fun Actions
 
