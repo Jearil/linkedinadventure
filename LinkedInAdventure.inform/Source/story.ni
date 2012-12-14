@@ -251,7 +251,7 @@ The Reception Area is a room. "You are standing in the middle of a large room wi
 A Large Desk is in The Reception Area.
 The Receptionist's Computer is on The Desk.
 A Webcam is on the Large Desk.
-A Bowl of candy is on the Large Desk.
+A Bowl of candy is on the Large Desk. "This is a bowl of candy".
 The Bowl of candy is a container.
 A piece of candy is in the Bowl of Candy.
 The piece of candy is edible.
@@ -259,7 +259,6 @@ The Receptionist is in The Reception Area.
 The Large Desk and The Receptionist's Computer are scenery.
 A Glass Door is a door.
 A Glass Door is east of The Reception Area.
-
 
 The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the end of the hallway is a door leading to an office."
 
@@ -295,7 +294,7 @@ After reading a command when the command prompt is "Please enter your name >":
 
 Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
 Up Button is a door.
-Up Button is above The Outside Of The Elevator.
+Up Button is above The Outside Of The Elevator and below The Fancy Hallway.
 Down Button is a door.
 Down Button is below The Outside Of The Elevator.
 Dance Button is in The Outside Of The Elevator.
