@@ -10,11 +10,11 @@ Release along with an interpreter.
 
 The Reception Area is a room.
 
-Part 1 Setting up the World
+Book 1 Setting up the World
 
-Chapter 1 Making new Kinds
+Part 1 Making new Kinds
 
-Section 1 Links
+Chapter 1 Links
 
 A link is a kind of door.
 A link is usually open.
@@ -48,18 +48,55 @@ A first check going rule (this is the reject directional travel while online rul
 		end if.;
 	end if.
 
+Logging out is an action applying to nothing.
+Understand "logout" as Logging out.
+
+Check logging out:
+	if location of player is not in The Online Area
+	begin;
+		say "You can't logout of life. Sorry.";
+		stop the action.;
+	end if;
+
+Carry out logging out:
+	move player to before login of the player.
 
 The Online Area is a region.
 
 Understand "head [direction]" as going.
 
-Section 2 Equiping the Player
+Chapter 2 Equiping the Player
 
 The player has some text called has clicked on.
 The player's full name is an indexed text that varies.
 The has clicked on is usually "No".
 
-Section 3 Look and Feel
+Section 1 Cell Phone
+
+The player has a room called before login.
+The player is carrying a device called a Cell Phone.
+The cell phone is switched on.
+The description of the Cell Phone is "In this day and age, the cell phone is indispensable. On the cellphone is a button for the LinkedIn app."
+
+An app is a kind of thing.
+
+Carry out switching off cell phone:
+	now The description of the Cell Phone is "A lonely dark display stares back at you."
+Carry out switching on cell phone:
+	now The description of the Cell Phone is "In this day and age, the cell phone is indispensable. On the cellphone is a button for the LinkedIn app."
+	
+The LinkedIn Application is part of The Cell Phone.
+The LinkedIn Application is an app.
+
+Section 2 Touching (apps)
+
+Instead of touching The LinkedIn Application:
+	say "You open up the LinkedIn Application.";
+	now the before login of player is the location of the player;
+	move player to The Login Screen.
+		
+
+Chapter 3 Look and Feel
 
 To turn screen black:
 	say white letters;
@@ -73,7 +110,7 @@ To leave space:
 	say paragraph break;
 	say paragraph break.
 
-Chapter 2 Making fun Actions
+Chapter 4 Making fun Actions
 
 Dancing is an action applying to nothing.
 Understand "dance" or "groove" or "jig" as dancing.
@@ -93,13 +130,13 @@ Carry out licking:
 Report Licking:
 	say "You lick [the noun]. It is yours now."
 	
-Chapter 2 Modifying Current Things
+Chapter 5 Modifying Current Things
 
 Instead of swearing obscenely: say "That is not very professional of you"
 
-Chapter 3 Recruting The Team
+Part 3 Recruting The Team
 
-Section 1 The Rooms
+Chapter 1 The Rooms
 
 The Darkness is a room. "You stand (float?) in what seems to be an empty black void. Your life feels somewhat hallow, as if there's been something missing that you can't quite identify. A dim light receeds to the north, a faint glimmer of hope amidst the darnkess. [paragraph break]You are likely to be eaten by a Grue."
 Enlightenment is a room. "Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You're really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.[paragraph break] To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don't want to go there)."
@@ -166,7 +203,7 @@ A puppy is in the Kennel. "An awesome puppy."
 The puppy is a Pet.
 The description of the Puppy is "This puppy seems really happy to see you. You wonder how he could have arrived at this place."
 
-Section 2 The Rules
+Chapter 2 The Rules
 
 Instead of doing anything to snakes:
 	die of snake bites.
@@ -211,9 +248,9 @@ After eating the delicious taco:
 	say "You now have no more taco which is a sad thing.";
 	decrease the score by 5.
 
-Part 2 The World
+Book 2 The World
 
-Chapter 1 Online
+Part 1 Online
 
 The Login Screen is a room. "A wonderous world of magic awaits you at this special page that reads 'LinkedIn' at the top. A login button beckons to you seductively from the side."
 The Login Screen is in The Online Area.
@@ -230,10 +267,10 @@ Through it is the LinkedIn Homepage.
 
 The exit button is a link.
 The exit button is west of the Login Screen.
-Through it is the Office.
+Through it is the Holding Area.
 
-After going to the Office from the Login Screen:
-	try switching off computer.
+Carry out going to the Holding Area:
+	move the player to the before login of the player.
 
 The logout button is a link.
 The logout button is south of the LinkedIn Homepage.
@@ -243,32 +280,54 @@ A soft taco is in the LinkedIn Homepage.
 The taco is edible.
 The description of the taco is "This taco is made of tasty meat and cheese with a tortilla curled around it."
 
-Chapter 2 Real World
+Part 2 Real World
 
-Section 1 Office Building
+Chapter 1 Office Building
 
-The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings.  The walls are painted LinkedIn blue and decorated with a multitude of posters.  There is a water cooler in the corner and a few chairs strewn about.  The receptionist is sitting at a large desk and is working on her computer.  On the desk there is a webcam and a bowl of candy."
+Section 1 Ground Floor
+
+[Reception Area]
+The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer.."
 A Large Desk is in The Reception Area.
+The description of A Large Desk is "It's a desk, and it's large.".
 The Receptionist's Computer is on The Desk.
+The description of a Receptionist's Computer is "This is your standard iMac.  The receptionist is making great use of the Retina display by browsing for new shoes".
 A Webcam is on the Large Desk.
-A Bowl of candy is on the Large Desk. "This is a bowl of candy".
-The Bowl of candy is a container.
-A piece of candy is in the Bowl of Candy.
-The piece of candy is edible.
-The Receptionist is in The Reception Area.
+A Webcam is scenery.
+The description of a Webcam is "The webcam looks like a black ball on a small podium.  The lens is staring back at you."
+A bowl of candy is on the Large Desk. 
+The description of a bowl of candy is "The bowl looks like it is made of crystal with elaborate designs engraved into it.".
+The bowl of candy is a container. 
+A piece of candy is in the bowl of Candy. 
+The description of a piece of candy is "The candy wrapper is written in a language you don’t understand.  You have no clue what kind of candy this might be.".
+The piece of candy is edible. 
+The Receptionist is in The Reception Area. 
+The description of the Receptionist is "The receptionist has short blonde hair and is quite pretty.  She is wearing a nice dress with flower print.  Her name tag reads ‘Rebecca’.  She is ignoring you with such skill that it is quite obvious that she has perfected the art.".
 The Receptionist is a person.
+Understand "Rebecca" as The Receptionist.
 The water cooler is in The reception Area.
-The description of the water cooler is "The water cooler stands in the corner placidly. You feel its non-existent eyes boring into you.  Plastic cups sit on top of it.  A bubble gurgles up to the top making a loud noise."
+The description of the water cooler is "The water cooler stands half-empty in the corner placidly. You feel its non-existent eyes boring into you.  Plastic cups sit on top of it.  A bubble gurgles up to the top making a loud noise."
 Some cups are on the Water Cooler.
+[you need to be able to take a cup]
 The Large Desk and The Receptionist's Computer and The Water Cooler and Some cups are scenery.
 A Glass Door is a door.
 A Glass Door is east of The Reception Area.
+A Glass Door is locked.
+The description of A Glass Door is "The glass door is transparent!  You can see right through it because it’s made of glass… It’s practically magical.  Attached to it is a card reader.".
+A card reader is in The Reception Area.
+A card reader is scenery.
+The description of A card reader is "It’s a black box with a glowing red light.  Red probably means the door is locked.".
+[To do: add a swipe action]
+[When the door is not locked the description of A card reader is "It’s a black box with a glowing green light.  Green probably means the door is unlocked.".]
 
 [ subsection for receptionist ]
 Instead of licking the receptionist:
-	say "The Receptionist gives you a look then says 'I wouldn't try that if I were you'".
+    say "The Receptionist gives you a look then says 'I wouldn't try that if I were you'".
+
 
 The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the end of the hallway is a door leading to an office."
+
+Section 2 Holding Area
 
 The Office is a room. "This is a standard computer office. There's a desk with a computer and a chair on it."
 The Dingy Desk is in the Office.
@@ -300,6 +359,8 @@ After reading a command when the command prompt is "Please enter your name >":
 	now the command prompt is ">".;
 	reject the player's command.]
 
+Section 3 Elevator
+
 Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
 Up Button is an open door.
 The Up Button is not openable.
@@ -311,7 +372,7 @@ Dance Button is in The Outside Of The Elevator.
 Connect Button is in The Outside Of The Elevator.
 The Outside Of The Elevator is north of The Reception Area.
 
-Section 2 The Dungeon
+Section 4 The Basement
 
 [Dungeon Junction]
 Dungeon Junction is a room. "The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks 'Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.'"
