@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x183b000" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x183b000" />
+  <activeNode nodeId="node-0x97905e0" />
   <item nodeId="node-0x183b000">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -9,7 +9,7 @@
 
 
 LinkedInAdventure
-An Interactive Fiction by Colin Miller The story headline is &quot;An interactive adventure featuring the wonders of LinkedIn&quot;
+An interactive adventure featuring the wonders of LinkedIn by Colin Miller, Julie Meridian, Edward Goldstein, Howard Zhao, and Jonathan Newton.
 Release 1 / Serial number 121214 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Office
@@ -18,7 +18,7 @@ This is a standard computer office. There&apos;s a desk with a computer and a ch
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="180">NO</temporary>
+    <temporary score="8">NO</temporary>
     <children>
       <child nodeId="node-0x82a0080" />
       <child nodeId="node-0x183b2a0" />
@@ -96,19 +96,19 @@ Why would you want to do that to a grue? They&apos;re dangerous you know.
   </item>
   <item nodeId="node-0x183af60">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You stumble into the light.
+    <result xml:space="preserve">
+Elevator
+Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
 
-Enlightenment
-Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
-
- To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don&apos;t want to go there).
+You can see Up Button, Down Button, Dance Button and Connect Button here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="157">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
     <children>
       <child nodeId="node-0x829ea90" />
+      <child nodeId="node-0xd484390" />
       <child nodeId="node-0x829e780" />
       <child nodeId="node-0x829e6a0" />
       <child nodeId="node-0x829e360" />
@@ -426,6 +426,85 @@ Ok, so there wasn&apos;t really a puppy, but you can imagine one. I bet if you s
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="156">YES</temporary>
+  </item>
+  <item nodeId="node-0xd484390">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Office
+This is a standard computer office. There&apos;s a desk with a computer and a chair on it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ef4490" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ef4490">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Elevator
+Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
+
+You can see Up Button, Down Button, Dance Button and Connect Button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+    <children>
+      <child nodeId="node-0xa330320" />
+    </children>
+  </item>
+  <item nodeId="node-0xa330320">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">(first opening Up Button)
+You can&apos;t, since Up Button leads nowhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ef55a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ef55a0">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">(first opening Down Button)
+You can&apos;t, since Down Button leads nowhere.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+    <children>
+      <child nodeId="node-0x9793020" />
+    </children>
+  </item>
+  <item nodeId="node-0x9793020">
+    <command xml:space="preserve">touch up</command>
+    <result xml:space="preserve">(Up Button)
+You feel nothing unexpected.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="8">YES</temporary>
+    <children>
+      <child nodeId="node-0x97905e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x97905e0">
+    <command xml:space="preserve">press up</command>
+    <result xml:space="preserve">(Up Button)
+It is fixed in place.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="7">YES</temporary>
   </item>
   <item nodeId="node-0x829ea90">
     <command xml:space="preserve">search around</command>

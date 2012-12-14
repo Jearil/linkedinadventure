@@ -272,5 +272,13 @@ After reading a command when the command prompt is "Please enter your name >":
 	say "Thank you [Player's full name]".;
 	now the command prompt is ">".;
 	reject the player's command.]
-	
-	
+
+The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
+Up Button is a door.
+Up Button is above The Elevator.
+Down Button is a door.
+Down Button is below The Elevator.
+Dance Button is in The Elevator.
+Connect Button is in The Elevator.
+The Elevator is north of The Office.
+
