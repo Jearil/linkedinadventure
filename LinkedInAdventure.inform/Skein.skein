@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x183b000" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x979c4c0" />
+  <activeNode nodeId="node-0x1e69fd0" />
   <item nodeId="node-0x183b000">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -22,9 +22,8 @@ You can also see a Receptionist and a Glass Door here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="51">NO</temporary>
+    <temporary score="63">NO</temporary>
     <children>
-      <child nodeId="node-0xe1793b0" />
       <child nodeId="node-0x183b2a0" />
       <child nodeId="node-0x829fde0" />
       <child nodeId="node-0x829fd70" />
@@ -108,9 +107,8 @@ You can see Down Button, Up Button, Dance Button and Connect Button here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="51">YES</temporary>
+    <temporary score="63">YES</temporary>
     <children>
-      <child nodeId="node-0xd494610" />
       <child nodeId="node-0xe1dea20" />
     </children>
   </item>
@@ -124,56 +122,15 @@ You can see Down Button, a dungeon ceiling, a dungeon floor and a dungeon walls 
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="63">YES</temporary>
     <children>
-      <child nodeId="node-0x1b44080" />
-      <child nodeId="node-0xe1741d0" />
       <child nodeId="node-0xe172b20" />
+      <child nodeId="node-0x1e6d4f0" />
+      <child nodeId="node-0x1b44080" />
+      <child nodeId="node-0x1b5a7b0" />
+      <child nodeId="node-0xe1741d0" />
     </children>
-  </item>
-  <item nodeId="node-0xe172b20">
-    <command xml:space="preserve">l guard</command>
-    <result xml:space="preserve">The guard is heavily muscled and could probably break bricks over his head (or yours). His armor suggests he has played in one too many LARPs and lives alone.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b05e50" />
-      <child nodeId="node-0xe1e8800" />
-    </children>
-  </item>
-  <item nodeId="node-0xe1e8800">
-    <command xml:space="preserve">examine security guard</command>
-    <result xml:space="preserve">You see nothing special about The Security Guard.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="37">YES</temporary>
-  </item>
-  <item nodeId="node-0x1b05e50">
-    <command xml:space="preserve">l helmet</command>
-    <result xml:space="preserve">A grey plastic waste paper basket with eye slits cut into it and a hole for your mouth. It would fit snuggly and keep your head warm. It would provide a small amount of protection while making you look like an idiot at the same time.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="51">YES</temporary>
-    <children>
-      <child nodeId="node-0x979c4c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x979c4c0">
-    <command xml:space="preserve">take helmet</command>
-    <result xml:space="preserve">That seems to belong to The Security Guard.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="50">YES</temporary>
   </item>
   <item nodeId="node-0xe1741d0">
     <command xml:space="preserve">l armor</command>
@@ -183,6 +140,58 @@ You can see Down Button, a dungeon ceiling, a dungeon floor and a dungeon walls 
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="45">YES</temporary>
+  </item>
+  <item nodeId="node-0x1b5a7b0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Hallway Near The Dungeon Junction
+The hallway goes on for a long way. It is dimly lit and occasionally you hear whispers and mutterings, but when you look around there is nothing there. On your right you see an alcove with a Stuffed Platypus in it.
+
+You can see an alcove (in which is a Stuffed Platypus) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="63">YES</temporary>
+    <children>
+      <child nodeId="node-0x14bb8f80" />
+    </children>
+  </item>
+  <item nodeId="node-0x14bb8f80">
+    <command xml:space="preserve">l platypus</command>
+    <result xml:space="preserve">You see nothing special about the Stuffed Platypus.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="63">YES</temporary>
+    <children>
+      <child nodeId="node-0x14b8c460" />
+    </children>
+  </item>
+  <item nodeId="node-0x14b8c460">
+    <command xml:space="preserve">get platypus</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="63">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e69fd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e69fd0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Hallway Near The Dungeon Junction
+The hallway goes on for a long way. It is dimly lit and occasionally you hear whispers and mutterings, but when you look around there is nothing there. On your right you see an alcove
+
+You can see an alcove (empty) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="62">YES</temporary>
   </item>
   <item nodeId="node-0x1b44080">
     <command xml:space="preserve">l helmet</command>
@@ -217,77 +226,47 @@ You can see Down Button, a dungeon ceiling, a dungeon floor and a dungeon walls 
     <changed>YES</changed>
     <temporary score="42">YES</temporary>
   </item>
-  <item nodeId="node-0xd494610">
-    <command xml:space="preserve">up</command>
-    <result xml:space="preserve">(first opening Up Button)
-
-Fancy Hallway
-This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the end of the hallway is a door leading to an office.
-
-You can see Up Button here.
+  <item nodeId="node-0x1e6d4f0">
+    <command xml:space="preserve">l basket</command>
+    <result xml:space="preserve">A grey plastic waste paper basket with eye slits cut into it and a hole for your mouth. It would fit snuggly and keep your head warm. It would provide a small amount of protection while making you look like an idiot at the same time.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="28">YES</temporary>
+    <temporary score="53">YES</temporary>
+  </item>
+  <item nodeId="node-0xe172b20">
+    <command xml:space="preserve">l guard</command>
+    <result xml:space="preserve">The guard is heavily muscled and could probably break bricks over his head (or yours). His armor suggests he has played in one too many LARPs and lives alone.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0xe1f1600" />
+      <child nodeId="node-0x1b05e50" />
     </children>
   </item>
-  <item nodeId="node-0xe1f1600">
-    <command xml:space="preserve">down</command>
-    <result xml:space="preserve">
-Outside Of The Elevator
-Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
-
-You can see Up Button, Down Button, Dance Button and Connect Button here.
+  <item nodeId="node-0x1b05e50">
+    <command xml:space="preserve">l helmet</command>
+    <result xml:space="preserve">A grey plastic waste paper basket with eye slits cut into it and a hole for your mouth. It would fit snuggly and keep your head warm. It would provide a small amount of protection while making you look like an idiot at the same time.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="28">YES</temporary>
+    <temporary score="51">YES</temporary>
     <children>
-      <child nodeId="node-0xe1b5310" />
+      <child nodeId="node-0x979c4c0" />
     </children>
   </item>
-  <item nodeId="node-0xe1b5310">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Reception Area
-You are standing in the middle of a large room with vaulted ceilings.  The walls are painted LinkedIn blue and decorated with a multitude of posters.  There is a water cooler in the corner and a few chairs strewn about.  The receptionist is sitting at a large desk and is working on her computer.  On the desk there is a webcam and a bowl of candy.
-
-On the Large Desk are a Webcam and a Bowl of candy (in which is a piece of candy).
-
-You can also see a Receptionist and a Glass Door here.
+  <item nodeId="node-0x979c4c0">
+    <command xml:space="preserve">take helmet</command>
+    <result xml:space="preserve">That seems to belong to The Security Guard.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="28">YES</temporary>
-    <children>
-      <child nodeId="node-0x1b77450" />
-    </children>
-  </item>
-  <item nodeId="node-0x1b77450">
-    <command xml:space="preserve">l in bowl</command>
-    <result xml:space="preserve">In the Bowl of candy is a piece of candy.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="28">YES</temporary>
-    <children>
-      <child nodeId="node-0xe1d0c50" />
-    </children>
-  </item>
-  <item nodeId="node-0xe1d0c50">
-    <command xml:space="preserve">l at bowl</command>
-    <result xml:space="preserve">In the Bowl of candy is a piece of candy.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="28">YES</temporary>
+    <temporary score="50">YES</temporary>
   </item>
   <item nodeId="node-0x829f1a0">
     <command xml:space="preserve">click exit</command>
@@ -749,14 +728,5 @@ You can see a shiny gravestone and a damaged gravestone here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="171">YES</temporary>
-  </item>
-  <item nodeId="node-0xe1793b0">
-    <command xml:space="preserve">lick receptionist</command>
-    <result xml:space="preserve">(the Receptionist)
-The Receptionist gives you a look then says &quot;I wouldn&apos;t try that if I were you&quot;
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="33">YES</temporary>
   </item>
 </Skein>
