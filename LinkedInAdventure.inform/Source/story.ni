@@ -6,7 +6,7 @@ The story description is "This is an adventure about the LinkedIn experience. On
 The story creation year is 2012.
 
 Include Basic Screen Effects by Emily Short.
-Release along with an interpreter.
+Release along with an interpreter and cover art.
 
 The Reception Area is a room.
 
@@ -214,11 +214,11 @@ The Light is a door.
 The Light is open.
 The Light is scenery.
 The Light is north of The Darkness and south of Enlightenment.
-A Grue is in the darkness.
-A Grue is scenery.
+[A Grue is in the darkness.
+A Grue is scenery.]
 
-Instead of doing anything to the Grue:
-	say "Why would you want to do that to a grue? They're dangerous you know."
+[Instead of doing anything to the Grue:
+	say "Why would you want to do that to a grue? They're dangerous you know."]
 
 Before going to Enlightenment:
 	if Enlightenment is not visited, say "You stumble into the light."
@@ -356,7 +356,7 @@ Part 2 Real World
 
 Chapter 1 Office Building
 
-Section 1 Ground Floor
+Section 1 Reception Area
 
 [Reception Area]
 The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer.."
@@ -384,7 +384,7 @@ Some cups are on the Water Cooler.
 The Large Desk and The Receptionist's Computer and The Water Cooler and Some cups are scenery.
 A Glass Door is a door.
 A Glass Door is north of The Reception Area and south of Outside Of The Elevator.
-A Glass Door is locked.
+A Glass Door is unlocked.
 The description of A Glass Door is "The glass door is transparent!  You can see right through it because it’s made of glass… It’s practically magical.  Attached to it is a card reader.".
 A card reader is in The Reception Area.
 A card reader is scenery.
@@ -396,10 +396,32 @@ The description of A card reader is "It’s a black box with a glowing red light
 Instead of licking the receptionist:
     say "The Receptionist gives you a look then says 'I wouldn't try that if I were you'".
 
+Instead of licking the water cooler:
+    say "It taste like plastic with a hint of sweat.".
+
+Section 2 Fancy Hallway
 
 The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the end of the hallway is a door leading to an office."
 
-Section 2 Holding Area
+[High Five Area]
+
+The High Five Zone is a room.  "You are in the high five zone of the fancy hallway.  Apart from the standard fancy here is a poster with the title 'High Fives Saves Lives' on the wall.  A few feet away from you is a Grue with his hand up looking at you expectantly.".
+The high five poster is in the High Five Zone.
+The high five poster is scenery.
+The description of the high five poster is "This poster has 'High Fives Saves Lives in huge letter.  Under the title are detailed instructions on how to give a high five.  There is a small mention about high fiving Grues but most of it is blacked out by black marker.".
+The High Five Zone is east of the Fancy Hallway.
+The Grue is in the High Five Zone.
+The description of the Grue is "Your standard Grue is standing in the High Five Zone with his arm raised and hand open.  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
+The Grue is a person.
+
+[High five rules for grue]
+
+
+
+
+[End High Five Area]
+
+Section 3 Holding Area
 
 The Office is a room. "This is a standard computer office. There's a desk with a computer and a chair on it."
 The Dingy Desk is in the Office.
@@ -431,7 +453,7 @@ After reading a command when the command prompt is "Please enter your name >":
 	now the command prompt is ">".;
 	reject the player's command.]
 
-Section 3 Elevator
+Section 4 Elevator
 
 Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
 Up Button is an open door.
@@ -443,7 +465,7 @@ Down Button is below The Outside Of The Elevator and above The Dungeon Junction.
 Dance Button is in The Outside Of The Elevator.
 Connect Button is in The Outside Of The Elevator.
 
-Section 4 The Basement
+Section 6 The Basement
 
 [Dungeon Junction]
 Basement Junction is a room. "The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks 'Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.'"
