@@ -256,12 +256,17 @@ The Bowl of candy is a container.
 A piece of candy is in the Bowl of Candy.
 The piece of candy is edible.
 The Receptionist is in The Reception Area.
+The Receptionist is a person.
 The water cooler is in The reception Area.
 The description of the water cooler is "The water cooler stands in the corner placidly. You feel its non-existent eyes boring into you.  Plastic cups sit on top of it.  A bubble gurgles up to the top making a loud noise."
 Some cups are on the Water Cooler.
 The Large Desk and The Receptionist's Computer and The Water Cooler and Some cups are scenery.
 A Glass Door is a door.
 A Glass Door is east of The Reception Area.
+
+[ subsection for receptionist ]
+Instead of licking the receptionist:
+	say "The Receptionist gives you a look then says 'I wouldn't try that if I were you'".
 
 The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the end of the hallway is a door leading to an office."
 

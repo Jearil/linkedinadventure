@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x183b000" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x183b000" />
+  <activeNode nodeId="node-0xe1793b0" />
   <item nodeId="node-0x183b000">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -17,15 +17,14 @@ You are standing in the middle of a large room with vaulted ceilings.  The walls
 
 On the Large Desk are a Webcam and a Bowl of candy (in which is a piece of candy).
 
-On the water cooler are some cups.
-
 You can also see a Receptionist and a Glass Door here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="32">NO</temporary>
+    <changed>NO</changed>
+    <temporary score="34">NO</temporary>
     <children>
+      <child nodeId="node-0xe1793b0" />
       <child nodeId="node-0x183b2a0" />
       <child nodeId="node-0x1e76660" />
       <child nodeId="node-0x829fde0" />
@@ -746,5 +745,14 @@ You can see a shiny gravestone and a damaged gravestone here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="171">YES</temporary>
+  </item>
+  <item nodeId="node-0xe1793b0">
+    <command xml:space="preserve">lick receptionist</command>
+    <result xml:space="preserve">(the Receptionist)
+The Receptionist gives you a look then says &quot;I wouldn&apos;t try that if I were you&quot;
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="33">YES</temporary>
   </item>
 </Skein>
