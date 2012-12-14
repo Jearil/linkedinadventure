@@ -8,7 +8,7 @@ The story creation year is 2012.
 Include Basic Screen Effects by Emily Short.
 Release along with an interpreter.
 
-The Office is a room.
+The Reception Area is a room.
 
 Part 1 Setting up the World
 
@@ -50,6 +50,8 @@ A first check going rule (this is the reject directional travel while online rul
 
 
 The Online Area is a region.
+
+Understand "head [direction]" as going.
 
 Section 2 Equiping the Player
 
@@ -243,15 +245,33 @@ The description of the taco is "This taco is made of tasty meat and cheese with 
 
 Chapter 2 Real World
 
-The Office is a room. "This is a standard computer office. There's a desk with a computer and a chair on it."
-The desk is in the Office.
-On it is a computer.
-The description of the computer is "Sleek and high tech, this construct of keys, screen, and whirring lights allows one to send signals through a series of tubes to remote locations. Truely a marvel of the modern world."
-The computer is a device.
-The chair is in the Office.
-The desk, computer, and chair is scenery.
+Section 1 Office Building
 
-Carry out switching on the computer: move the player to the Login Screen.
+The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings.  The walls are painted LinkedIn blue and decorated with a multitude of posters.  There is a water cooler in the corner and a few chairs strewn about.  The receptionist is sitting at a large desk and is working on her computer.  On the desk there is a webcam and a bowl of candy."
+A Large Desk is in The Reception Area.
+The Receptionist's Computer is on The Desk.
+A Webcam is on the Large Desk.
+A Bowl of candy is on the Large Desk.
+The Bowl of candy is a container.
+A piece of candy is in the Bowl of Candy.
+The piece of candy is edible.
+The Receptionist is in The Reception Area.
+The Large Desk and The Receptionist's Computer are scenery.
+A Glass Door is a door.
+A Glass Door is east of The Reception Area.
+
+
+The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the end of the hallway is a door leading to an office."
+
+The Office is a room. "This is a standard computer office. There's a desk with a computer and a chair on it."
+The Dingy Desk is in the Office.
+On it is an office computer.
+The description of the office computer is "Sleek and high tech, this construct of keys, screen, and whirring lights allows one to send signals through a series of tubes to remote locations. Truely a marvel of the modern world."
+The office computer is a device.
+The chair is in the Office.
+The Dingy Desk, office computer, and chair is scenery.
+
+Carry out switching on the office computer: move the player to the Login Screen.
 
 The Bathroom is a room. "This bathroom hasn't been cleaned in years."
 The Bathroom is east of the Office.
@@ -273,12 +293,12 @@ After reading a command when the command prompt is "Please enter your name >":
 	now the command prompt is ">".;
 	reject the player's command.]
 
-The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
+Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
 Up Button is a door.
-Up Button is above The Elevator.
+Up Button is above The Outside Of The Elevator.
 Down Button is a door.
-Down Button is below The Elevator.
-Dance Button is in The Elevator.
-Connect Button is in The Elevator.
-The Elevator is north of The Office.
+Down Button is below The Outside Of The Elevator.
+Dance Button is in The Outside Of The Elevator.
+Connect Button is in The Outside Of The Elevator.
+The Outside Of The Elevator is north of The Reception Area.
 
