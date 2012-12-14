@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd4acf60" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x14b47b70" />
+  <activeNode nodeId="node-0x1d660260" />
   <item nodeId="node-0xd4acf60">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -16,14 +16,12 @@ Please press SPACE to continue.
 </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="192">NO</temporary>
+    <temporary score="226">NO</temporary>
     <children>
-      <child nodeId="node-0xd4acfb0" />
       <child nodeId="node-0xd418860" />
       <child nodeId="node-0xd4187f0" />
       <child nodeId="node-0xd43edd0" />
       <child nodeId="node-0x272a0540" />
-      <child nodeId="node-0xd4180d0" />
       <child nodeId="node-0xd417710" />
       <child nodeId="node-0xd417ac0" />
       <child nodeId="node-0x1e3aa350" />
@@ -171,7 +169,7 @@ You can also see a Glass Door and a Receptionist here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="192">YES</temporary>
+    <temporary score="226">YES</temporary>
     <children>
       <child nodeId="node-0x1e34c160" />
       <child nodeId="node-0x1d6fc010" />
@@ -202,12 +200,12 @@ You can see Down Button, Up Button, a Glass Door, Dance Button and Connect Butto
 Outside Of The Elevator
 Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
 
-You can see Down Button, Up Button, a Glass Door, Dance Button and Connect Button here.
+You can see a Glass Door, Up Button, Down Button, Dance Button and Connect Button here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="192">YES</temporary>
+    <temporary score="226">YES</temporary>
     <children>
       <child nodeId="node-0x1d615dc0" />
     </children>
@@ -218,15 +216,69 @@ You can see Down Button, Up Button, a Glass Door, Dance Button and Connect Butto
 Fancy Hallway
 This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the east end of the hallway is the High Five Zone.
 
-You can see Up Button here.
-
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="192">YES</temporary>
+    <temporary score="226">YES</temporary>
     <children>
       <child nodeId="node-0x1d6494a0" />
+      <child nodeId="node-0x272d87f0" />
     </children>
+  </item>
+  <item nodeId="node-0x272d87f0">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+Outside Of The Elevator
+Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
+
+You can see a Glass Door, Up Button, Down Button, Dance Button and Connect Button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="226">YES</temporary>
+    <children>
+      <child nodeId="node-0x272e1620" />
+    </children>
+  </item>
+  <item nodeId="node-0x272e1620">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+The Basement Junction
+The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks &quot;Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.&quot;
+
+You can see a basement ceiling, a basement floor and a basement walls here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="226">YES</temporary>
+    <children>
+      <child nodeId="node-0x27296870" />
+      <child nodeId="node-0x1d660260" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d660260">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Outside Of The Elevator
+Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
+
+You can see a Glass Door, Up Button, Down Button, Dance Button and Connect Button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="225">YES</temporary>
+  </item>
+  <item nodeId="node-0x27296870">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="219">YES</temporary>
   </item>
   <item nodeId="node-0x1d6494a0">
     <command xml:space="preserve">e</command>
@@ -239,12 +291,81 @@ You can see a Grue here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="192">YES</temporary>
+    <temporary score="198">YES</temporary>
     <children>
+      <child nodeId="node-0x1d66c100" />
       <child nodeId="node-0x97903f0" />
       <child nodeId="node-0x1d6dacb0" />
-      <child nodeId="node-0x1d66c100" />
+      <child nodeId="node-0x272783f0" />
     </children>
+  </item>
+  <item nodeId="node-0x272783f0">
+    <command xml:space="preserve">high five grue</command>
+    <result xml:space="preserve">You high five the Grue with a resounding clap!
+
+[Your score has just gone up by one point.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="198">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d6ce2e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d6ce2e0">
+    <command xml:space="preserve">high five grue</command>
+    <result xml:space="preserve">There&apos;s an uncomfortable pause and the Grue coughs quietly.
+
+You were eaten by a Grue.
+
+
+
+    *** The End ***
+
+
+In that game you scored 1 out of a possible 20, in 5 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="197">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d6dacb0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="180">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e341e70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e341e70">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">hi
+Fancy Hallway
+This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the east end of the hallway is the High Five Zone.
+
+You can see Up Button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="179">YES</temporary>
+  </item>
+  <item nodeId="node-0x97903f0">
+    <command xml:space="preserve">l grue</command>
+    <result xml:space="preserve">Your standard Grue is standing in the High Five Zone with his arm raised and hand open.  In his other hand you see a coffee mug with &quot;#1 Grue&quot; written on it.  He&apos;s looking at you expectantly.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="152">YES</temporary>
   </item>
   <item nodeId="node-0x1d66c100">
     <command xml:space="preserve">w</command>
@@ -369,40 +490,6 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="191">YES</temporary>
   </item>
-  <item nodeId="node-0x1d6dacb0">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can&apos;t go that way.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="180">YES</temporary>
-    <children>
-      <child nodeId="node-0x1e341e70" />
-    </children>
-  </item>
-  <item nodeId="node-0x1e341e70">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">hi
-Fancy Hallway
-This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the east end of the hallway is the High Five Zone.
-
-You can see Up Button here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="179">YES</temporary>
-  </item>
-  <item nodeId="node-0x97903f0">
-    <command xml:space="preserve">l grue</command>
-    <result xml:space="preserve">Your standard Grue is standing in the High Five Zone with his arm raised and hand open.  In his other hand you see a coffee mug with &quot;#1 Grue&quot; written on it.  He&apos;s looking at you expectantly.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="152">YES</temporary>
-  </item>
   <item nodeId="node-0x14b2f7d0">
     <command xml:space="preserve">fill cup</command>
     <result xml:space="preserve">You take a cup from the top of the stack.
@@ -431,11 +518,197 @@ You already took one. You don&apos;t want to be wasteful.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="168">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="214">YES</temporary>
     <children>
       <child nodeId="node-0x1d620e40" />
+      <child nodeId="node-0x272659e0" />
     </children>
+  </item>
+  <item nodeId="node-0x272659e0">
+    <command xml:space="preserve">fill cup</command>
+    <result xml:space="preserve">(the empty cup)
+You fill the cup.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d61df50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d61df50">
+    <command xml:space="preserve">drink water</command>
+    <result xml:space="preserve">There&apos;s nothing suitable to drink here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x272645f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x272645f0">
+    <command xml:space="preserve">drink from cup</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d67cea0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d67cea0">
+    <command xml:space="preserve">drink</command>
+    <result xml:space="preserve">What do you want to drink?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d611300" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d611300">
+    <command xml:space="preserve">drink water</command>
+    <result xml:space="preserve">There&apos;s nothing suitable to drink here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d6f1d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d6f1d60">
+    <command xml:space="preserve">drink</command>
+    <result xml:space="preserve">What do you want to drink?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x28468830" />
+    </children>
+  </item>
+  <item nodeId="node-0x28468830">
+    <command xml:space="preserve">inv</command>
+    <result xml:space="preserve">You are carrying:
+  a cup full of water
+  a Cell Phone
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e36e4a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e36e4a0">
+    <command xml:space="preserve">drink</command>
+    <result xml:space="preserve">What do you want to drink?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x272bc900" />
+    </children>
+  </item>
+  <item nodeId="node-0x272bc900">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You must name something more substantial.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d616390" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d616390">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the Glass Door)
+
+Outside Of The Elevator
+Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
+
+You can see Down Button, Up Button, a Glass Door, Dance Button and Connect Button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x27281f80" />
+    </children>
+  </item>
+  <item nodeId="node-0x27281f80">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+The Basement Junction
+The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks &quot;Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.&quot;
+
+You can see Down Button, a basement ceiling, a basement floor and a basement walls here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x272853c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x272853c0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x28496080" />
+    </children>
+  </item>
+  <item nodeId="node-0x28496080">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Outside Of The Elevator
+Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says &quot;Please make your selection from the following menu.&quot;
+
+You can see Down Button, Up Button, a Glass Door, Dance Button and Connect Button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="214">YES</temporary>
+    <children>
+      <child nodeId="node-0x2726c320" />
+    </children>
+  </item>
+  <item nodeId="node-0x2726c320">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Fancy Hallway
+This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the east end of the hallway is the High Five Zone.
+
+You can see Up Button here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="213">YES</temporary>
   </item>
   <item nodeId="node-0x1d620e40">
     <command xml:space="preserve">take cup</command>
@@ -612,7 +885,6 @@ A wonderous world of magic awaits you at this special page that reads &quot;Link
     <changed>NO</changed>
     <temporary score="132">YES</temporary>
     <children>
-      <child nodeId="node-0x1d6603a0" />
       <child nodeId="node-0x1d6a7ba0" />
     </children>
   </item>
@@ -665,55 +937,6 @@ You can also see a Receptionist and a Glass Door here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="132">YES</temporary>
-    <children>
-      <child nodeId="node-0x1d6373d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d6373d0">
-    <command xml:space="preserve">get cell</command>
-    <result xml:space="preserve">Taken.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="131">YES</temporary>
-  </item>
-  <item nodeId="node-0x1d6603a0">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="125">YES</temporary>
-    <children>
-      <child nodeId="node-0x1e5f4c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1e5f4c0">
-    <command xml:space="preserve">drop cell</command>
-    <result xml:space="preserve">Dropped.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="125">YES</temporary>
-    <children>
-      <child nodeId="node-0x1e3975f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1e3975f0">
-    <command xml:space="preserve">l</command>
-    <result xml:space="preserve">Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-You can see a Cell Phone here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="124">YES</temporary>
   </item>
   <item nodeId="node-0x1e34c160">
     <command xml:space="preserve">high five receptionist</command>
@@ -771,83 +994,6 @@ Please enter your name &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="158">YES</temporary>
-  </item>
-  <item nodeId="node-0xd4180d0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-Office
-This is a standard computer office. There&apos;s a desk with a computer and a chair on it.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="123">YES</temporary>
-    <children>
-      <child nodeId="node-0xd418140" />
-    </children>
-  </item>
-  <item nodeId="node-0xd418140">
-    <command xml:space="preserve">l computer</command>
-    <result xml:space="preserve">Sleek and high tech, this construct of keys, screen, and whirring lights allows one to send signals through a series of tubes to remote locations. Truely a marvel of the modern world.
-
-The computer is currently switched off.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="123">YES</temporary>
-    <children>
-      <child nodeId="node-0xd4181b0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd4181b0">
-    <command xml:space="preserve">l chair</command>
-    <result xml:space="preserve">You see nothing special about the chair.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="123">YES</temporary>
-    <children>
-      <child nodeId="node-0xd43ecc0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd43ecc0">
-    <command xml:space="preserve">lick computer</command>
-    <result xml:space="preserve">You lick the computer. It is yours now.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="123">YES</temporary>
-    <children>
-      <child nodeId="node-0xd43ed10" />
-    </children>
-  </item>
-  <item nodeId="node-0xd43ed10">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Darkness
-You stand (float?) in what seems to be an empty black void. Your life feels somewhat hallow, as if there&apos;s been something missing that you can&apos;t quite identify. A dim light receeds to the north, a faint glimmer of hope amidst the darnkess. 
-
-You are likely to be eaten by a Grue.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="123">YES</temporary>
-    <children>
-      <child nodeId="node-0xd43ed60" />
-    </children>
-  </item>
-  <item nodeId="node-0xd43ed60">
-    <command xml:space="preserve">lick grue</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="122">YES</temporary>
   </item>
   <item nodeId="node-0x272a0540">
     <command xml:space="preserve">c</command>
@@ -1024,63 +1170,5 @@ Please enter your name &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="159">YES</temporary>
-  </item>
-  <item nodeId="node-0xd4acfb0">
-    <command xml:space="preserve">lick grue</command>
-    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="128">YES</temporary>
-    <children>
-      <child nodeId="node-0xd4e03f0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd4e03f0">
-    <command xml:space="preserve">kick grue</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="128">YES</temporary>
-    <children>
-      <child nodeId="node-0xd4e0440" />
-    </children>
-  </item>
-  <item nodeId="node-0xd4e0440">
-    <command xml:space="preserve">attack grue</command>
-    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="128">YES</temporary>
-    <children>
-      <child nodeId="node-0xd4e0490" />
-    </children>
-  </item>
-  <item nodeId="node-0xd4e0490">
-    <command xml:space="preserve">eat grue</command>
-    <result xml:space="preserve">(first taking the Grue)
-Why would you want to do that to a grue? They&apos;re dangerous you know.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="128">YES</temporary>
-    <children>
-      <child nodeId="node-0xd4e04e0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd4e04e0">
-    <command xml:space="preserve">lick grue</command>
-    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="127">YES</temporary>
   </item>
 </Skein>

@@ -75,26 +75,32 @@ Carry out logging out:
 The Online Area is a region.
 
 Understand "head [direction]" as going.
-
+ 
 [ the cup ]
-Instead of taking some cups when the player carry a cup: 
-    say "You already took one. You don't want to be wasteful."
-Instead of taking some cups: 
-    now the player carries the cup; say "You take a cup from the top of the stack."
-
 A cup is a thing. A cup can be full or empty.
 After printing the name of a full cup: say " full of water".
 Before printing the name of an empty cup: say "empty ".
 
-Instead of taking the water cooler when the player does not carry the cup:
-    say "With what? Your bear hands?"
-Instead of taking the water cooler when the player carry the cup and the cup is empty: 
-    now the cup is full;  say "You fill your cup."
-Instead of taking the water cooler when the player carry the cup and the cup is full: 
-    say "You spill water everywhere."
-Instead of drinking the cup when the cup is full: 
-    now the cup is empty; say "Delicious"
+Instead of taking some cups when the player carry a cup: 
+	say "You already took one. You don't want to be wasteful."
+Instead of taking some cups: 
+	now the player carries the cup; say "You take a cup from the top of the stack."
 
+[ filling / drinking ]
+Filling is an action applying to one thing.
+Understand "fill [something]" as filling.
+
+Check filling:
+	if water cooler is not visible, say "You can't fill [the noun] without water." instead;
+	if the noun is not a cup, say "You can't fill [the noun]." instead;
+
+Carry out filling:
+	if the cup is full, say "You spill water everywhere.";
+	if the cup is empty, say "You fill the cup.";  now the cup is full;
+
+Instead of drinking the cup when the cup is full: 
+	now the cup is empty; say "Delicious"
+    
 Chapter 2 Equiping the Player
 
 The player has some text called has clicked on.
@@ -106,7 +112,7 @@ Section 1 Cell Phone
 The player has a room called before login.
 The player is carrying a device called a Cell Phone.
 The cell phone is switched on.
-The description of the Cell Phone is "In this day and age, the cell phone is indispensable. On the cellphone is a button for the LinkedIn app."
+The description of the Cell Phone is "In this day and age, the cell phone is indispensable. On the cellphone is the LinkedIn app."
 
 An app is a kind of thing.
 
@@ -455,6 +461,12 @@ Before going from The High Five Zone:
 		end the story.;
 	end if.
 
+Check High Fiving:
+	if the grue is happy and the noun is the grue
+	begin;
+		say "There's an uncomfortable pause and the Grue coughs quietly.[paragraph break]You were eaten by a Grue.";
+		end the story.;
+	end if.
 
 [End High Five Area]
 
@@ -495,10 +507,14 @@ Section 4 Elevator
 Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
 Up Button is an open door.
 The Up Button is not openable.
-Up Button is above The Outside Of The Elevator and below The Fancy Hallway.
+Up Button is above The Outside Of The Elevator.
+Through it is The Fancy Hallway.
+Outside Of The Elevator is below The Fancy Hallway.
 Down Button is an open door.
 The Down Button is not openable.
-Down Button is below The Outside Of The Elevator and above The Dungeon Junction.
+Down Button is below The Outside Of The Elevator.
+Through it is The Basement Junction.
+Outside Of The Elevator is above The Basement Junction.
 Dance Button is in The Outside Of The Elevator.
 Connect Button is in The Outside Of The Elevator.
 
