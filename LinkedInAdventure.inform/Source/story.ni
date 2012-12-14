@@ -24,9 +24,7 @@ The description of a link is usually "[The item described] will probably go some
 Clicking is an action applying to one thing.
 Understand "click [something]" as clicking.
 Understand "click on [something]" as clicking.
-
-The player has some text called has clicked on.
-The has clicked on is usually "No".
+Understand "kick [something]" as attacking.
 
 Carry out clicking:
 	if the noun is a link
@@ -38,7 +36,7 @@ Carry out clicking:
 	end if.
 	
 A first check going rule (this is the reject directional travel while online rule):
-	if room gone from is in The Online Area and room gone to is in The Online Area
+	if room gone from is in The Online Area
 	begin;
 		if door gone through is not a link or has clicked on of player is "No"
 		begin;
@@ -51,7 +49,13 @@ A first check going rule (this is the reject directional travel while online rul
 
 The Online Area is a region.
 
-Section 2 Look and Feel
+Section 2 Equiping the Player
+
+The player has some text called has clicked on.
+The player's full name is an indexed text that varies.
+The has clicked on is usually "No".
+
+Section 3 Look and Feel
 
 To turn screen black:
 	say white letters;
@@ -65,6 +69,22 @@ To leave space:
 	say paragraph break;
 	say paragraph break.
 
+Chapter 2 Making fun Actions
+
+Dancing is an action applying to nothing.
+Understand "dance" or "groove" or "jig" as dancing.
+
+Report dancing:
+	say "A disco ball descends and you groove."
+	
+Licking is an action applying to one thing.
+Understand "lick [something]" as Licking.
+
+Carry out licking:
+	try silently taking the noun.
+
+Report Licking:
+	say "You lick [the noun]. It is yours now."
 	
 Chapter 2 Modifying Current Things
 
@@ -75,7 +95,17 @@ Chapter 3 Recruting The Team
 Section 1 The Rooms
 
 The Darkness is a room. "You stand (float?) in what seems to be an empty black void. Your life feels somewhat hallow, as if there's been something missing that you can't quite identify. A dim light receeds to the north, a faint glimmer of hope amidst the darnkess. [paragraph break]You are likely to be eaten by a Grue."
-Enlightenment is north of The Darkness. "Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You're really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.[paragraph break] To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don't want to go there)."
+Enlightenment is a room. "Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You're really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.[paragraph break] To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don't want to go there)."
+The Light is a door.
+The Light is open.
+The Light is scenery.
+The Light is north of The Darkness and south of Enlightenment.
+A Grue is in the darkness.
+A Grue is scenery.
+
+Instead of doing anything to the Grue:
+	say "Why would you want to do that to a grue? They're dangerous you know."
+
 Before going to Enlightenment:
 	if Enlightenment is not visited, say "You stumble into the light."
 Enlightenment has some text called backtrack.
@@ -116,6 +146,8 @@ snakes are animals.
 
 A Cake is in Vahalla. "A delicious looking cake."
 The cake is edible.
+Instead of smelling the cake:
+	say "The cake smells mouth watering."
 The description of the Cake is "This cake looks to be made of pure joy (with frosting and sprinkles). It looks delicious."
 Instead of eating the cake:
 	say "You take a bite of the cake and find yourself in nirvana.";
@@ -193,6 +225,9 @@ The exit button is a link.
 The exit button is west of the Login Screen.
 Through it is the Office.
 
+After going to the Office from the Login Screen:
+	try switching off computer.
+
 The logout button is a link.
 The logout button is south of the LinkedIn Homepage.
 Through it is the Login Screen.
@@ -202,11 +237,11 @@ The taco is edible.
 The description of the taco is "This taco is made of tasty meat and cheese with a tortilla curled around it."
 
 Chapter 2 Real World
-[If you got to the office from the computer you should mention turning it off]
 
 The Office is a room. "This is a standard computer office. There's a desk with a computer and a chair on it."
 The desk is in the Office.
 On it is a computer.
+The description of the computer is "Sleek and high tech, this construct of keys, screen, and whirring lights allows one to send signals through a series of tubes to remote locations. Truely a marvel of the modern world."
 The computer is a device.
 The chair is in the Office.
 The desk, computer, and chair is scenery.
@@ -216,5 +251,21 @@ Carry out switching on the computer: move the player to the Login Screen.
 The Bathroom is a room. "This bathroom hasn't been cleaned in years."
 The Bathroom is east of the Office.
 
+The Graveyard is a room. "This small patch of overgrown land has a series of well worn stone markers indicating the final resting place of many failed projects."
+A shiny gravestone is in the Graveyard.
+The description of the shiny gravestone is "R.I.P. [Player's full name]".
+A damaged gravestone is in the Graveyard.
+The description of the damaged gravestone is "This stone appears to have bullet holes and what looks like scratches made from some sort of pick or axe. In faded letters you can make out only a single word: Leo".
+The Graveyard is south of the Office.
+South of The Darkness is the Office.
 
+When play begins:
+	now the command prompt is "Please enter your name >".
 
+After reading a command when the command prompt is "Please enter your name >":
+	now the player's full name is the player's command.;
+	say "Thank you [Player's full name]".;
+	now the command prompt is ">".;
+	reject the player's command.
+	
+	
