@@ -1,4 +1,4 @@
-"LinkedInAdventure" by "Colin Miller, Julie Meridian, Edward Goldstein, Howard Zhao, and Jonathan Newton."
+"LinkedInAdventure" by "Colin Miller, Julie Meridian, Edward Goldstein, Jemiah Westerman, and Jonathan Newton."
 The story headline is "An interactive adventure featuring the wonders of LinkedIn".
 The story genre is "Action-Adventure".
 The release number is 1.
@@ -14,7 +14,7 @@ Book 1 Setting up the World
 
 Part 1 Making new Kinds
 
-Chapter 1 Links
+Chapter 1 Stuff
 
 Section 1 Defining a Link
 
@@ -75,6 +75,25 @@ Carry out logging out:
 The Online Area is a region.
 
 Understand "head [direction]" as going.
+
+[ the cup ]
+Instead of taking some cups when the player carry a cup: 
+    say "You already took one. You don't want to be wasteful."
+Instead of taking some cups: 
+    now the player carries the cup; say "You take a cup from the top of the stack."
+
+A cup is a thing. A cup can be full or empty.
+After printing the name of a full cup: say " full of water".
+Before printing the name of an empty cup: say "empty ".
+
+Instead of taking the water cooler when the player does not carry the cup:
+    say "With what? Your bear hands?"
+Instead of taking the water cooler when the player carry the cup and the cup is empty: 
+    now the cup is full;  say "You fill your cup."
+Instead of taking the water cooler when the player carry the cup and the cup is full: 
+    say "You spill water everywhere."
+Instead of drinking the cup when the cup is full: 
+    now the cup is empty; say "Delicious"
 
 Chapter 2 Equiping the Player
 
@@ -379,8 +398,9 @@ The Receptionist is a person.
 Understand "Rebecca" as The Receptionist.
 The water cooler is in The reception Area.
 The description of the water cooler is "The water cooler stands half-empty in the corner placidly. You feel its non-existent eyes boring into you.  Plastic cups sit on top of it.  A bubble gurgles up to the top making a loud noise."
-Some cups are on the Water Cooler.
-[you need to be able to take a cup]
+Some cups are on the Water Cooler. 
+Understand "cup" as cups.
+
 The Large Desk and The Receptionist's Computer and The Water Cooler and Some cups are scenery.
 A Glass Door is a door.
 A Glass Door is north of The Reception Area and south of Outside Of The Elevator.
@@ -392,16 +412,27 @@ The description of A card reader is "It’s a black box with a glowing red light
 [To do: add a swipe action]
 [When the door is not locked the description of A card reader is "It’s a black box with a glowing green light.  Green probably means the door is unlocked.".]
 
+The posters are in The Reception Area.
+The posters are scenery.
+The description of the posters is "The posters are pretty boring.  Some motivational crap that isn't really motivating you to keep looking at the posters.".
+The chairs are in The Reception Area.
+The chairs are scenery.
+The chairs are a container.
+The description of the chairs is "The chairs are pretty plain but look very uncomfortable".
+Understand "the chair" or "chair" as The chairs.
+
 [ subsection for receptionist ]
 Instead of licking the receptionist:
     say "The Receptionist gives you a look then says 'I wouldn't try that if I were you'".
+Instead of entering the chairs:
+    say "You sit down on a chair, promptly hurt your back and stand back up.".
 
 Instead of licking the water cooler:
     say "It taste like plastic with a hint of sweat.".
 
 Section 2 Fancy Hallway
 
-The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the end of the hallway is a door leading to an office."
+The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the east end of the hallway is the High Five Zone."
 
 [High Five Area]
 
@@ -416,7 +447,13 @@ The Grue is a person.
 
 [High five rules for grue]
 
-
+Before going from The High Five Zone:
+	if the grue is sad
+	begin;
+		say "The grue is offended that you left him hanging. [paragraph break]You were eaten by a Grue.";
+		decrease the score by 5;
+		end the story.;
+	end if.
 
 
 [End High Five Area]
