@@ -314,9 +314,20 @@ The Outside Of The Elevator is north of The Reception Area.
 Section 2 The Dungeon
 
 Dungeon Junction is a room. "The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks 'Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.'"
-The Security Guard is in the Dungeon Junction.
-The Security Guard is a person.
+In the Dungeon Junction is a man called The Security Guard.
 The Security Guard is scenery.
-The Helmet is in the Dungeon Junction.
-The Helmet is wearable.
+The Security Guard wears an umbrella.
+The Security Guard wears a helmet.
+The Security Guard wears plate mail.
+Understand "armor" as plate mail.
+The description of the Security Guard is "The guard is heavily muscled and could probably break bricks over his head (or yours). His armor suggests he has played in one too many LARPs and lives alone."
+The description of the helmet is "A grey plastic waste paper basket with eye slits cut into it and a hole for your mouth. It would fit snuggly and keep your head warm. It would provide a small amount of protection while making you look like an idiot at the same time."
+The description of the umbrella is "The umbrella is blue with the LinkedIn logo. It is decently snazzy swag."
+The description of the plate mail is "This armor is made of interlocking paper plates from the cafeteria. It would provide a small amount of protection while making you look ridiculous."
+The dungeon ceiling is in the Dungeon Junction.
+The dungeon floor is in the Dungeon Junction.
+The dungeon walls is in the Dungeon Junction.
+The description of the dungeon walls is "The walls are slick with water and slimy mold. It reminds you of your dormitory years."
+The description of the dungeon ceiling is "You look at the ceiling and think beige, they should really paint the ceiling beige."
+The description of the dungeon floor is "The floor is inlaid with arcane symbols. Upon closer inspection you realize that is actually binary code. You now have a better understanding of search algorithms." [gain 15 points when first looking at this]
 
