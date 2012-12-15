@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd4acf60" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1d660260" />
+  <activeNode nodeId="node-0x27220cb0" />
   <item nodeId="node-0xd4acf60">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -16,11 +16,10 @@ Please press SPACE to continue.
 </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="226">NO</temporary>
+    <temporary score="238">NO</temporary>
     <children>
       <child nodeId="node-0xd418860" />
       <child nodeId="node-0xd4187f0" />
-      <child nodeId="node-0xd43edd0" />
       <child nodeId="node-0x272a0540" />
       <child nodeId="node-0xd417710" />
       <child nodeId="node-0xd417ac0" />
@@ -169,10 +168,9 @@ You can also see a Glass Door and a Receptionist here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="226">YES</temporary>
+    <temporary score="238">YES</temporary>
     <children>
       <child nodeId="node-0x1e34c160" />
-      <child nodeId="node-0x1d6fc010" />
       <child nodeId="node-0x1d629bc0" />
       <child nodeId="node-0x14b2f7d0" />
       <child nodeId="node-0x272b5010" />
@@ -205,10 +203,57 @@ You can see a Glass Door, Up Button, Down Button, Dance Button and Connect Butto
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="226">YES</temporary>
+    <temporary score="238">YES</temporary>
     <children>
+      <child nodeId="node-0x1d64d450" />
       <child nodeId="node-0x1d615dc0" />
+      <child nodeId="node-0x1d67b260" />
+      <child nodeId="node-0x27233310" />
     </children>
+  </item>
+  <item nodeId="node-0x27233310">
+    <command xml:space="preserve">push up</command>
+    <result xml:space="preserve">(Up Button)
+hi
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="228">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d67b260">
+    <command xml:space="preserve">press connect</command>
+    <result xml:space="preserve">A soft feminine voice says &quot;Thank you for adding me to your profesional network. Can you write me a recommendation?&quot;
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="238">YES</temporary>
+    <children>
+      <child nodeId="node-0x1e3ca7b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1e3ca7b0">
+    <command xml:space="preserve">press connect</command>
+    <result xml:space="preserve">Nothing obvious happens.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="238">YES</temporary>
+    <children>
+      <child nodeId="node-0x27220cb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x27220cb0">
+    <command xml:space="preserve">press dance</command>
+    <result xml:space="preserve">The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="237">YES</temporary>
   </item>
   <item nodeId="node-0x1d615dc0">
     <command xml:space="preserve">u</command>
@@ -489,6 +534,18 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="191">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d64d450">
+    <command xml:space="preserve">press up button</command>
+    <result xml:space="preserve">The button lights up and chimes softly. The elevator quietly ascends.
+
+Fancy Hallway
+This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the east end of the hallway is the High Five Zone.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="231">YES</temporary>
   </item>
   <item nodeId="node-0x14b2f7d0">
     <command xml:space="preserve">fill cup</command>
@@ -873,71 +930,6 @@ You can also see a Glass Door and a Receptionist here.
     <changed>YES</changed>
     <temporary score="167">YES</temporary>
   </item>
-  <item nodeId="node-0x1d6fc010">
-    <command xml:space="preserve">use cell</command>
-    <result xml:space="preserve">You open up the LinkedIn Application.
-
-Login Screen
-A wonderous world of magic awaits you at this special page that reads &quot;LinkedIn&quot; at the top. A login button beckons to you seductively from the side.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="132">YES</temporary>
-    <children>
-      <child nodeId="node-0x1d6a7ba0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d6a7ba0">
-    <command xml:space="preserve">drop cell</command>
-    <result xml:space="preserve">You fumble for a bit and your cell phone beeps sadly. You decide to not drop the Cell Phone until you log off.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="132">YES</temporary>
-    <children>
-      <child nodeId="node-0x27285460" />
-    </children>
-  </item>
-  <item nodeId="node-0x27285460">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">But you aren&apos;t in anything at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="132">YES</temporary>
-    <children>
-      <child nodeId="node-0x1d60a950" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d60a950">
-    <command xml:space="preserve">logout</command>
-    <result xml:space="preserve">Reception Area
-You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer..
-
-On the Large Desk is a bowl of candy (in which is a piece of candy).
-
-You can also see a Receptionist and a Glass Door here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="132">YES</temporary>
-    <children>
-      <child nodeId="node-0x272ab890" />
-    </children>
-  </item>
-  <item nodeId="node-0x272ab890">
-    <command xml:space="preserve">drop cell</command>
-    <result xml:space="preserve">Dropped.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="132">YES</temporary>
-  </item>
   <item nodeId="node-0x1e34c160">
     <command xml:space="preserve">high five receptionist</command>
     <result xml:space="preserve">(the Receptionist)
@@ -1064,94 +1056,6 @@ You can also see a Receptionist and a Glass Door here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="139">YES</temporary>
-    <children>
-      <child nodeId="node-0x1e29ed0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1e29ed0">
-    <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">But you aren&apos;t in anything at the moment.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="138">YES</temporary>
-  </item>
-  <item nodeId="node-0xd43edd0">
-    <command xml:space="preserve">kick grue</command>
-    <result xml:space="preserve">Why would you want to do that to a grue? They&apos;re dangerous you know.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="134">YES</temporary>
-    <children>
-      <child nodeId="node-0xd43ee40" />
-    </children>
-  </item>
-  <item nodeId="node-0xd43ee40">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">You stumble into the light.
-
-Enlightenment
-Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You&apos;re really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.
-
- To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don&apos;t want to go there).
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="134">YES</temporary>
-    <children>
-      <child nodeId="node-0xd43eeb0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd43eeb0">
-    <command xml:space="preserve">search</command>
-    <result xml:space="preserve">What do you want to search?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="134">YES</temporary>
-    <children>
-      <child nodeId="node-0xd43ef20" />
-    </children>
-  </item>
-  <item nodeId="node-0xd43ef20">
-    <command xml:space="preserve">search around</command>
-    <result xml:space="preserve">You find a delicious taco.
-
-[Your score has just gone up by ten points.]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="134">YES</temporary>
-    <children>
-      <child nodeId="node-0xd43ef90" />
-    </children>
-  </item>
-  <item nodeId="node-0xd43ef90">
-    <command xml:space="preserve">kick taco</command>
-    <result xml:space="preserve">Violence isn&apos;t the answer to this one.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="134">YES</temporary>
-    <children>
-      <child nodeId="node-0xd418780" />
-    </children>
-  </item>
-  <item nodeId="node-0xd418780">
-    <command xml:space="preserve">lick taco</command>
-    <result xml:space="preserve">You lick the delicious taco. It is yours now.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="133">YES</temporary>
   </item>
   <item nodeId="node-0xd4187f0">
     <command xml:space="preserve">Hi</command>

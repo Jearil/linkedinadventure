@@ -504,19 +504,38 @@ After reading a command when the command prompt is "Please enter your name >":
 
 Section 4 Elevator
 
+Elevator button is a kind of door.
+Elevator button is always open.
+
 Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
-Up Button is an open door.
+Up Button is an Elevator button.
 The Up Button is not openable.
 Up Button is above The Outside Of The Elevator.
 Through it is The Fancy Hallway.
 Outside Of The Elevator is below The Fancy Hallway.
-Down Button is an open door.
+Down Button is an Elevator button.
 The Down Button is not openable.
 Down Button is below The Outside Of The Elevator.
 Through it is The Basement Junction.
 Outside Of The Elevator is above The Basement Junction.
 Dance Button is in The Outside Of The Elevator.
 Connect Button is in The Outside Of The Elevator.
+
+[ Rules for buttons ]
+Before going from Outside Of The Elevator to The Fancy Hallway:
+	say "The button lights up and chimes softly. The elevator quietly ascends.".
+Before going from Outside Of The Elevator to the Basement Junction:
+	say "The button lights up and chimes softly. The elevator quietly descends.".
+
+Instead of pushing an elevator button:
+	try going the noun.
+
+Instead of pushing the Dance Button:
+	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along."
+
+Instead of pushing the Connect Button for the first time:
+	say "A soft feminine voice says 'Thank you for adding me to your profesional network. Can you write me a recommendation?'";
+	increase score by 5
 
 Section 6 The Basement
 
