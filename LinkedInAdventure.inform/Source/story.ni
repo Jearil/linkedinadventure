@@ -81,12 +81,6 @@ A cup is a thing. A cup can be full or empty.
 After printing the name of a full cup: say " full of water".
 Before printing the name of an empty cup: say "empty ".
 
-Instead of taking some cups when the player carry a cup: 
-	say "You already took one. You don't want to be wasteful."
-Instead of taking some cups: 
-	now the player carries the cup; say "You take a cup from the top of the stack."
-
-[ filling / drinking ]
 Filling is an action applying to one thing.
 Understand "fill [something]" as filling.
 
@@ -99,7 +93,58 @@ Carry out filling:
 	if the cup is empty, say "You fill the cup.";  now the cup is full;
 
 Instead of drinking the cup when the cup is full: 
-	now the cup is empty; say "Delicious"
+	now the cup is empty; say "Delicious."
+Instead of drinking the cup when the cup is empty: 
+	now the cup is empty; say "Maybe if you filled it first."
+Instead of drinking water when the cup is full: 
+	now the cup is empty; say "Delicious."
+Instead of drinking water when the cup is empty:
+	now the cup is empty; say "You do not have any water."
+
+[ Swiping ]
+
+Swiping is an action applying to two things.
+Understand "swipe [something] at [something]" as swiping.
+
+Check swiping:
+    if noun is not a badge
+    begin;
+        say "You can't swipe that!".;
+        stop the action;
+    end if.
+    
+Carry out swiping:
+    if second noun is a card reader and a glass door is locked
+    begin;
+        say "The card reader beeps and you hear a loud clang.  The card reader light turns green.".;
+        now the description of a card reader is "It’s a black box with a glowing green light.  Green probably means the door is unlocked.".;
+        now a glass door is unlocked.;
+        a glass door locks in five turns from now.;
+    otherwise;
+       say "You swipe your [noun] at [the second noun], congratulations!  Nothing happens.".;
+    end if.
+
+Instead of activating badge:
+	say "Maybe you should try swiping it at something".
+    
+After opening a glass door for the first time:
+    increase the score by 6.
+
+After opening a glass door:
+    now a glass door is open.;
+    a glass door closes in three turns from now.;
+    say "You open the glass door but it slowly starts to close again.".
+
+    
+At the time when a glass door locks:
+    now a glass door is locked.;
+    now the description of A card reader is "It’s a black box with a glowing red light.  Red probably means the door is locked.".;
+    say "A soft clang pulls your attention to the glass door.  You notice the card reader light is red.".
+    
+At the time when a glass door closes:
+    now a glass door is closed.;
+    say "The glass door closes with a click.".
+
     
 Chapter 2 Equiping the Player
 
@@ -135,7 +180,7 @@ To Login To Linkedin:
 	otherwise;
 		say "You open up the LinkedIn Application.";
 		now the before login of player is the location of the player;
-		move player to The Login Screen.;
+		move player to The LinkedIn Homepage.;
 	end if.
 
 Instead of touching The LinkedIn Application:
@@ -349,19 +394,8 @@ Part 1 Online
 
 Chapter 1 LinkedIn
 
-The Login Screen is a room. "A wonderous world of magic awaits you at this special page that reads 'LinkedIn' at the top. A login button beckons to you seductively from the side."
-The Login Screen is in The Online Area.
-
 The LinkedIn Homepage is a room.
 The LinkedIn Homepage is in The Online Area.
-The login button is a link.
-The login button is north of the Login Screen.
-Through it is the LinkedIn Homepage.
-
-The signup button is a link.
-The signup button is east of the Login Screen.
-Through it is the LinkedIn Homepage.
-
 The exit button is a link.
 The exit button is west of the Login Screen.
 Through it is the Holding Area.
@@ -403,11 +437,10 @@ The description of the Receptionist is "The receptionist has short blonde hair a
 The Receptionist is a person.
 Understand "Rebecca" as The Receptionist.
 The water cooler is in The reception Area.
-The description of the water cooler is "The water cooler stands half-empty in the corner placidly. You feel its non-existent eyes boring into you.  Plastic cups sit on top of it.  A bubble gurgles up to the top making a loud noise."
-Some cups are on the Water Cooler. 
-Understand "cup" as cups.
+The description of the water cooler is "The water cooler stands half-empty in the corner placidly. You feel its non-existent eyes boring into you. [if the cup is on the water cooler] A Plastic cup sit on top of it.[end if] A bubble gurgles up to the top making a loud noise."
+A cup are on the Water Cooler.
 
-The Large Desk and The Receptionist's Computer and The Water Cooler and Some cups are scenery.
+The Large Desk and The Receptionist's Computer and The Water Cooler are scenery.
 A Glass Door is a door.
 A Glass Door is north of The Reception Area and south of Outside Of The Elevator.
 A Glass Door is unlocked.
@@ -415,6 +448,9 @@ The description of A Glass Door is "The glass door is transparent!  You can see 
 A card reader is in The Reception Area.
 A card reader is scenery.
 The description of A card reader is "It’s a black box with a glowing red light.  Red probably means the door is locked.".
+A badge is a thing.
+The description of a badge is "It's your temporary ID Badge.  It has your picture on it.".
+a badge is carried by the receptionist.
 [To do: add a swipe action]
 [When the door is not locked the description of A card reader is "It’s a black box with a glowing green light.  Green probably means the door is unlocked.".]
 
