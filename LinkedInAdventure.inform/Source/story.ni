@@ -7,6 +7,7 @@ The story creation year is 2012.
 
 Include Basic Screen Effects by Emily Short.
 Include Conversation Framework by Eric Eve.
+Include Conversational Defaults by Eric Eve.
 Release along with an interpreter and cover art.
 
 The Reception Area is a room.
@@ -500,10 +501,10 @@ say "The receptionist makes a soft sighing sound before saying 'Yes?'.  She look
 
 After saying goodbye to the receptionist:
 	say "The receptionist goes back to her computer.".
-[default ask-tell response for the receptionist:
+default ask-tell response for the receptionist:
 	say "The receptionist stares at you blankly looking a little confused.".
 default ask-for response for the receptionist:
-	say "The receptionist sighs heavily and says 'Why do people always ask for stuff?  I don't have anything to give.'".]
+	say "The receptionist sighs heavily and says 'Why do people always ask for stuff?  I don't have anything to give.'".
 after quizzing the receptionist about a badge for the first time:
 	say "The receptionist asks 'Do I know you?  We're not even connected on LinkedIn.'".
 
