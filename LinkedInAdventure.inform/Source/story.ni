@@ -8,7 +8,7 @@ The story creation year is 2012.
 Include Basic Screen Effects by Emily Short.
 Include Conversation Framework by Eric Eve.
 Include Conversational Defaults by Eric Eve.
-Release along with an interpreter and cover art.
+Release along with an interpreter, the source text and cover art.
 
 The Reception Area is a room.
 
@@ -124,7 +124,6 @@ Carry out swiping:
 	otherwise;
 		say "You swipe your [noun] at [the second noun], congratulations!  Nothing happens.".;
 	end if.
-
 After opening a glass door:
 	now a glass door is open.;
 	a glass door closes in three turns from now.;
@@ -146,7 +145,6 @@ At the time when a glass door closes:
 	begin;
 		say "The glass door closes with a click.".;
 	end if.
-	
 [End reception area][Connecting]
 [to do: make this only work on the phone]
 Connection relates one person to another.
