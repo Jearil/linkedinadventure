@@ -6,6 +6,7 @@ The story description is "This is an adventure about the LinkedIn experience. On
 The story creation year is 2012.
 
 Include Basic Screen Effects by Emily Short.
+Include Conversation Framework by Eric Eve.
 Release along with an interpreter and cover art.
 
 The Reception Area is a room.
@@ -107,44 +108,82 @@ Swiping is an action applying to two things.
 Understand "swipe [something] at [something]" as swiping.
 
 Check swiping:
-    if noun is not a badge
-    begin;
-        say "You can't swipe that!".;
-        stop the action;
-    end if.
-    
+	if noun is not a badge
+	begin;
+		say "You can't swipe that!".;
+		stop the action;
+	end if.
 Carry out swiping:
-    if second noun is a card reader and a glass door is locked
-    begin;
-        say "The card reader beeps and you hear a loud clang.  The card reader light turns green.".;
-        now the description of a card reader is "It’s a black box with a glowing green light.  Green probably means the door is unlocked.".;
-        now a glass door is unlocked.;
-        a glass door locks in five turns from now.;
-    otherwise;
-       say "You swipe your [noun] at [the second noun], congratulations!  Nothing happens.".;
-    end if.
-
-Instead of activating badge:
-	say "Maybe you should try swiping it at something".
-    
-After opening a glass door for the first time:
-    increase the score by 6.
+	if second noun is a card reader and a glass door is locked
+	begin;
+		say "The card reader beeps and you hear a loud clang.  The card reader light turns green.".;
+		now the description of a card reader is "It’s a black box with a glowing green light.  Green probably means the door is unlocked.".;
+		now a glass door is unlocked.;
+		a glass door locks in five turns from now.;
+	otherwise;
+		say "You swipe your [noun] at [the second noun], congratulations!  Nothing happens.".;
+	end if.
 
 After opening a glass door:
-    now a glass door is open.;
-    a glass door closes in three turns from now.;
-    say "You open the glass door but it slowly starts to close again.".
+	now a glass door is open.;
+	a glass door closes in three turns from now.;
+	say "You open the glass door but it slowly starts to close again.".
 
-    
+After opening a glass door for the first time:
+	increase the score by 6.;
+	continue the action.
 At the time when a glass door locks:
-    now a glass door is locked.;
-    now the description of A card reader is "It’s a black box with a glowing red light.  Red probably means the door is locked.".;
-    say "A soft clang pulls your attention to the glass door.  You notice the card reader light is red.".
-    
+	now a glass door is locked.;
+	now the description of A card reader is "It’s a black box with a glowing red light.  Red probably means the door is locked.".;
+	if the player can see a glass door 
+	begin;
+		say "A soft clang pulls your attention to the glass door.  You notice the card reader light is red.".;
+	end if.
 At the time when a glass door closes:
-    now a glass door is closed.;
-    say "The glass door closes with a click.".
+	now a glass door is closed.;
+	if the player can see a glass door 
+	begin;
+		say "The glass door closes with a click.".;
+	end if.
+	
+[End reception area][Connecting]
+[to do: make this only work on the phone]
+Connection relates one person to another.
+The verb to connect (he is connected to, they are connected to, he connected to, it is connected to, he is connected to) implies the connection relation.
 
+Connecting is an action applying to one thing.
+Understand "connect with [something]" or "connect to [something]" as connecting.
+
+Check connecting:
+	if noun is not a person
+	begin;
+		say "Good luck connecting with that!".;
+		stop the action.;
+	end if.
+Carry out connecting:
+	if the player is connected to noun
+	begin;
+		say "You've already connected to [noun].".;
+	otherwise;
+		say "You connect with [noun] on LinkedIn!".;
+		now the player is connected to noun.;
+		increase score by 5.;
+	end if.
+
+a webdevice is a kind of thing.
+a webdevice can be on or off.
+a webdevice is usually off.
+
+Instead of examining a webcam:
+	if the webcam is on
+	begin;
+		say "The receptionist says 'Smile!  Ok, that's good.' and the printer starts printing before you have a chance to actually smile.".;
+		now a webcam is off.;
+		say "The receptionist hands you a badge.".;
+		now the player is carrying a badge.;
+	otherwise;
+		continue the action.;
+	end if.
     
 Chapter 2 Equiping the Player
 
@@ -425,6 +464,7 @@ The Receptionist's Computer is on The Desk.
 The description of a Receptionist's Computer is "This is your standard iMac.  The receptionist is making great use of the Retina display by browsing for new shoes".
 A Webcam is on the Large Desk.
 A Webcam is scenery.
+a webcam is a webdevice.
 The description of a Webcam is "The webcam looks like a black ball on a small podium.  The lens is staring back at you."
 A bowl of candy is on the Large Desk. 
 The description of a bowl of candy is "The bowl looks like it is made of crystal with elaborate designs engraved into it.".
@@ -443,14 +483,42 @@ A cup are on the Water Cooler.
 The Large Desk and The Receptionist's Computer and The Water Cooler are scenery.
 A Glass Door is a door.
 A Glass Door is north of The Reception Area and south of Outside Of The Elevator.
-A Glass Door is unlocked.
+A Glass Door is locked.
 The description of A Glass Door is "The glass door is transparent!  You can see right through it because it’s made of glass… It’s practically magical.  Attached to it is a card reader.".
 A card reader is in The Reception Area.
 A card reader is scenery.
 The description of A card reader is "It’s a black box with a glowing red light.  Red probably means the door is locked.".
 A badge is a thing.
 The description of a badge is "It's your temporary ID Badge.  It has your picture on it.".
-a badge is carried by the receptionist.
+The receptionist is carrying the badge.
+
+
+After saying hello to the receptionist for the first time:
+say "The receptionist looks at you, puts on a giant fake smile and says 'Hello and welcome to Frobozz, how may I help you?'".
+After saying hello to the receptionist:
+say "The receptionist makes a soft sighing sound before saying 'Yes?'.  She looks a little irritated.".
+
+After saying goodbye to the receptionist:
+	say "The receptionist goes back to her computer.".
+[default ask-tell response for the receptionist:
+	say "The receptionist stares at you blankly looking a little confused.".
+default ask-for response for the receptionist:
+	say "The receptionist sighs heavily and says 'Why do people always ask for stuff?  I don't have anything to give.'".]
+after quizzing the receptionist about a badge for the first time:
+	say "The receptionist asks 'Do I know you?  We're not even connected on LinkedIn.'".
+
+after quizzing the receptionist about a badge:
+if the player is connected to the receptionist
+begin;
+say "The receptionist says 'I see we're connected on LinkedIn!  Let me get you a temp badge.  Please look at the webcam.'".;
+now a webcam is on.;
+otherwise;
+say "The receptionist looks at you sternly and says 'Look, I don't give badges out to just anyone.  Either we're connected on linkedin it or we're not.'".;
+end if.
+after quizzing the receptionist about the water cooler:
+say "The receptionist says 'Yeah, the water's free.  Help yourself.".
+[end get the badge]
+
 [To do: add a swipe action]
 [When the door is not locked the description of A card reader is "It’s a black box with a glowing green light.  Green probably means the door is unlocked.".]
 
@@ -484,7 +552,7 @@ The high five poster is scenery.
 The description of the high five poster is "This poster has 'High Fives Saves Lives in huge letter.  Under the title are detailed instructions on how to give a high five.  There is a small mention about high fiving Grues but most of it is blacked out by black marker.".
 The High Five Zone is east of the Fancy Hallway.
 The Grue is in the High Five Zone.
-The description of the Grue is "Your standard Grue is standing in the High Five Zone with his arm raised and hand open.  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
+The description of the Grue is "Your standard Grue is standing in the High Five Zone[if the grue is sad] with his arm raised and hand open[end if].  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
 The Grue is a person.
 
 [High five rules for grue]
