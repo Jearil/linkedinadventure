@@ -9,6 +9,7 @@ Include Basic Screen Effects by Emily Short.
 Include Conversation Framework by Eric Eve.
 Include Conversational Defaults by Eric Eve.
 Release along with an interpreter, the source text and cover art.
+The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
 
