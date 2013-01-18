@@ -12,6 +12,7 @@ Include Hidden Items by Krister Fundin.
 Release along with an interpreter, the source text and cover art.
 The display banner rule is not listed in the startup rulebook.
 
+The Fancy Hallway is a room.
 The Reception Area is a room.
 
 Book 1 Setting up the World
@@ -282,6 +283,9 @@ The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you'
 
 The End Of The Hallway is a room. "The hallway ends at a large mahogany door. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned."
 The End Of The Hallway is east of The Fancy Hallway.
+The nameplate is in The End Of The Hallway.
+The nameplate is scenery.
+The description of the nameplate is "The nameplate reads 'Maximillion Warbucks - CFO'."
 A janitor cart is in the End Of The Hallway.
 The janitor cart is scenery.
 Understand "cart" as the janitor cart. Understand "rag" as rags. Understand "brush" as brushes.
@@ -309,6 +313,10 @@ The mahogany door is east of The End Of The Hallway.
 Through it is The Office of the CFO.
 The mahogany door is lockable and locked.
 The janitor keys unlocks the mahogany door.
+
+Section 3 CFO Office
+
+The Office of the CFO is a room.
 	
 
 [High Five Area]
