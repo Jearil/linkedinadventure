@@ -8,6 +8,7 @@ The story creation year is 2012.
 Include Basic Screen Effects by Emily Short.
 Include Conversation Framework by Eric Eve.
 Include Conversational Defaults by Eric Eve.
+Include Hidden Items by Krister Fundin.
 Release along with an interpreter, the source text and cover art.
 The display banner rule is not listed in the startup rulebook.
 
@@ -192,7 +193,7 @@ Chapter 1 Office Building
 Section 1 Reception Area
 
 [Reception Area]
-The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer.."
+The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. The company logo on the wall boldy reads: 'Qwerty Fizzbuzz'. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer.."
 A Large Desk is in The Reception Area.
 The description of A Large Desk is "It's a desk, and it's large.".
 The Receptionist's Computer is on The Desk.
@@ -277,7 +278,38 @@ Instead of licking the water cooler:
 
 Section 2 Fancy Hallway
 
-The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. At the east end of the hallway is the High Five Zone."
+The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. The hallway continues to the east."
+
+The End Of The Hallway is a room. "The hallway ends at a large mahogany door. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned."
+The End Of The Hallway is east of The Fancy Hallway.
+A janitor cart is in the End Of The Hallway.
+The janitor cart is scenery.
+Understand "cart" as the janitor cart. Understand "rag" as rags. Understand "brush" as brushes.
+rags are on the janitor cart.
+The description of the Janitor Cart is "The Janitor Cart has some rags, various chemicals, some brushes, and a garbage can on it."
+The chemicals are on the Janitor Cart. "Some basic cleaning chemicals."
+The indefinite article of the chemicals is "some".
+The description of the chemicals is "Some basic cleaning chemicals. Not even really powerful enough to get food off of the carpet.".
+brushes are on the janitor cart.
+The garbage can is on the janitor cart.
+The garbage can is not portable.
+The garbage can is a container.
+The description of the garbage can is "A grey garbage can with a black bag."
+The janitor keys are on the janitor cart.
+The janitor keys are hidden.
+
+After examining the janitor cart for the first time:
+	reveal the janitor keys.;
+	say "You also see some janitor keys on the cart."
+	
+The mahogany door is a door.
+The mahogany door is scenery.
+The description of the mahogany door is "This large door is made of solid mahogany. In contrast with the higher-tech badge system used on the front door, this door features a simple keyhole attached to what you assume is a dead-bolt."
+The mahogany door is east of The End Of The Hallway.
+Through it is The Office of the CFO.
+The mahogany door is lockable and locked.
+The janitor keys unlocks the mahogany door.
+	
 
 [High Five Area]
 
@@ -285,7 +317,6 @@ The High Five Zone is a room.  "You are in the high five zone of the fancy hallw
 The high five poster is in the High Five Zone.
 The high five poster is scenery.
 The description of the high five poster is "This poster has 'High Fives Saves Lives in huge letter.  Under the title are detailed instructions on how to give a high five.  There is a small mention about high fiving Grues but most of it is blacked out by black marker.".
-The High Five Zone is east of the Fancy Hallway.
 The Grue is in the High Five Zone.
 The description of the Grue is "Your standard Grue is standing in the High Five Zone[if the grue is sad] with his arm raised and hand open[end if].  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
 The Grue is a person.
@@ -308,35 +339,6 @@ Check High Fiving:
 	end if.
 
 [End High Five Area]
-
-Section 3 Holding Area
-
-The Office is a room. "This is a standard computer office. There's a desk with a computer and a chair on it."
-The Dingy Desk is in the Office.
-On it is an office computer.
-The description of the office computer is "Sleek and high tech, this construct of keys, screen, and whirring lights allows one to send signals through a series of tubes to remote locations. Truely a marvel of the modern world."
-The office computer is a device.
-The chair is in the Office.
-The Dingy Desk, office computer, and chair is scenery.
-
-The Bathroom is a room. "This bathroom hasn't been cleaned in years."
-The Bathroom is east of the Office.
-
-The Graveyard is a room. "This small patch of overgrown land has a series of well worn stone markers indicating the final resting place of many failed projects."
-A shiny gravestone is in the Graveyard.
-A damaged gravestone is in the Graveyard.
-The description of the damaged gravestone is "This stone appears to have bullet holes and what looks like scratches made from some sort of pick or axe. In faded letters you can make out only a single word: Leo".
-The Graveyard is south of the Office.
-South of The Darkness is the Office.
-
-[When play begins:
-	now the command prompt is "Please enter your name >".
-
-After reading a command when the command prompt is "Please enter your name >":
-	now the player's full name is the player's command.;
-	say "Thank you [Player's full name]".;
-	now the command prompt is ">".;
-	reject the player's command.]
 
 Section 4 Elevator
 
