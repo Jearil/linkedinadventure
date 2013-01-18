@@ -192,7 +192,7 @@ Chapter 1 Office Building
 Section 1 Reception Area
 
 [Reception Area]
-The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer.."
+The Reception Area is a room. "You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer.  Behind the desk in large 3-D letters you see 'Qwerty Fizzbuzz'.".
 A Large Desk is in The Reception Area.
 The description of A Large Desk is "It's a desk, and it's large.".
 The Receptionist's Computer is on The Desk.
@@ -229,7 +229,7 @@ The receptionist is carrying the badge.
 
 
 After saying hello to the receptionist for the first time:
-say "The receptionist looks at you, puts on a giant fake smile and says 'Hello and welcome to Frobozz, how may I help you?'".
+say "The receptionist looks at you, puts on a giant fake smile and says 'Hello and welcome to Qwerty Fizzbuzz, how may I help you?'".
 After saying hello to the receptionist:
 say "The receptionist makes a soft sighing sound before saying 'Yes?'.  She looks a little irritated.".
 
@@ -240,16 +240,20 @@ default ask-tell response for the receptionist:
 default ask-for response for the receptionist:
 	say "The receptionist sighs heavily and says 'Why do people always ask for stuff?  I don't have anything to give.'".
 after quizzing the receptionist about a badge for the first time:
-	say "The receptionist asks 'Do I know you?  We're not even connected on LinkedIn.'".
-
+	say "The receptionist asks 'Of course, a badge.  Who are you meeting with?".
 after quizzing the receptionist about a badge:
-[if the player is connected to the receptionist TODO: REMOVE CONNECTING
-begin;
-say "The receptionist says 'I see we're connected on LinkedIn!  Let me get you a temp badge.  Please look at the webcam.'".;
-now a webcam is on.;
-otherwise;
-say "The receptionist looks at you sternly and says 'Look, I don't give badges out to just anyone.  Either we're connected on linkedin it or we're not.'".;
-end if.]
+	say "The receptionist narrows her eyes at you and says 'Yes, yes a badge already.  You're clearly not just loitering around our reception area so you must have a meeting.  Who are you meeting?".
+after telling the receptionist about "Maximillion Warbucks":
+	say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+	now a webcam is on.
+after telling the receptionist about "Marge Tuckerberg":
+	say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+	now a webcam is on.
+after telling the receptionist about "Darwen Straus":
+	say "The receptionist gives you a once over followed by the evil eye and says 'He's not here right now.  Are you meeting with someone else?".;
+	now a webcam is off.
+
+
 after quizzing the receptionist about the water cooler:
 say "The receptionist says 'Yeah, the water's free.  Help yourself.".
 [end get the badge]
@@ -259,7 +263,10 @@ say "The receptionist says 'Yeah, the water's free.  Help yourself.".
 
 The posters are in The Reception Area.
 The posters are scenery.
-The description of the posters is "The posters are pretty boring.  Some motivational crap that isn't really motivating you to keep looking at the posters.".
+The description of the posters is "The posters are pretty boring.  Some motivational crap that isn't really motivating you to keep looking at the posters.  One of the posters is covered by a LinkedIn flier".
+The linkedin flier is scenery.
+The linkedin flier is in The Reception Area.
+The description of the linkedin flier is "The flier reads:  Qwerty Fizzbuzz is now on LinkedIn!!!! Look us up online for more information.  (Really, use a browser… like the one you're using to play this game)".
 The chairs are in The Reception Area.
 The chairs are scenery.
 The chairs are a container.
