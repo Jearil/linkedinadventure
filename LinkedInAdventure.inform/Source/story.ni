@@ -362,7 +362,7 @@ Instead of examining the slim silver computer:
 		Say "From: Dr. Edward Drolkrad <edrolkrad@qwertyfizzbuzz.com>[line break]";
 		Say "Subject: Supplies[paragraph break]";
 		Say "Mr. Warbucks,[paragraph break]";
-		Say "Supplies are running low in cage. The damage that Darwin caused is setting us back pretty far. He should be taken care of. ";
+		Say "Supplies are running low in cage. We need more moxie. The damage that Darwin caused is setting us back pretty far. He should be taken care of. ";
 		Say "I'll work with Marge to handle that. The next set of results is waiting for you in the drop box in the basement.[paragraph break]";
 		Say "Sincerely,[line break]";
 		Say "Dr. Drolkrad";
@@ -374,13 +374,99 @@ After reading a command when the command prompt is "Password? >":
 		say "Correct!";
 		say "The computer unlocks and displays what the CFO was last looking at.";
 		now the command prompt is ">";
+		increase the score by 10;
 	otherwise:
 		say "Incorrect!";
 		now the command prompt is ">";
 	reject the player's command.
+
+
+Section 4 Elevator
+
+Elevator button is a kind of door.
+Elevator button is always open.
+
+The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are two glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'".
+the panel is in The Elevator. "A metal panel with buttons".
+The description of the panel is "A metal panel contains tow glowing buttons. One is labeled 'Up', while the other is mysteriously labled 'Dance'. Below these buttons is a small square hole about 1 inch on each side and one half inch deep.".
+the square hole is on the panel.
+The square hole is a container.
+The square hole is scenery.
+The description of the square hole is "This square hole doesn't seem to have much of a purpose.".
+Up Button is an Elevator button.
+The Up Button is not openable.
+The Up Button is scenery.
+Up Button is above The Elevator.
+Through it is The Fancy Hallway.
+The Elevator is below The Fancy Hallway.
+Dance Button is in The Elevator.
+The Dance Button is scenery.
+
+A Secret Door is a door.
+A Secret Door is north of The Elevator and south of the Top of Stairs.
+A Secret Door is hidden.
+
+the terminal is in The Elevator.
+the terminal is fixed in place.
+the terminal is hidden.
+
+Instead of examining the terminal:
+	if A Secret Door is hidden
+	begin;
+		say "This terminal is password protected.[Line Break]Please enter authorization[Paragraph Break]";
+		now the command prompt is "Authorization code>"; [moxie]
+	otherwise;
+		say "The terminal has gone blank";
+	end if.
+
+After reading a command when the command prompt is "Authorization code>":
+	if the player's command matches "moxie":
+		reveal A Secret Door;
+		say "A panel on the back of the elevator slides away to reveal a sliding wooden door.";
+		say "The terminal powers down.";
+		increase the score by 10;
+		now the command prompt is ">";
+	otherwise:
+		say "Access Denied!"; [fail 3 times message?]
+		now the command prompt is ">";
+	reject the player's command.
+
+Section 5 The Basement
+
+Top of Stairs is a room. "Suprisingly, a small landing resides on the other side of the elevator. There is a stairway leading down. The walls and floor are grey concret and not very inviting."
+Stair is a kind of door.
+Stair is always open.
+Stair is not openable.
+Stair is never locked.
+A rough stairway is a stair.
+A rough stairway is scenery.
+Understand "stairs" and "stair" as the rough stairway.
+The rough stairway is below Top of Stairs and above The Basement.
+
+The Basement is a room. "A 10' by 10' concrete unfurnished room lies at the bottom of a set of stairs. In the eastern wall is a steel door with a push bar.".
+steel door is a door.
+The steel door is east of The Basement and west of The Break Room.
+The description of the steel door is "A sturdy door made of steel which has a push bar across the middle."
+A push bar is part of the steel door.
+The description of the push bar is "It's a push bar. It's umm.. used to open a door. By.. you know.. pushing on it. This isn't really all that complicated.".
+	
+Instead of pushing the push bar:
+	say "You push on the bar, fulfilling it's ultimate purpose";
+	increase the score by 5;
+	move the player to The Break Room.
+
+After going to The Break Room for the first time:
+	say "There's an audible click as the steel door locks behind you.";
+	now the steel door is locked.
+
+Section 6 The Breakroom
+
+The Breakroom is a room. "This is a break room".
+
+The High Five Zone is south of The Breakroom.
 	
 
-Section 11 Grue
+Section 7 Grue
 [High Five Area]
 
 The High Five Zone is a room.  "You are in the high five zone of the fancy hallway.  Apart from the standard fancy here is a poster with the title 'High Fives Saves Lives' on the wall.  A few feet away from you is a Grue with his hand up looking at you expectantly.".
@@ -409,73 +495,6 @@ Check High Fiving:
 	end if.
 
 [End High Five Area]
-
-Section 4 Elevator
-
-Elevator button is a kind of door.
-Elevator button is always open.
-
-The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are two glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'".
-the panel is in The Elevator. "A metal panel with buttons".
-The description of the panel is "A metal panel contains tow glowing buttons. One is labeled 'Up', while the other is mysteriously labled 'Dance'. Below these buttons is a small square hole about 1 inch on each side and one half inch deep.".
-the square hole is on the panel.
-The square hole is a container.
-The square hole is scenery.
-The description of the square hole is "This square hole doesn't seem to have much of a purpose.".
-Up Button is an Elevator button.
-The Up Button is not openable.
-The Up Button is scenery.
-Up Button is above The Elevator.
-Through it is The Fancy Hallway.
-The Elevator is below The Fancy Hallway.
-Dance Button is in The Elevator.
-The Dance Button is scenery.
-
-A Secret Door is a door.
-A Secret Door is north of The Elevator and south of The Basement.
-A Secret Door is hidden.
-
-the terminal is in The Elevator.
-the terminal is fixed in place.
-the terminal is hidden.
-
-Instead of examining the terminal:
-	if A Secret Door is hidden
-	begin;
-		say "This terminal is password protected.[Line Break]Please enter authorization[Paragraph Break]";
-		now the command prompt is "Authorization code>"; [moxie]
-	otherwise;
-		say "The terminal has gone blank";
-	end if.
-
-After reading a command when the command prompt is "Authorization code>":
-	if the player's command matches "moxie":
-		reveal A Secret Door;
-		say "A panel on the back of the elevator slides away to reveal a sliding wooden door.";
-		say "The terminal powers down.";
-		now the command prompt is ">";
-	otherwise:
-		say "Access Denied!"; [fail 3 times message?]
-		now the command prompt is ">";
-	reject the player's command.
-
-Section 5 The Basement
-
-Top of Stairs is a room. "Suprisingly, a small landing resides on the other side of the elevator. There is a stairway leading down. The walls and floor are grey concret and not very inviting."
-Stair is a kind of door.
-Stair is not openable.
-Stair is never locked.
-Basement stairway is a stair.
-Understand "stairs" and "stair" as Basement stairway.
-Basement stairway is below Top of Stairs and above The Basement.
-
-The Basement is a room. "A 10' by 10' concrete unfurnished room lies at the bottom of a set of stairs. In the eastern wall is a steel door with a push bar".
-steel door is a door.
-The steel door is east of The Basement.
-The description of the steel door is "A sturdy door made of steel which has a push bar across the middle."
-A push bar is part of the steel door.
-The description of the push bar is "It's a push bar. It's umm.. used to open a door. By.. you know.. pushing on it. This isn't really all that complicated.".
-	
 
 
 [rules for cube]
