@@ -12,7 +12,6 @@ Include Hidden Items by Krister Fundin.
 Release along with an interpreter, the source text and cover art.
 The display banner rule is not listed in the startup rulebook.
 
-The Fancy Hallway is a room.
 The Reception Area is a room.
 
 Book 1 Setting up the World
@@ -241,6 +240,10 @@ default ask-tell response for the receptionist:
 	say "The receptionist stares at you blankly looking a little confused.".
 default ask-for response for the receptionist:
 	say "The receptionist sighs heavily and says 'Why do people always ask for stuff?  I don't have anything to give.'".
+after quizzing the receptionist about the glass door:
+	say "The receptionist says 'You'll need a badge to get in'".
+after quizzing the receptionist about the card reader:
+	say "The receptionist says 'You need a badge to use the card reader'".
 after quizzing the receptionist about a badge for the first time:
 	say "The receptionist asks 'Of course, a badge.  Who are you meeting with?".
 after quizzing the receptionist about a badge:
@@ -395,13 +398,7 @@ The Up Button is not openable.
 Up Button is above The Outside Of The Elevator.
 Through it is The Fancy Hallway.
 Outside Of The Elevator is below The Fancy Hallway.
-Down Button is an Elevator button.
-The Down Button is not openable.
-Down Button is below The Outside Of The Elevator.
-Through it is The Basement Junction.
-Outside Of The Elevator is above The Basement Junction.
 Dance Button is in The Outside Of The Elevator.
-Connect Button is in The Outside Of The Elevator.
 
 [ Rules for buttons ]
 Before going from Outside Of The Elevator to The Fancy Hallway:
