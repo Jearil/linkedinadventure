@@ -9,7 +9,7 @@ Include Basic Screen Effects by Emily Short.
 Include Conversation Framework by Eric Eve.
 Include Conversational Defaults by Eric Eve.
 Include Hidden Items by Krister Fundin.
-Release along with an interpreter, the source text and cover art.
+Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
@@ -218,7 +218,7 @@ A cup are on the Water Cooler.
 
 The Large Desk and The Receptionist's Computer and The Water Cooler are scenery.
 A Glass Door is a door.
-A Glass Door is north of The Reception Area and south of Outside Of The Elevator.
+A Glass Door is north of The Reception Area and south of The Elevator.
 A Glass Door is locked.
 The description of A Glass Door is "The glass door is transparent!  You can see right through it because it’s made of glass… It’s practically magical.  Attached to it is a card reader.".
 A card reader is in The Reception Area.
@@ -293,49 +293,54 @@ The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you'
 
 The End Of The Hallway is a room. "The hallway ends at a large mahogany door. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned."
 The End Of The Hallway is east of The Fancy Hallway.
-The nameplate is in The End Of The Hallway.
-The nameplate is scenery.
-The description of the nameplate is "The nameplate reads 'Maximillion Warbucks - CFO'."
-A janitor cart is in the End Of The Hallway.
-The janitor cart is scenery.
+the nameplate is in The End Of The Hallway.
+the nameplate is scenery.
+the description of the nameplate is "The nameplate reads 'Maximillion Warbucks - CFO'.".
+a janitor cart is in the End Of The Hallway.
+the janitor cart is scenery.
 Understand "cart" as the janitor cart. Understand "rag" as rags. Understand "brush" as brushes.
 rags are on the janitor cart.
-The description of the Janitor Cart is "The Janitor Cart has some rags, various chemicals, some brushes, and a garbage can on it."
-The chemicals are on the Janitor Cart. "Some basic cleaning chemicals."
-The indefinite article of the chemicals is "some".
-The description of the chemicals is "Some basic cleaning chemicals. Not even really powerful enough to get food off of the carpet.".
+the description of the Janitor Cart is "The Janitor Cart has some rags, various chemicals, some brushes, and a garbage can on it.".
+the chemicals are on the Janitor Cart. "Some basic cleaning chemicals.".
+the indefinite article of the chemicals is "some".
+the description of the chemicals is "Some basic cleaning chemicals. Not even really powerful enough to get food off of the carpet.".
 brushes are on the janitor cart.
-The garbage can is on the janitor cart.
-The garbage can is not portable.
-The garbage can is a container.
-The description of the garbage can is "A grey garbage can with a black bag."
-The janitor keys are on the janitor cart.
-The janitor keys are hidden.
+the garbage can is on the janitor cart.
+the garbage can is not portable.
+the garbage can is a container.
+the description of the garbage can is "A grey garbage can with a black bag.".
+the janitor keys are on the janitor cart.
+the janitor keys are hidden.
 
 After examining the janitor cart for the first time:
 	reveal the janitor keys.;
 	say "You also see some janitor keys on the cart."
 	
-The mahogany door is a door.
-The mahogany door is scenery.
-The description of the mahogany door is "This large door is made of solid mahogany. In contrast with the higher-tech badge system used on the front door, this door features a simple keyhole attached to what you assume is a dead-bolt."
-The mahogany door is east of The End Of The Hallway.
-Through it is The Office of the CFO.
-The mahogany door is lockable and locked.
-The janitor keys unlocks the mahogany door.
+the mahogany door is a door.
+the mahogany door is scenery.
+the description of the mahogany door is "This large door is made of solid mahogany. In contrast with the higher-tech badge system used on the front door, this door features a simple keyhole attached to what you assume is a dead-bolt.".
+the mahogany door is east of The End Of The Hallway and west of The Office of the CFO.
+the mahogany door is lockable and locked.
+the janitor keys unlocks the mahogany door.
 
 Section 3 CFO Office
 
-The Office of the CFO is a room. "This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the wall."
-The carpet is in the Office of the CFO.
-The description of the carpet is "This red carpet is rich and plush. The color is unsettling, as you are reminded of blood just by looking at it."
-The carpet is scenery.
-The fixtures are in the Offie of the CFO.
-The fixtures are scenery.
-The mahogany desk is in the Office of the CFO.
-The mahogany desk is scenery.
-A slim silver computer is on the mahogany desk.
-The slim silver computer is scenery.
+The Office of the CFO is a room. "This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the wall.".
+the carpet is in the Office of the CFO.
+the description of the carpet is "This red carpet is rich and plush. The color is unsettling, as you are reminded of blood just by looking at it.".
+the carpet is scenery.
+the fixtures are in the Office of the CFO.
+the fixtures are scenery.
+the mahogany desk is in the Office of the CFO.
+the mahogany desk is scenery.
+the description of the mahogany desk is "A broad mahogany desk sits in the center of the room. On it is an expensive looking silver computer. On one side of the desk there is a drawer";
+the drawer is part of the mahogany desk.
+the cube is in the drawer. "A small metallic cube.".
+The description of the cube is "A small metallic cube. There are weird engravings on one side.".
+the drawer is a closed container.
+the drawer is openable.
+the slim silver computer is on the mahogany desk.
+the slim silver computer is scenery.
 A password protected computer is kind of thing.
 A password protected computer can be protected or unprotected.
 A password protected computer is usually protected.
@@ -343,8 +348,8 @@ A slim silver computer is a password protected computer.
 Filing cabinets are in the Office of the CFO.
 Filing cabinets are scenery.
 Filing cabinets are a container.
-The description of the filing cabinets is "A series of metal cabinets that most likely contain a lot of paper files."
-The filing cabinets are lockable and locked.
+The description of the filing cabinets is "A series of metal cabinets that most likely contain a lot of paper files.".
+the filing cabinets are lockable and locked.
 
 Instead of examining the slim silver computer:
 	if the slim silver computer is protected
@@ -352,9 +357,27 @@ Instead of examining the slim silver computer:
 		Say "The computer screen has a prompt for a password on it.";
 		now the command prompt is "Password? >";
 	otherwise;
-		Say "Computer description here.";
+		Say "An email is displayed:[paragraph break]";
+		Say "To: Maximillion Warbucks <bigmoney@qwertyfizzbuzz.com>[line break]";
+		Say "From: Dr. Edward Drolkrad <edrolkrad@qwertyfizzbuzz.com>[line break]";
+		Say "Subject: Supplies[paragraph break]";
+		Say "Mr. Warbucks,[paragraph break]";
+		Say "Supplies are running low in cage. The damage that Darwin caused is setting us back pretty far. He should be taken care of. ";
+		Say "I'll work with Marge to handle that. The next set of results is waiting for you in the drop box in the basement.[paragraph break]";
+		Say "Sincerely,[line break]";
+		Say "Dr. Drolkrad";
 	end if.
 
+After reading a command when the command prompt is "Password? >":
+	if the player's command matches "money":
+		now the slim silver computer is unprotected;
+		say "Correct!";
+		say "The computer unlocks and displays what the CFO was last looking at.";
+		now the command prompt is ">";
+	otherwise:
+		say "Incorrect!";
+		now the command prompt is ">";
+	reject the player's command.
 	
 
 Section 11 Grue
@@ -392,60 +415,80 @@ Section 4 Elevator
 Elevator button is a kind of door.
 Elevator button is always open.
 
-Outside Of The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are four glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'"
+The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are two glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'".
+the panel is in The Elevator. "A metal panel with buttons".
+The description of the panel is "A metal panel contains tow glowing buttons. One is labeled 'Up', while the other is mysteriously labled 'Dance'. Below these buttons is a small square hole about 1 inch on each side and one half inch deep.".
+the square hole is on the panel.
+The square hole is a container.
+The square hole is scenery.
+The description of the square hole is "This square hole doesn't seem to have much of a purpose.".
 Up Button is an Elevator button.
 The Up Button is not openable.
-Up Button is above The Outside Of The Elevator.
+The Up Button is scenery.
+Up Button is above The Elevator.
 Through it is The Fancy Hallway.
-Outside Of The Elevator is below The Fancy Hallway.
-Dance Button is in The Outside Of The Elevator.
+The Elevator is below The Fancy Hallway.
+Dance Button is in The Elevator.
+The Dance Button is scenery.
+
+A Secret Door is a door.
+A Secret Door is north of The Elevator and south of The Basement.
+A Secret Door is hidden.
+
+the terminal is in The Elevator.
+the terminal is fixed in place.
+the terminal is hidden.
+
+Instead of examining the terminal:
+	if A Secret Door is hidden
+	begin;
+		say "This terminal is password protected.[Line Break]Please enter authorization[Paragraph Break]";
+		now the command prompt is "Authorization code>"; [moxie]
+	otherwise;
+		say "The terminal has gone blank";
+	end if.
+
+After reading a command when the command prompt is "Authorization code>":
+	if the player's command matches "moxie":
+		reveal A Secret Door;
+		say "A panel on the back of the elevator slides away to reveal a sliding wooden door.";
+		say "The terminal powers down.";
+		now the command prompt is ">";
+	otherwise:
+		say "Access Denied!"; [fail 3 times message?]
+		now the command prompt is ">";
+	reject the player's command.
+
+Section 5 The Basement
+
+Top of Stairs is a room. "Suprisingly, a small landing resides on the other side of the elevator. There is a stairway leading down. The walls and floor are grey concret and not very inviting."
+Stair is a kind of door.
+Stair is not openable.
+Stair is never locked.
+Basement stairway is a stair.
+Understand "stairs" and "stair" as Basement stairway.
+Basement stairway is below Top of Stairs and above The Basement.
+
+The Basement is a room. "A 10' by 10' concrete unfurnished room lies at the bottom of a set of stairs. In the eastern wall is a steel door with a push bar".
+steel door is a door.
+The steel door is east of The Basement.
+The description of the steel door is "A sturdy door made of steel which has a push bar across the middle."
+A push bar is part of the steel door.
+The description of the push bar is "It's a push bar. It's umm.. used to open a door. By.. you know.. pushing on it. This isn't really all that complicated.".
+	
+
+
+[rules for cube]
+Instead of inserting a cube into a square hole:
+	reveal the terminal.;
+	say "After inserting the cube into the matching hole, a small terminal flips down from the wall next to you".
 
 [ Rules for buttons ]
-Before going from Outside Of The Elevator to The Fancy Hallway:
+Before going from The Elevator to The Fancy Hallway:
 	say "The button lights up and chimes softly. The elevator quietly ascends.".
-Before going from Outside Of The Elevator to the Basement Junction:
-	say "The button lights up and chimes softly. The elevator quietly descends.".
 
 Instead of pushing an elevator button:
 	try going the noun.
 
 Instead of pushing the Dance Button:
 	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along."
-
-Instead of pushing the Connect Button for the first time:
-	say "A soft feminine voice says 'Thank you for adding me to your profesional network. Can you write me a recommendation?'";
-	increase score by 5
-
-Section 6 The Basement
-
-[Dungeon Junction]
-Basement Junction is a room. "The doors open into a circular room. Water drips from the mildewed walls. The room smells of failed business proposals and shattered LIX experiments.  Hallways leading  East, West, and North branch off from this room In the center of the room stands a security guard. The guard is wearing plate mail (formed of large white paper plates) and armed with an umbrella. His helmet was cut from a waste paper basket. He looks down on you and speaks 'Choose your direction wisely adventurer for your fate and the fate of all LinkedIn members depend on you.'"
-In the Dungeon Junction is a man called The Security Guard.
-The Security Guard is scenery.
-The Security Guard wears an umbrella.
-The Security Guard wears a helmet.
-The Security Guard wears plate mail.
-Understand "armor" as plate mail.
-Understand "basket" as helmet.
-Understand "waste paper basket" as helmet.
-The description of the Security Guard is "The guard is heavily muscled and could probably break bricks over his head (or yours). His armor suggests he has played in one too many LARPs and lives alone."
-The description of the helmet is "A grey plastic waste paper basket with eye slits cut into it and a hole for your mouth. It would fit snuggly and keep your head warm. It would provide a small amount of protection while making you look like an idiot at the same time."
-The description of the umbrella is "The umbrella is blue with the LinkedIn logo. It is decently snazzy swag."
-The description of the plate mail is "This armor is made of interlocking paper plates from the cafeteria. It would provide a small amount of protection while making you look ridiculous."
-The basement ceiling is in the Basement Junction.
-The basement floor is in the Basement Junction.
-The basement walls is in the Basement Junction.
-The description of the dungeon walls is "The walls are slick with water and slimy mold. It reminds you of your dormitory years."
-The description of the dungeon ceiling is "You look at the ceiling and think beige, they should really paint the ceiling beige."
-The description of the dungeon floor is "The floor is inlaid with arcane symbols. Upon closer inspection you realize that is actually binary code. You now have a better understanding of search algorithms." [gain 15 points when first looking at this]
-
-[East of Dungeon Junction]
-The Hallway Near The Dungeon Junction is east of The Dungeon Junction. "The hallway goes on for a long way. It is dimly lit and occasionally you hear whispers and mutterings, but when you look around there is nothing there. On your right you see an alcove[if the Stuffed Platypus is in the alcove] with a Stuffed Platypus in it[end if].".
-The alcove is a container in The Hallway Near The Dungeon Junction.
-The Stuffed Platypus is in the alcove.
-The description of the Stuffed Platypus is "You see a cute stuffed platypus that smells of fresh laundry. "
-
-[Rough hallway]
-The Rought Hallway is east of The Hallway Near The Dungeon Junction. "The dungeon walls start to become less of stone and more of hard packed earth. Roots of plants brush against your face. The tunnel begins to slope upward."
-
-
