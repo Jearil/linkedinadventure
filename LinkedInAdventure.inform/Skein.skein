@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x1bac960" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x8522e30" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1b51b80" />
-  <item nodeId="node-0x1bac960">
+  <activeNode nodeId="node-0x8522e30" />
+  <item nodeId="node-0x8522e30">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -18,11 +18,11 @@ Please press SPACE to continue.
     <changed>NO</changed>
     <temporary score="2">NO</temporary>
     <children>
-      <child nodeId="node-0x1bb02f0" />
-      <child nodeId="node-0x1b51b80" />
+      <child nodeId="node-0x8522ed0" />
+      <child nodeId="node-0x8522e80" />
     </children>
   </item>
-  <item nodeId="node-0x1b51b80">
+  <item nodeId="node-0x8522e80">
     <command xml:space="preserve"> </command>
     <result xml:space="preserve">
 Reception Area
@@ -39,16 +39,16 @@ You can also see a Glass Door and a Receptionist here.
     <changed>YES</changed>
     <temporary score="1">YES</temporary>
   </item>
-  <item nodeId="node-0x1bb02f0">
+  <item nodeId="node-0x8522ed0">
     <command xml:space="preserve">þ</command>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="3">YES</temporary>
     <children>
-      <child nodeId="node-0x1bb0340" />
+      <child nodeId="node-0x8527db0" />
     </children>
   </item>
-  <item nodeId="node-0x1bb0340">
+  <item nodeId="node-0x8527db0">
     <command xml:space="preserve"> </command>
     <result xml:space="preserve">
 LinkedInAdventure

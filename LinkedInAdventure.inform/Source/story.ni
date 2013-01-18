@@ -19,63 +19,9 @@ Part 1 Making new Kinds
 
 Chapter 1 Stuff
 
-Section 1 Defining a Link
-
-A link is a kind of door.
-A link is usually open.
-A link is seldom openable.
-A link is usually scenery.
-Understand "link" or "url" or "URL" as a link.
-The description of a link is usually "[The item described] will probably go somewhere if clicked on."
-
-Clicking is an action applying to one thing.
-Understand "click [something]" as clicking.
-Understand "click on [something]" as clicking.
 Understand "kick [something]" as attacking.
 
 Section 2 Rules
-
-Carry out clicking:
-	if the noun is a link
-	begin;
-		now has clicked on of player is "Yes";
-		try entering the noun;
-	otherwise;
-		say "[the noun] is not a thing on which one can click.";
-	end if.
-	
-A first check going rule (this is the reject directional travel while online rule):
-	if room gone from is in The Online Area
-	begin;
-		if door gone through is not a link or has clicked on of player is "No"
-		begin;
-			say "Going that way doesn't really make any sense." instead.;
-		otherwise;
-			now has clicked on of player is "No";
-		end if.;
-	end if.
-
-Logging out is an action applying to nothing.
-Understand "logout" as Logging out.
-
-A first check dropping rule (this is the you can't drop stuff when online rule):
-	if location of the player is in The Online Area
-	begin;
-		say "You fumble for a bit and your cell phone beeps sadly. You decide to not drop [the noun] until you log off.";
-		stop the action.;
-	end if;
-
-Check logging out:
-	if location of player is not in The Online Area
-	begin;
-		say "You can't logout of life. Sorry.";
-		stop the action.;
-	end if;
-
-Carry out logging out:
-	move player to before login of the player.
-
-The Online Area is a region.
 
 Understand "head [direction]" as going.
  
@@ -146,29 +92,7 @@ At the time when a glass door closes:
 	begin;
 		say "The glass door closes with a click.".;
 	end if.
-[End reception area][Connecting]
-[to do: make this only work on the phone]
-Connection relates one person to another.
-The verb to connect (he is connected to, they are connected to, he connected to, it is connected to, he is connected to) implies the connection relation.
-
-Connecting is an action applying to one thing.
-Understand "connect with [something]" or "connect to [something]" as connecting.
-
-Check connecting:
-	if noun is not a person
-	begin;
-		say "Good luck connecting with that!".;
-		stop the action.;
-	end if.
-Carry out connecting:
-	if the player is connected to noun
-	begin;
-		say "You've already connected to [noun].".;
-	otherwise;
-		say "You connect with [noun] on LinkedIn!".;
-		now the player is connected to noun.;
-		increase score by 5.;
-	end if.
+[End reception area]
 
 a webdevice is a kind of thing.
 a webdevice can be on or off.
@@ -184,60 +108,6 @@ Instead of examining a webcam:
 	otherwise;
 		continue the action.;
 	end if.
-    
-Chapter 2 Equiping the Player
-
-The player has some text called has clicked on.
-The player's full name is an indexed text that varies.
-The has clicked on is usually "No".
-
-Section 1 Cell Phone
-
-The player has a room called before login.
-The player is carrying a device called a Cell Phone.
-The cell phone is switched on.
-The description of the Cell Phone is "In this day and age, the cell phone is indispensable. On the cellphone is the LinkedIn app."
-
-An app is a kind of thing.
-
-Carry out switching off cell phone:
-	now The description of the Cell Phone is "A lonely dark display stares back at you."
-Carry out switching on cell phone:
-	now The description of the Cell Phone is "In this day and age, the cell phone is indispensable. On the cellphone is a button for the LinkedIn app."
-	
-The LinkedIn Application is part of The Cell Phone.
-The LinkedIn Application is an app.
-
-[push and use cell]
-
-Section 2 Touching (apps)
-
-To Login To Linkedin:
-	if the location of the player is in the online area
-	begin;
-		say "You're already online.";
-	otherwise;
-		say "You open up the LinkedIn Application.";
-		now the before login of player is the location of the player;
-		move player to The LinkedIn Homepage.;
-	end if.
-
-Instead of touching The LinkedIn Application:
-	Login To Linkedin.
-
-Section 3 Additional actions for phone
-
-Activating is an action applying to one thing.
-Understand "use [something]" as activating.
-
-Carry out activating an app:
-	Login To LinkedIn.
-	
-Carry out activating the cell phone:
-	Login To LinkedIn.
-
-Instead of opening the cell phone:
-	Login To LinkedIn.
 
 Chapter 3 Look and Feel
 
@@ -313,142 +183,7 @@ Chapter 5 Modifying Current Things
 
 Instead of swearing obscenely: say "That is not very professional of you"
 
-Part 3 Recruting The Team
-
-Chapter 1 The Rooms
-
-The Darkness is a room. "You stand (float?) in what seems to be an empty black void. Your life feels somewhat hallow, as if there's been something missing that you can't quite identify. A dim light receeds to the north, a faint glimmer of hope amidst the darnkess. [paragraph break]You are likely to be eaten by a Grue."
-Enlightenment is a room. "Clarity fills your mind as you realize your sole purpose in life is to create an interactive fiction (just like this!) about LinkedIn. You're really not sure where it will go or what it will contain but you feel compelled to pour your life essense into this project. You imagine the rewards will be astounding. The feeling of pure joy of having reached this conclusion is enough to bring a tear to your eye. You try to hold it back, yet fail.[paragraph break] To the east is a Vahalla where you can meet your fate. To the West is a pit of snakes. (You probably don't want to go there)."
-The Light is a door.
-The Light is open.
-The Light is scenery.
-The Light is north of The Darkness and south of Enlightenment.
-[A Grue is in the darkness.
-A Grue is scenery.]
-
-[Instead of doing anything to the Grue:
-	say "Why would you want to do that to a grue? They're dangerous you know."]
-
-Before going to Enlightenment:
-	if Enlightenment is not visited, say "You stumble into the light."
-Enlightenment has some text called backtrack.
-The backtrack is usually "No".
-The delicious taco is in Enlightenment.
-The delicious taco is undescribed.
-The delicious taco is edible.
-Around is in Enlightenment.
-Around is scenery.
-Pet is a kind of animal.
-Pet has some text called been pet.
-The been pet is usually "No".
-
-Petting is an action applying to one thing.
-Understand "pet [something]" as petting.
-
-Check petting:
-	if noun is not a pet
-	begin;
-		say "You can't pet [the noun]".;
-		stop the action.;
-	end if.
-
-Carry out petting:
-	if been pet of the noun is "No"
-	begin;
-		say "You pet the puppy who licks you and wags his tail. How wonderful.";
-		increase the score by 5.;
-		now the been pet of the noun is "Yes".;
-	otherwise;
-		say "You continue to pet the puppy who continues to wag his tail excitedly.".;
-	end if.
-
-The Dangerous Pit is west of Enlightenment. "For some reason you jumped onto a platform in the center of a pit of snakes. The area is dark and has an opressive feel to it. Hisses come from the snakes below you, but also from the walls. They sound like failure."
-Vahalla is east of Enlightenment. "Congradulations! You've decided to work on LinkedIn Adventure! You should send a message to Colin Miller (cmiller@linkedin.com) right away and let him know of your profound commitment to this worth cause. Also, cake!".
-Some snakes are in The Dangerous Pit.
-snakes are animals.
-
-A Cake is in Vahalla. "A delicious looking cake."
-The cake is edible.
-Instead of smelling the cake:
-	say "The cake smells mouth watering."
-The description of the Cake is "This cake looks to be made of pure joy (with frosting and sprinkles). It looks delicious."
-Instead of eating the cake:
-	say "You take a bite of the cake and find yourself in nirvana.";
-	increase the score by 5.;
-	end the story.
-
-The Kennel is above Enlightenment. "Why is this even here? How did you go up from what was basically a room of pure light? Did you float? Looking around you see a bunch of empty cages and some newspaper on the ground."
-A puppy is in the Kennel. "An awesome puppy."
-The puppy is a Pet.
-The description of the Puppy is "This puppy seems really happy to see you. You wonder how he could have arrived at this place."
-
-Chapter 2 The Rules
-
-Instead of doing anything to snakes:
-	die of snake bites.
-	
-Instead of going to Enlightenment from The Dangerous Pit:
-	say "As you attempt to make your way back to enlightenment you accidently trip over your shoe laces and fall into the pit. (bad break)";
-	die of snake bites.
-	
-To die of snake bites:
-	say "Before you can move, a pile of snakes lashes out at you and sink their teeth into your flesh. Burning pain of poison flashes through your system before your body seizes up. You're only regret is that you never followed through with working on LinkedIn Adventure.";
-	decrease the score by 10000.;
-	say "[paragraph break] *** YOU DIED ***";
-	end the story.
-
-
-The maximum score is 20.
-
-Instead of searching Around in Enlightenment:
-	if the delicious taco is undescribed
-	begin;
-		now the delicious taco is described.;
-		say "You find a delicious taco.";
-		increase the score by 10;
-	otherwise;
-		say "You find no additional tacos.";
-	end if.
-
-Instead of going to The Darkness from Enlightenment:
-	if backtrack of enlightenment is "No"
-	begin;
-		say "Why would you ever want to go back to that empty void? This place is much better. Look, over there is a puppy! [paragraph break]Ok, so there wasn't really a puppy, but you can imagine one. I bet if you search around long enough you'll find a taco. Mmm, tacos. There's no tacos in the dark place. Better to stay here.";
-		now backtrack of Enlightenment is "Yes";
-	otherwise;
-		 say "You still don't want to go that way" instead.;
-	end if;
-
-Instead of taking the delicious taco:
-	if the delicious taco is undescribed, say "What taco? Man, don't you wish there were a taco here?".;
-	otherwise continue the action.
-
-After eating the delicious taco:
-	say "You now have no more taco which is a sad thing.";
-	decrease the score by 5.
-
 Book 2 The World
-
-Part 1 Online
-
-Chapter 1 LinkedIn
-
-The LinkedIn Homepage is a room.
-The LinkedIn Homepage is in The Online Area.
-The exit button is a link.
-The exit button is west of the Login Screen.
-Through it is the Holding Area.
-
-Carry out going to the Holding Area:
-	move the player to the before login of the player.
-
-The logout button is a link.
-The logout button is south of the LinkedIn Homepage.
-Through it is the Login Screen.
-
-A soft taco is in the LinkedIn Homepage.
-The taco is edible.
-The description of the taco is "This taco is made of tasty meat and cheese with a tortilla curled around it."
 
 Part 2 Real World
 
@@ -508,13 +243,13 @@ after quizzing the receptionist about a badge for the first time:
 	say "The receptionist asks 'Do I know you?  We're not even connected on LinkedIn.'".
 
 after quizzing the receptionist about a badge:
-if the player is connected to the receptionist
+[if the player is connected to the receptionist TODO: REMOVE CONNECTING
 begin;
 say "The receptionist says 'I see we're connected on LinkedIn!  Let me get you a temp badge.  Please look at the webcam.'".;
 now a webcam is on.;
 otherwise;
 say "The receptionist looks at you sternly and says 'Look, I don't give badges out to just anyone.  Either we're connected on linkedin it or we're not.'".;
-end if.
+end if.]
 after quizzing the receptionist about the water cooler:
 say "The receptionist says 'Yeah, the water's free.  Help yourself.".
 [end get the badge]
@@ -584,14 +319,11 @@ The office computer is a device.
 The chair is in the Office.
 The Dingy Desk, office computer, and chair is scenery.
 
-Carry out switching on the office computer: move the player to the Login Screen.
-
 The Bathroom is a room. "This bathroom hasn't been cleaned in years."
 The Bathroom is east of the Office.
 
 The Graveyard is a room. "This small patch of overgrown land has a series of well worn stone markers indicating the final resting place of many failed projects."
 A shiny gravestone is in the Graveyard.
-The description of the shiny gravestone is "R.I.P. [Player's full name]".
 A damaged gravestone is in the Graveyard.
 The description of the damaged gravestone is "This stone appears to have bullet holes and what looks like scratches made from some sort of pick or axe. In faded letters you can make out only a single word: Leo".
 The Graveyard is south of the Office.
