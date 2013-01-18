@@ -11,133 +11,133 @@
     </dict>
     <key>1</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>16</integer>
+        <key>Line</key><integer>18</integer>
         <key>Title</key><string>Book 1 Setting up the World</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>2</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>18</integer>
+        <key>Line</key><integer>20</integer>
         <key>Title</key><string>Part 1 Making new Kinds</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>3</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>20</integer>
+        <key>Line</key><integer>22</integer>
         <key>Title</key><string>Chapter 1 Stuff</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>4</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>24</integer>
+        <key>Line</key><integer>26</integer>
         <key>Title</key><string>Section 2 Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>5</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>112</integer>
+        <key>Line</key><integer>114</integer>
         <key>Title</key><string>Chapter 3 Look and Feel</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>6</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>114</integer>
+        <key>Line</key><integer>116</integer>
         <key>Title</key><string>Section 1 Colors</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>128</integer>
+        <key>Line</key><integer>130</integer>
         <key>Title</key><string>Section 2</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>135</integer>
+        <key>Line</key><integer>137</integer>
         <key>Title</key><string>Chapter 4 Making fun Actions</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>137</integer>
+        <key>Line</key><integer>139</integer>
         <key>Title</key><string>Section 1 Some actions</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>157</integer>
+        <key>Line</key><integer>159</integer>
         <key>Title</key><string>Section 2 High Fives</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>182</integer>
+        <key>Line</key><integer>184</integer>
         <key>Title</key><string>Chapter 5 Modifying Current Things</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>186</integer>
+        <key>Line</key><integer>188</integer>
         <key>Title</key><string>Book 2 The World</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>188</integer>
+        <key>Line</key><integer>190</integer>
         <key>Title</key><string>Part 2 Real World</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>190</integer>
+        <key>Line</key><integer>192</integer>
         <key>Title</key><string>Chapter 1 Office Building</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>192</integer>
+        <key>Line</key><integer>194</integer>
         <key>Title</key><string>Section 1 Reception Area</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>278</integer>
+        <key>Line</key><integer>280</integer>
         <key>Title</key><string>Section 2 Fancy Hallway</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>312</integer>
-        <key>Title</key><string>Section 3 Holding Area</string>
+        <key>Line</key><integer>317</integer>
+        <key>Title</key><string>Section 3 CFO Office</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>341</integer>
+        <key>Line</key><integer>351</integer>
         <key>Title</key><string>Section 4 Elevator</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/Users/cmiller/Projects/linkedin_adventure/LinkedInAdventure.inform/Source/story.ni</string>
-        <key>Line</key><integer>376</integer>
+        <key>Line</key><integer>386</integer>
         <key>Title</key><string>Section 6 The Basement</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
@@ -1172,55 +1172,90 @@
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>167</key><dict>
+        <key>Filename</key><string>/Users/cmiller/Library/Inform/Extensions/krister fundin/hidden items.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 2 of Hidden Items by Krister Fundin begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>168</key><dict>
+        <key>Filename</key><string>/Users/cmiller/Library/Inform/Extensions/krister fundin/hidden items.i7x</string>
+        <key>Line</key><integer>5</integer>
+        <key>Title</key><string>Chapter 1 - Properties and attributes</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>169</key><dict>
+        <key>Filename</key><string>/Users/cmiller/Library/Inform/Extensions/krister fundin/hidden items.i7x</string>
+        <key>Line</key><integer>11</integer>
+        <key>Title</key><string>Chapter 2 - Floating objects - Unindexed</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>170</key><dict>
+        <key>Filename</key><string>/Users/cmiller/Library/Inform/Extensions/krister fundin/hidden items.i7x</string>
+        <key>Line</key><integer>26</integer>
+        <key>Title</key><string>Chapter 3 - Removing initially hidden objects from play</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>171</key><dict>
+        <key>Filename</key><string>/Users/cmiller/Library/Inform/Extensions/krister fundin/hidden items.i7x</string>
+        <key>Line</key><integer>32</integer>
+        <key>Title</key><string>Chapter 4 - Hiding and revealing</string>
+        <key>Level</key><integer>4</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>172</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/eric eve/epistemology.i7x</string>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>Version 6 of Epistemology by Eric Eve begins here</string>
         <key>Level</key><integer>0</integer>
         <key>Indentation</key><integer>0</integer>
     </dict>
-    <key>168</key><dict>
+    <key>173</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/eric eve/epistemology.i7x</string>
         <key>Line</key><integer>5</integer>
         <key>Title</key><string>Book 1 - Sight</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>169</key><dict>
+    <key>174</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/eric eve/epistemology.i7x</string>
         <key>Line</key><integer>27</integer>
         <key>Title</key><string>Book 2 - Familiarity</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>170</key><dict>
+    <key>175</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/eric eve/epistemology.i7x</string>
         <key>Line</key><integer>29</integer>
         <key>Title</key><string>Chapter 1 - Basic Familiarity</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>171</key><dict>
+    <key>176</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/eric eve/epistemology.i7x</string>
         <key>Line</key><integer>41</integer>
         <key>Title</key><string>Chapter 2 - Subject (for use without Threaded Conversation by Emily Short)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>172</key><dict>
+    <key>177</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/eric eve/epistemology.i7x</string>
         <key>Line</key><integer>46</integer>
         <key>Title</key><string>Chapter 3 - Familiarity of Subjects</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
-    <key>173</key><dict>
+    <key>178</key><dict>
         <key>Filename</key><string>/Applications/Inform.app/Contents/Resources/Inform7/Extensions/eric eve/epistemology.i7x</string>
         <key>Line</key><integer>52</integer>
         <key>Title</key><string>Book 3 - Testing commands - not for release</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
-    <key>174</key><dict>
+    <key>179</key><dict>
         <key>Line</key><integer>1</integer>
         <key>Title</key><string>scene understood is a scene which varies</string>
         <key>Level</key><integer>0</integer>
