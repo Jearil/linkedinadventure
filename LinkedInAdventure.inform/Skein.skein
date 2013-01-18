@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0x8522e30" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0xa44d940" />
+  <activeNode nodeId="node-0x18dd470" />
   <item nodeId="node-0x8522e30">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -16,28 +16,149 @@ Please press SPACE to continue.
 </result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="42">NO</temporary>
+    <temporary score="56">NO</temporary>
     <children>
       <child nodeId="node-0x8522ed0" />
       <child nodeId="node-0x8522e80" />
+      <child nodeId="node-0xb8dc4d0" />
     </children>
   </item>
-  <item nodeId="node-0x8522e80">
+  <item nodeId="node-0xb8dc4d0">
+    <command xml:space="preserve">e</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0xed93920" />
+    </children>
+  </item>
+  <item nodeId="node-0xed93920">
     <command xml:space="preserve"> </command>
     <result xml:space="preserve">
-Reception Area
-You are standing in the middle of a large room with vaulted ceilings. The walls are painted a pleasing shade of blue and decorated with a multitude of posters. The company logo on the wall boldy reads: &quot;Qwerty Fizzbuzz&quot;. There is a half-empty water cooler in the corner and a few chairs strewn about. The receptionist is sitting at a large desk and is working on her computer..
+Fancy Hallway
+This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. The hallway continues to the east.
 
-On the Large Desk is a bowl of candy (in which is a piece of candy).
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0xa45b040" />
+    </children>
+  </item>
+  <item nodeId="node-0xa45b040">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+End Of The Hallway
+The hallway ends at a large mahogany door. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned.
 
-On the water cooler is an empty cup.
+On the janitor cart are rags, some chemicals, brushes and a garbage can (empty).
 
-You can also see a Glass Door and a Receptionist here.
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0xb7e21c0" />
+      <child nodeId="node-0xa4527f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xa4527f0">
+    <command xml:space="preserve">l cart</command>
+    <result xml:space="preserve">The Janitor Cart has some rags, various chemicals, some brushes, and a garbage can on it.
+
+On the janitor cart are rags, some chemicals, brushes and a garbage can (empty).
+
+You also see some janitor keys on the cart.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="42">YES</temporary>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0xfd920e0" />
+    </children>
+  </item>
+  <item nodeId="node-0xfd920e0">
+    <command xml:space="preserve">get keys</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0x85386f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x85386f0">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">(with the janitor keys)
+You unlock the mahogany door.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0xfda4c50" />
+    </children>
+  </item>
+  <item nodeId="node-0xfda4c50">
+    <command xml:space="preserve">go door</command>
+    <result xml:space="preserve">(first opening the mahogany door)
+
+The Office of the CFO
+This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the wall.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0xfd39e90" />
+    </children>
+  </item>
+  <item nodeId="node-0xfd39e90">
+    <command xml:space="preserve">l computer</command>
+    <result xml:space="preserve">The computer screen has a prompt for a password on it.
+
+Password? &gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="56">YES</temporary>
+    <children>
+      <child nodeId="node-0x18dd470" />
+    </children>
+  </item>
+  <item nodeId="node-0x18dd470">
+    <command xml:space="preserve">hi</command>
+    <result xml:space="preserve">There&apos;s no one here but you.
+
+Password? &gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="55">YES</temporary>
+  </item>
+  <item nodeId="node-0xb7e21c0">
+    <command xml:space="preserve">l nameplate</command>
+    <result xml:space="preserve">The nameplate reads &quot;Maximillion Warbucks - CFO&quot;.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="45">YES</temporary>
+  </item>
+  <item nodeId="node-0x8522e80">
+    <command xml:space="preserve"> </command>
+    <result xml:space="preserve">
+Fancy Hallway
+This hallway is really fancy. You&apos;re not sure you&apos;re dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. The hallway continues to the east.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="46">YES</temporary>
     <children>
       <child nodeId="node-0xa44b1d0" />
       <child nodeId="node-0x180ba70" />

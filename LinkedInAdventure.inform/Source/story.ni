@@ -316,9 +316,38 @@ The janitor keys unlocks the mahogany door.
 
 Section 3 CFO Office
 
-The Office of the CFO is a room.
+The Office of the CFO is a room. "This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the wall."
+The carpet is in the Office of the CFO.
+The description of the carpet is "This red carpet is rich and plush. The color is unsettling, as you are reminded of blood just by looking at it."
+The carpet is scenery.
+The fixtures are in the Offie of the CFO.
+The fixtures are scenery.
+The mahogany desk is in the Office of the CFO.
+The mahogany desk is scenery.
+A slim silver computer is on the mahogany desk.
+The slim silver computer is scenery.
+A password protected computer is kind of thing.
+A password protected computer can be protected or unprotected.
+A password protected computer is usually protected.
+A slim silver computer is a password protected computer.
+Filing cabinets are in the Office of the CFO.
+Filing cabinets are scenery.
+Filing cabinets are a container.
+The description of the filing cabinets is "A series of metal cabinets that most likely contain a lot of paper files."
+The filing cabinets are lockable and locked.
+
+Instead of examining the slim silver computer:
+	if the slim silver computer is protected
+	begin;
+		Say "The computer screen has a prompt for a password on it.";
+		now the command prompt is "Password? >";
+	otherwise;
+		Say "Computer description here.";
+	end if.
+
 	
 
+Section 11 Grue
 [High Five Area]
 
 The High Five Zone is a room.  "You are in the high five zone of the fancy hallway.  Apart from the standard fancy here is a poster with the title 'High Fives Saves Lives' on the wall.  A few feet away from you is a Grue with his hand up looking at you expectantly.".
