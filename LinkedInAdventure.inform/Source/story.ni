@@ -24,6 +24,7 @@ Understand "kick [something]" as attacking.
 
 Section 2 Rules
 
+Understand "ls" as looking.
 Understand "head [direction]" as going.
  
 [ the cup ]
@@ -106,6 +107,7 @@ Instead of examining a webcam:
 		now a webcam is off.;
 		say "The receptionist hands you a badge.".;
 		now the player is carrying a badge.;
+		increase the score by 5;
 	otherwise;
 		continue the action.;
 	end if.
@@ -129,7 +131,7 @@ To leave space:
 Section 2
 
 When play begins:
-	say "It's a new day, much like any other day at Frobozz Industries. It's 8:55am and you are mildly delirious from lack of sleep. You spent the previous evening waiting in line to get a new phone, which is quite possibly the most interesting thing to have happened since the last time you got a new phone. You idly wonder if you can convince your boss to expense it as you glance down at it in your hand, feeling very clever for getting the LinkedIn app so you can have a reason to use it at work. Or, at least you can pretend to be while you're surreptitiously tending your virtual garden during the staff meeting. [paragraph break]".;
+	say "The streetlights cast a harsh glow on the shiny façade of the Qwerty Fizzbuzz company headquarters. You have no idea what they do—some fancy new telecommunications thing you saw on a billboard somewhere. You're only here because of your new client, Darwen Straus, some hotshot who just got thrown under the bus by his employers. 'Indefinite administrative leave', they called it. Something seems fishy. You've been in the private investigation business long enough to know that sometimes you put two and two together and get four…and sometimes you get twenty-two. It's time to get some answers.   [paragraph break]".;
 	pause the game.
 
 
@@ -244,10 +246,29 @@ after quizzing the receptionist about the glass door:
 	say "The receptionist says 'You'll need a badge to get in'".
 after quizzing the receptionist about the card reader:
 	say "The receptionist says 'You need a badge to use the card reader'".
+	
 after quizzing the receptionist about a badge for the first time:
-	say "The receptionist asks 'Of course, a badge.  Who are you meeting with?".
+	if the receptionist carries the badge and the webcam is not on
+	begin;
+		say "The receptionist asks 'Of course, a badge.  Who are you meeting with?'";
+		now the command prompt is "Person's name>";
+	otherwise if the webcam is on;
+		say "The receptionist says 'look into the webcam to get your badge'";
+	otherwise;
+		say "The receptionist says 'You already have a badge. What more do you want?'";
+	end if.
+	
 after quizzing the receptionist about a badge:
-	say "The receptionist narrows her eyes at you and says 'Yes, yes a badge already.  You're clearly not just loitering around our reception area so you must have a meeting.  Who are you meeting?".
+	if the receptionist carries the badge and the webcam is not on
+	begin;
+		say "The receptionist narrows her eyes at you and says 'Yes, yes a badge already.  You're clearly not just loitering around our reception area so you must have a meeting.  Who are you meeting?";
+		now the command prompt is "Person's name>";
+	otherwise if the webcam is on;
+		say "The receptionist says 'look into the webcam to get your badge'";
+	otherwise;
+		say "The receptionist says 'You already have a badge. What more do you want?'";
+	end if.
+	
 after telling the receptionist about "Maximillion Warbucks":
 	say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
 	now a webcam is on.
@@ -258,6 +279,24 @@ after telling the receptionist about "Darwen Straus":
 	say "The receptionist gives you a once over followed by the evil eye and says 'He's not here right now.  Are you meeting with someone else?".;
 	now a webcam is off.
 
+After reading a command when the command prompt is "Person's name>":
+	if the player's command matches "max"
+	begin;
+		say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+		now a webcam is on;
+		now the command prompt is ">";
+	otherwise if the player's command matches "marge";
+		say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+		now a webcam is on;
+		now the command prompt is ">";
+	otherwise if the player's command matches "Darwen";
+		say "The receptionist gives you a once over followed by the evil eye and says 'He's not here right now.";
+		now the command prompt is ">";
+	otherwise;
+		say "The receptionist looks at you confused and says 'I don't think they work here.'";
+		now the command prompt is ">";
+	end if;
+	reject the player's command.
 
 after quizzing the receptionist about the water cooler:
 say "The receptionist says 'Yeah, the water's free.  Help yourself.".
@@ -289,9 +328,9 @@ Instead of licking the water cooler:
 
 Section 2 Fancy Hallway
 
-The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. The hallway continues to the east."
+The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. An elevator rests in the southern wall. The hallway continues to the east."
 
-The End Of The Hallway is a room. "The hallway ends at a large mahogany door. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned."
+The End Of The Hallway is a room. "The hallway ends at a large mahogany door on the eastern wall. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned. The rest of the hallway is to the west."
 The End Of The Hallway is east of The Fancy Hallway.
 the nameplate is in The End Of The Hallway.
 the nameplate is scenery.
@@ -325,7 +364,7 @@ the janitor keys unlocks the mahogany door.
 
 Section 3 CFO Office
 
-The Office of the CFO is a room. "This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the wall.".
+The Office of the CFO is a room. "This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the south wall. A large mahagony door is set in the west wall.".
 the carpet is in the Office of the CFO.
 the description of the carpet is "This red carpet is rich and plush. The color is unsettling, as you are reminded of blood just by looking at it.".
 the carpet is scenery.
@@ -362,7 +401,7 @@ Instead of examining the slim silver computer:
 		Say "From: Dr. Edward Drolkrad <edrolkrad@qwertyfizzbuzz.com>[line break]";
 		Say "Subject: Supplies[paragraph break]";
 		Say "Mr. Warbucks,[paragraph break]";
-		Say "Supplies are running low in cage. We need more moxie. The damage that Darwin caused is setting us back pretty far. He should be taken care of. ";
+		Say "Supplies are running low in cage. The damage that Darwin caused is setting us back pretty far. He should be taken care of. ";
 		Say "I'll work with Marge to handle that. The next set of results is waiting for you in the drop box in the basement.[paragraph break]";
 		Say "Sincerely,[line break]";
 		Say "Dr. Drolkrad";
@@ -406,7 +445,7 @@ The Up Button is not openable.
 The Up Button is scenery.
 Up Button is above The Elevator.
 Through it is The Fancy Hallway.
-The Elevator is below The Fancy Hallway.
+The Elevator is south of The Fancy Hallway.
 Dance Button is in The Elevator.
 The Dance Button is scenery.
 
@@ -433,7 +472,7 @@ Instead of examining the terminal:
 After reading a command when the command prompt is "Authorization code>":
 	if the player's command matches "moxie":
 		reveal A Secret Door;
-		say "A panel on the back of the elevator slides away to reveal a sliding wooden door.";
+		say "A panel on the back of the elevator slides away to reveal a secret door.";
 		say "The terminal powers down.";
 		increase the score by 10;
 		now the command prompt is ">";
@@ -463,7 +502,7 @@ The rough stairway is below Top of Stairs and above The Basement.
 
 The Basement is a room. "A 10' by 10' concrete unfurnished room lies at the bottom of a set of stairs. In the eastern wall is a steel door with a push bar.".
 steel door is a door.
-The steel door is east of The Basement and west of The Break Room.
+The steel door is east of The Basement and west of The Breakroom.
 The description of the steel door is "A sturdy door made of steel which has a push bar across the middle."
 A push bar is part of the steel door.
 The description of the push bar is "It's a push bar. It's umm.. used to open a door. By.. you know.. pushing on it. This isn't really all that complicated.".
@@ -471,39 +510,40 @@ The description of the push bar is "It's a push bar. It's umm.. used to open a d
 Instead of pushing the push bar:
 	say "You push on the bar, fulfilling it's ultimate purpose";
 	increase the score by 5;
-	move the player to The Break Room.
+	move the player to The Breakroom.
 
-After going to The Break Room for the first time:
+After going to The Breakroom for the first time:
 	say "There's an audible click as the steel door locks behind you.";
 	now the steel door is locked.
 
 Section 6 The Breakroom
 
-The Breakroom is a room. "This is a break room".
-
-The High Five Zone is south of The Breakroom.
-	
+The Breakroom is a room. "This room is dimly lit and smells of fear and desperation. The place is furnished with a sofa, numerous arm chairs, and some video games from a by-gone era. A pile of National Geographic magazines from 15 years ago are piled on a table in the center of the room. A hallway to the north seems to lead to a kitchen. To passage to the south has a red ominous glow. To the east you hear the sounds of typing".
+The sofa is in the Breakroom.
+The sofa is scenery.
+numerous arm chairs are in the Breakroom.
+the arm chairs are scenery.
+video games are in the Breakroom.
+video games are scenery.
+Some magazines are in the Breakroom.
+The magazines are scenery.
+The Kitchen is north of The Breakroom.
+Cubopolous is east of The Breakroom.
+The Server Racks is south of The Breakroom
 
 Section 7 Grue
 [High Five Area]
 
-The High Five Zone is a room.  "You are in the high five zone of the fancy hallway.  Apart from the standard fancy here is a poster with the title 'High Fives Saves Lives' on the wall.  A few feet away from you is a Grue with his hand up looking at you expectantly.".
-The high five poster is in the High Five Zone.
-The high five poster is scenery.
-The description of the high five poster is "This poster has 'High Fives Saves Lives in huge letter.  Under the title are detailed instructions on how to give a high five.  There is a small mention about high fiving Grues but most of it is blacked out by black marker.".
-The Grue is in the High Five Zone.
-The description of the Grue is "Your standard Grue is standing in the High Five Zone[if the grue is sad] with his arm raised and hand open[end if].  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
+The Server Racks is a room.  "You are in a room full of computer servers. The noise is deafening and the heat almost unbearable. A huge mainframe sits in the center of the room with wires coming out and snaking along the floor like streams of life. At the far end of the room is a circular door with a bright red exit sign on it. Standing in front of the door with a hand raised, palm out in front of you is a Grue. To the north is the breakroom.".
+The circular door is a door.
+The circular door is scenery.
+The circular door is south of The Server Racks and north of Fin.
+The circular door is lockable and locked.
+The Grue is in the Server Racks.
+The description of the Grue is "Your standard Grue is standing in the Server Racks[if the grue is sad] with his arm raised and hand open[end if].  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
 The Grue is a person.
 
 [High five rules for grue]
-
-Before going from The High Five Zone:
-	if the grue is sad
-	begin;
-		say "The grue is offended that you left him hanging. [paragraph break]You were eaten by a Grue.";
-		decrease the score by 5;
-		end the story.;
-	end if.
 
 Check High Fiving:
 	if the grue is happy and the noun is the grue
@@ -512,7 +552,22 @@ Check High Fiving:
 		end the story.;
 	end if.
 
+After High Fiving:
+	if the noun is the grue
+	begin;
+		say "After a nod indicating that he knows your true intention, the Grue turns around and presses a few buttons on a secret panel next to the circular door. After a moment you notice steel bars retract and the door unlocks.";
+		now the circular door is unlocked;
+	end if.
+		
+
 [End High Five Area]
+
+Section 8 The End
+
+Fin is a room. "This is the end."
+
+Instead of entering Fin:
+	end the story finally saying "You have completed the story".
 
 
 [rules for cube]
