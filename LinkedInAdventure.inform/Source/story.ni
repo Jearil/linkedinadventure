@@ -461,7 +461,7 @@ Instead of examining the terminal:
 After reading a command when the command prompt is "Authorization code>":
 	if the player's command matches "moxie":
 		reveal A Secret Door;
-		say "A panel on the back of the elevator slides away to reveal a sliding wooden door.";
+		say "A panel on the back of the elevator slides away to reveal a secret door.";
 		say "The terminal powers down.";
 		increase the score by 10;
 		now the command prompt is ">";
@@ -547,6 +547,9 @@ After High Fiving:
 Section 8 The End
 
 Fin is a room. "This is the end."
+
+Instead of entering Fin:
+	end the story finally saying "You have completed the story".
 
 
 [rules for cube]
