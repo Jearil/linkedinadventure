@@ -330,7 +330,7 @@ Section 2 Fancy Hallway
 
 The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. The hallway continues to the east."
 
-The End Of The Hallway is a room. "The hallway ends at a large mahogany door. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned."
+The End Of The Hallway is a room. "The hallway ends at a large mahogany door on the eastern wall. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned. The rest of the hallway is to the west."
 The End Of The Hallway is east of The Fancy Hallway.
 the nameplate is in The End Of The Hallway.
 the nameplate is scenery.
@@ -364,7 +364,7 @@ the janitor keys unlocks the mahogany door.
 
 Section 3 CFO Office
 
-The Office of the CFO is a room. "This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the wall.".
+The Office of the CFO is a room. "This office is large and spacious. The carpet is a deep red, while the walls are a pale tan. Soft yellow light emmits from the fixtures overhead. It features a broad mahogany desk with a slim silver computer off to one side. A series of filing cabinets lines the south wall. A large mahagony door is set in the west wall.".
 the carpet is in the Office of the CFO.
 the description of the carpet is "This red carpet is rich and plush. The color is unsettling, as you are reminded of blood just by looking at it.".
 the carpet is scenery.
