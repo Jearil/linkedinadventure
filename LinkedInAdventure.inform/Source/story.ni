@@ -328,7 +328,7 @@ Instead of licking the water cooler:
 
 Section 2 Fancy Hallway
 
-The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. The hallway continues to the east."
+The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. An elevator rests in the southern wall. The hallway continues to the east."
 
 The End Of The Hallway is a room. "The hallway ends at a large mahogany door on the eastern wall. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned. The rest of the hallway is to the west."
 The End Of The Hallway is east of The Fancy Hallway.
@@ -437,7 +437,7 @@ The Up Button is not openable.
 The Up Button is scenery.
 Up Button is above The Elevator.
 Through it is The Fancy Hallway.
-The Elevator is below The Fancy Hallway.
+The Elevator is south of The Fancy Hallway.
 Dance Button is in The Elevator.
 The Dance Button is scenery.
 
@@ -516,7 +516,7 @@ The Server Racks is south of The Breakroom
 Section 7 Grue
 [High Five Area]
 
-The Server Racks is a room.  "You are in a room full of computer servers. The noise is deafening and the heat almost unbearable. A huge mainframe sits in the center of the room with wires coming out and snaking along the floor like streams of life. At the far end of the room is a circular door with a bright red exit sign on it. Standing in front of the door with a hand raised, palm out in front of you is a Grue".
+The Server Racks is a room.  "You are in a room full of computer servers. The noise is deafening and the heat almost unbearable. A huge mainframe sits in the center of the room with wires coming out and snaking along the floor like streams of life. At the far end of the room is a circular door with a bright red exit sign on it. Standing in front of the door with a hand raised, palm out in front of you is a Grue. To the north is the breakroom.".
 The circular door is a door.
 The circular door is scenery.
 The circular door is south of The Server Racks and north of Fin.
