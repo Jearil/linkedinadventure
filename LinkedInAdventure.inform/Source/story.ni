@@ -131,7 +131,7 @@ To leave space:
 Section 2
 
 When play begins:
-	say "It's a new day, much like any other day at Frobozz Industries. It's 8:55am and you are mildly delirious from lack of sleep. You spent the previous evening waiting in line to get a new phone, which is quite possibly the most interesting thing to have happened since the last time you got a new phone. You idly wonder if you can convince your boss to expense it as you glance down at it in your hand, feeling very clever for getting the LinkedIn app so you can have a reason to use it at work. Or, at least you can pretend to be while you're surreptitiously tending your virtual garden during the staff meeting. [paragraph break]".;
+	say "The streetlights cast a harsh glow on the shiny façade of the Qwerty Fizzbuzz company headquarters. You have no idea what they do—some fancy new telecommunications thing you saw on a billboard somewhere. You're only here because of your new client, Darwen Straus, some hotshot who just got thrown under the bus by his employers. 'Indefinite administrative leave', they called it. Something seems fishy. You've been in the private investigation business long enough to know that sometimes you put two and two together and get four…and sometimes you get twenty-two. It's time to get some answers.   [paragraph break]".;
 	pause the game.
 
 
@@ -484,7 +484,7 @@ The rough stairway is below Top of Stairs and above The Basement.
 
 The Basement is a room. "A 10' by 10' concrete unfurnished room lies at the bottom of a set of stairs. In the eastern wall is a steel door with a push bar.".
 steel door is a door.
-The steel door is east of The Basement and west of The Break Room.
+The steel door is east of The Basement and west of The Breakroom.
 The description of the steel door is "A sturdy door made of steel which has a push bar across the middle."
 A push bar is part of the steel door.
 The description of the push bar is "It's a push bar. It's umm.. used to open a door. By.. you know.. pushing on it. This isn't really all that complicated.".
@@ -492,39 +492,40 @@ The description of the push bar is "It's a push bar. It's umm.. used to open a d
 Instead of pushing the push bar:
 	say "You push on the bar, fulfilling it's ultimate purpose";
 	increase the score by 5;
-	move the player to The Break Room.
+	move the player to The Breakroom.
 
-After going to The Break Room for the first time:
+After going to The Breakroom for the first time:
 	say "There's an audible click as the steel door locks behind you.";
 	now the steel door is locked.
 
 Section 6 The Breakroom
 
-The Breakroom is a room. "This is a break room".
-
-The High Five Zone is south of The Breakroom.
-	
+The Breakroom is a room. "This room is dimly lit and smells of fear and desperation. The place is furnished with a sofa, numerous arm chairs, and some video games from a by-gone era. A pile of National Geographic magazines from 15 years ago are piled on a table in the center of the room. A hallway to the north seems to lead to a kitchen. To passage to the south has a red ominous glow. To the east you hear the sounds of typing".
+The sofa is in the Breakroom.
+The sofa is scenery.
+numerous arm chairs are in the Breakroom.
+the arm chairs are scenery.
+video games are in the Breakroom.
+video games are scenery.
+Some magazines are in the Breakroom.
+The magazines are scenery.
+The Kitchen is north of The Breakroom.
+Cubopolous is east of The Breakroom.
+The Server Racks is south of The Breakroom
 
 Section 7 Grue
 [High Five Area]
 
-The High Five Zone is a room.  "You are in the high five zone of the fancy hallway.  Apart from the standard fancy here is a poster with the title 'High Fives Saves Lives' on the wall.  A few feet away from you is a Grue with his hand up looking at you expectantly.".
-The high five poster is in the High Five Zone.
-The high five poster is scenery.
-The description of the high five poster is "This poster has 'High Fives Saves Lives in huge letter.  Under the title are detailed instructions on how to give a high five.  There is a small mention about high fiving Grues but most of it is blacked out by black marker.".
-The Grue is in the High Five Zone.
-The description of the Grue is "Your standard Grue is standing in the High Five Zone[if the grue is sad] with his arm raised and hand open[end if].  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
+The Server Racks is a room.  "You are in a room full of computer servers. The noise is deafening and the heat almost unbearable. A huge mainframe sits in the center of the room with wires coming out and snaking along the floor like streams of life. At the far end of the room is a circular door with a bright red exit sign on it. Standing in front of the door with a hand raised, palm out in front of you is a Grue".
+The circular door is a door.
+The circular door is scenery.
+The circular door is south of The Server Racks and north of Fin.
+The circular door is lockable and locked.
+The Grue is in the Server Racks.
+The description of the Grue is "Your standard Grue is standing in the Server Racks[if the grue is sad] with his arm raised and hand open[end if].  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
 The Grue is a person.
 
 [High five rules for grue]
-
-Before going from The High Five Zone:
-	if the grue is sad
-	begin;
-		say "The grue is offended that you left him hanging. [paragraph break]You were eaten by a Grue.";
-		decrease the score by 5;
-		end the story.;
-	end if.
 
 Check High Fiving:
 	if the grue is happy and the noun is the grue
@@ -533,7 +534,19 @@ Check High Fiving:
 		end the story.;
 	end if.
 
+After High Fiving:
+	if the noun is the grue
+	begin;
+		say "After a nod indicating that he knows your true intention, the Grue turns around and presses a few buttons on a secret panel next to the circular door. After a moment you notice steel bars retract and the door unlocks.";
+		now the circular door is unlocked;
+	end if.
+		
+
 [End High Five Area]
+
+Section 8 The End
+
+Fin is a room. "This is the end."
 
 
 [rules for cube]
