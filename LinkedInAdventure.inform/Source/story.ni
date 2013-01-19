@@ -24,6 +24,7 @@ Understand "kick [something]" as attacking.
 
 Section 2 Rules
 
+Understand "ls" as looking.
 Understand "head [direction]" as going.
  
 [ the cup ]
@@ -106,6 +107,7 @@ Instead of examining a webcam:
 		now a webcam is off.;
 		say "The receptionist hands you a badge.".;
 		now the player is carrying a badge.;
+		increase the score by 5;
 	otherwise;
 		continue the action.;
 	end if.
@@ -244,10 +246,29 @@ after quizzing the receptionist about the glass door:
 	say "The receptionist says 'You'll need a badge to get in'".
 after quizzing the receptionist about the card reader:
 	say "The receptionist says 'You need a badge to use the card reader'".
+	
 after quizzing the receptionist about a badge for the first time:
-	say "The receptionist asks 'Of course, a badge.  Who are you meeting with?".
+	if the receptionist carries the badge and the webcam is not on
+	begin;
+		say "The receptionist asks 'Of course, a badge.  Who are you meeting with?'";
+		now the command prompt is "Person's name>";
+	otherwise if the webcam is on;
+		say "The receptionist says 'look into the webcam to get your badge'";
+	otherwise;
+		say "The receptionist says 'You already have a badge. What more do you want?'";
+	end if.
+	
 after quizzing the receptionist about a badge:
-	say "The receptionist narrows her eyes at you and says 'Yes, yes a badge already.  You're clearly not just loitering around our reception area so you must have a meeting.  Who are you meeting?".
+	if the receptionist carries the badge and the webcam is not on
+	begin;
+		say "The receptionist narrows her eyes at you and says 'Yes, yes a badge already.  You're clearly not just loitering around our reception area so you must have a meeting.  Who are you meeting?";
+		now the command prompt is "Person's name>";
+	otherwise if the webcam is on;
+		say "The receptionist says 'look into the webcam to get your badge'";
+	otherwise;
+		say "The receptionist says 'You already have a badge. What more do you want?'";
+	end if.
+	
 after telling the receptionist about "Maximillion Warbucks":
 	say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
 	now a webcam is on.
@@ -258,6 +279,24 @@ after telling the receptionist about "Darwen Straus":
 	say "The receptionist gives you a once over followed by the evil eye and says 'He's not here right now.  Are you meeting with someone else?".;
 	now a webcam is off.
 
+After reading a command when the command prompt is "Person's name>":
+	if the player's command matches "max"
+	begin;
+		say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+		now a webcam is on;
+		now the command prompt is ">";
+	otherwise if the player's command matches "marge";
+		say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+		now a webcam is on;
+		now the command prompt is ">";
+	otherwise if the player's command matches "Darwen";
+		say "The receptionist gives you a once over followed by the evil eye and says 'He's not here right now.";
+		now the command prompt is ">";
+	otherwise;
+		say "The receptionist looks at you confused and says 'I don't think they work here.'";
+		now the command prompt is ">";
+	end if;
+	reject the player's command.
 
 after quizzing the receptionist about the water cooler:
 say "The receptionist says 'Yeah, the water's free.  Help yourself.".
