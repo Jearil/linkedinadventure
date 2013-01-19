@@ -378,7 +378,15 @@ After reading a command when the command prompt is "Password? >":
 	otherwise:
 		say "Incorrect!";
 		now the command prompt is ">";
+		increase  the CFOpasscount by 1.;
+		if the CFOpasscount is 3:
+			say "Password hint: What is the thing I like the most in the world?".;
+		if the CFOpasscount is 6:
+			say "Password hint: Check out Linkedin.com".;
 	reject the player's command.
+
+The CFOpasscount is a number which varies.
+The CFOpasscount is 0.
 
 
 Section 4 Elevator
@@ -410,6 +418,9 @@ the terminal is in The Elevator.
 the terminal is fixed in place.
 the terminal is hidden.
 
+The authCount is a number that varies.
+The authCount is 0.
+
 Instead of examining the terminal:
 	if A Secret Door is hidden
 	begin;
@@ -429,6 +440,13 @@ After reading a command when the command prompt is "Authorization code>":
 	otherwise:
 		say "Access Denied!"; [fail 3 times message?]
 		now the command prompt is ">";
+		increase the authCount by 1.;
+		if the authCount is 3:
+			say "Authorization failsafe: We need more resources.".;
+		if the authCount is 6:
+			say "Authorization failsafe: Only Authorized personel should have access.  This currently includes the CEO, CFO and Technical Consultant.".;
+		if the authCount is 9:
+			say "Authorization failsafe: Please verify your email for any updated codes.".;
 	reject the player's command.
 
 Section 5 The Basement
