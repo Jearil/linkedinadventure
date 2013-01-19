@@ -421,6 +421,10 @@ After reading a command when the command prompt is "Password? >":
 		if the CFOpasscount is 3:
 			say "Password hint: What is the thing I like the most in the world?".;
 		if the CFOpasscount is 6:
+			say "Password hint: Sleep on it!".;
+		if the CFOpasscount is 9:
+			say "Password hint: It's the only thing worth making.".;
+		if the CFOpasscount is 12:
 			say "Password hint: Check out Linkedin.com".;
 	reject the player's command.
 
@@ -481,11 +485,13 @@ After reading a command when the command prompt is "Authorization code>":
 		now the command prompt is ">";
 		increase the authCount by 1.;
 		if the authCount is 3:
-			say "Authorization failsafe: We need more resources.".;
+			say "Authorization failsafe: Do you have it?".;
 		if the authCount is 6:
-			say "Authorization failsafe: Only Authorized personel should have access.  This currently includes the CEO, CFO and Technical Consultant.".;
+			say "Authorization failsafe: Bring the Spirit!".;
 		if the authCount is 9:
-			say "Authorization failsafe: Please verify your email for any updated codes.".;
+			say "Authorization failsafe: Company motto.".;
+		if the authCount is 15:
+			say "Authorization failsafe: LinkedIn is your friend!".;
 	reject the player's command.
 
 Section 5 The Basement
