@@ -401,7 +401,7 @@ Instead of examining the slim silver computer:
 		Say "From: Dr. Edward Drolkrad <edrolkrad@qwertyfizzbuzz.com>[line break]";
 		Say "Subject: Supplies[paragraph break]";
 		Say "Mr. Warbucks,[paragraph break]";
-		Say "Supplies are running low in cage. We need more moxie. The damage that Darwin caused is setting us back pretty far. He should be taken care of. ";
+		Say "Supplies are running low in cage. The damage that Darwin caused is setting us back pretty far. He should be taken care of. ";
 		Say "I'll work with Marge to handle that. The next set of results is waiting for you in the drop box in the basement.[paragraph break]";
 		Say "Sincerely,[line break]";
 		Say "Dr. Drolkrad";
