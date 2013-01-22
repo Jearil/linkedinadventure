@@ -232,7 +232,7 @@ The receptionist is carrying the badge.
 
 
 After saying hello to the receptionist for the first time:
-say "The receptionist looks at you, puts on a giant fake smile and says 'Hello and welcome to Qwerty Fizzbuzz, how may I help you?'".
+say "The receptionist looks at you, puts on a giant fake smile and says 'Hello and welcome to Qwerty Fizzbuzz. If you need a visitor badge please let me know. How may I help you?'".
 After saying hello to the receptionist:
 say "The receptionist makes a soft sighing sound before saying 'Yes?'.  She looks a little irritated.".
 
@@ -421,10 +421,6 @@ After reading a command when the command prompt is "Password? >":
 		if the CFOpasscount is 3:
 			say "Password hint: What is the thing I like the most in the world?".;
 		if the CFOpasscount is 6:
-			say "Password hint: Sleep on it!".;
-		if the CFOpasscount is 9:
-			say "Password hint: It's the only thing worth making.".;
-		if the CFOpasscount is 12:
 			say "Password hint: Check out Linkedin.com".;
 	reject the player's command.
 
@@ -485,13 +481,11 @@ After reading a command when the command prompt is "Authorization code>":
 		now the command prompt is ">";
 		increase the authCount by 1.;
 		if the authCount is 3:
-			say "Authorization failsafe: Do you have it?".;
+			say "Authorization failsafe: We need more resources.".;
 		if the authCount is 6:
-			say "Authorization failsafe: Bring the Spirit!".;
+			say "Authorization failsafe: Only Authorized personel should have access.  This currently includes the CEO, CFO and Technical Consultant.".;
 		if the authCount is 9:
-			say "Authorization failsafe: Company motto.".;
-		if the authCount is 15:
-			say "Authorization failsafe: LinkedIn is your friend!".;
+			say "Authorization failsafe: Please verify your email for any updated codes.".;
 	reject the player's command.
 
 Section 5 The Basement
@@ -519,7 +513,9 @@ Instead of pushing the push bar:
 	move the player to The Breakroom.
 
 After going to The Breakroom for the first time:
-	say "There's an audible click as the steel door locks behind you.";
+	say "You enter the sub-basement and notice a faint mechanical whirring noise. Somethings clicks, and you hear a dull metallic thud behind you. You're blinded by a bright light as a monitor blinks on in front of you. As you adjust to the sudden light, you see an oddly familiar face. Darwen?[paragraph break]";
+	say "'Excellent! You passed with flying colors.' He steps back from the camera a bit, and waves dismissively. 'Pardon the ruse. This was your...um...interview, in a manner of speaking. It's a little unorthodox, I know, but you know how hard it is to find qualified people.' He lowers his voice to a stage whisper. 'And how hard it is to keep 'em around.' He straightens up. 'But you won't need to concern yourself with that. We will simply keep you here as long as you're needed. Yes, we have a very important project for you to work on. Once you help us complete it, there are a few...oh...options we can discuss for your next steps? Sound good?' He smiles and nods to himself, as if answering his own question. The screen goes black and the room returns to silence.";
+	pause the game;
 	now the steel door is locked.
 
 Section 6 The Breakroom
