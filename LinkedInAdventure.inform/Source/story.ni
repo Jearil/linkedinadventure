@@ -13,7 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
-The maximum score is 65.
+The maximum score is 76.
 
 Book 1 Setting up the World
 
@@ -104,7 +104,7 @@ a webdevice is usually off.
 Instead of examining a webcam:
 	if the webcam is on
 	begin;
-		say "The receptionist says 'Smile!  Ok, that's good.' and the printer starts printing before you have a chance to actually smile.".;
+		say "The receptionist says 'Smile!  Ok, that's good.' and the printer starts printing before you have a chance to actually smile. 'swipe this at the card reader to get in' the receptionist says.".;
 		now a webcam is off.;
 		say "The receptionist hands you a badge.".;
 		now the player is carrying a badge.;
@@ -310,7 +310,7 @@ After reading a command when the command prompt is "Person's name>":
 		now a webcam is on;
 		now the command prompt is ">";
 	otherwise if the player's command includes "marge";
-		say "'Ah, another one.' The receptionist chuckles lightly as she jots a note in the guest ledger. 'Good luck with your pitch.' Please look at the webcam.'".;
+		say "'Ah, another one.' The receptionist chuckles lightly as she jots a note in the guest ledger. 'Good luck with your pitch.' Please look at the webcam.".;
 		now a webcam is on;
 		now the command prompt is ">";
 	otherwise if the player's command includes "Darwen";
@@ -361,6 +361,12 @@ Instead of licking the water cooler:
 Section 2 Fancy Hallway
 
 The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. An elevator rests in the southern wall. The hallway continues to the east."
+
+A picture of people is in the Fancy Hallway.
+A picture of still life is in the Fancy Hallway.
+A picture of people and a picture of still life are scenery.
+The description of a picture of people is "Men and women in suits and business dresses sit at a large fancy table. Their eyes follow you as you move about the hallway. It's creepy.".
+The description of a picture of still life is "It's a portrait of a dead man composed of fruit and flowers. An interesting take on 'still life'.".
 
 The End Of The Hallway is a room. "The hallway ends at a large mahogany door on the eastern wall. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned. The rest of the hallway is to the west."
 The End Of The Hallway is east of The Fancy Hallway.
@@ -467,7 +473,8 @@ Elevator button is always open.
 
 The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are two glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'".
 the panel is in The Elevator. "A metal panel with buttons".
-The description of the panel is "A metal panel contains tow glowing buttons. One is labeled 'Up', while the other is mysteriously labled 'Dance'. Below these buttons is a small square hole about 1 inch on each side and one half inch deep.".
+The description of the panel is "A metal panel contains two glowing buttons. One is labeled 'Up', while the other is mysteriously labled 'Dance'. Below these buttons is a small square hole about 1 inch on each side and one half inch deep.".
+Understand "buttons" as panel.
 the square hole is on the panel.
 The square hole is a container.
 The square hole is scenery.
@@ -600,7 +607,7 @@ Instead of Licking the dishes:
 
 Section 8 Cubical Hell
 
-Cubical Hell is a room. "A maze of twisty cubicles that all look the same. It reminds you a of suberbia, but on a smaller scale. Just as soul draining however.".
+Cubical Hell is a room. "A maze of twisty cubicles that all look the same. It reminds you a of suberbia, but on a smaller scale. Just as soul draining however. To the west is the breakroom".
 A pointy haired manager is in Cubical Hell.
 A pointy haired manager is a man.
 The description of a pointy haired manager is "The pointy haired manager looks extremely busy, but after looking at him for a few moments you're pretty sure he's not actually doing much.".
