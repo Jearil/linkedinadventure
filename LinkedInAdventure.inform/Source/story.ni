@@ -13,7 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
-The maximum score is 65.
+The maximum score is 70.
 
 Book 1 Setting up the World
 
@@ -237,6 +237,11 @@ After saying hello to the receptionist for the first time:
 say "The receptionist looks at you, puts on a giant fake smile and says 'Hello and welcome to Qwerty Fizzbuzz. If you need a visitor badge please let me know. How may I help you?'".
 After saying hello to the receptionist:
 say "The receptionist makes a soft sighing sound before saying 'Yes?'.  She looks a little irritated.".
+
+default ask-tell response for the player:
+	say "You're talking ot yourself again.. Maybe you should try talking to someone else.".
+default ask-for response for the player:
+	say "You want to ask yourself for something? Maybe you should ask someone else.".
 
 After saying goodbye to the receptionist:
 	say "The receptionist goes back to her computer.".
@@ -669,5 +674,9 @@ Before going from The Elevator to The Fancy Hallway:
 Instead of pushing an elevator button:
 	try going the noun.
 
+Instead of pushing the Dance Button for the first time:
+	increase the score by 5;
+	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along.".
+	
 Instead of pushing the Dance Button:
 	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along."
