@@ -600,8 +600,19 @@ Section 8 Cubical Hell
 Cubical Hell is a room. "A maze of twisty cubicles that all look the same. It reminds you a of suberbia, but on a smaller scale. Just as soul draining however.".
 A pointy haired manager is in Cubical Hell.
 A pointy haired manager is a man.
+The description of a pointy haired manager is "The pointy haired manager looks extremely busy, but after looking at him for a few moments you're pretty sure he's not actually doing much.".
 A code monkey is in Cubical Hell.
 A code monkey is an animal.
+The description of a code monkey is "Glancing over the cubical walls you estimate that there are a thousand of these code monkeys.  They're all banging away at their typewriters, uh, keyboards.  This one in particular is sitting at a desk covered in empty Red Bull cans.".
+A filthy desk is scenery.
+The description of a monkey desk is "The code monkey's desk is covered in empty Red Bull cans.".
+An empty red bull can is scenery.
+The description of an empty red bull can is "The empty cans look sticky and gross.".
+Instead of giving the Red Bull to a code monkey:
+	say "The code monkey seems overjoyed as you give him the Red Bull.  He chugs it in one go and tosses the can in the pile.  He gives you a big toothy grin before returning to his computer.";
+	increase the score by 10;
+	remove Red Bull from play.
+	
 
 Section 9 Grue
 [High Five Area]
