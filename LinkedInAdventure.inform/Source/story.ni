@@ -13,7 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
-The maximum score is 38.
+The maximum score is 63.
 
 Book 1 Setting up the World
 
@@ -542,11 +542,7 @@ The description of the push bar is "It's a push bar. It's umm.. used to open a d
 Instead of pushing the push bar:
 	say "You push on the bar, fulfilling it's ultimate purpose";
 	increase the score by 5;
-	say "You enter the sub-basement and notice a faint mechanical whirring noise. Somethings clicks, and you hear a dull metallic thud behind you. You're blinded by a bright light as a monitor blinks on in front of you. As you adjust to the sudden light, you see an oddly familiar face. Darwen?[paragraph break]";
-	say "'Excellent! You passed with flying colors.' He steps back from the camera a bit, and waves dismissively. 'Pardon the ruse. This was your...um...interview, in a manner of speaking. It's a little unorthodox, I know, but you know how hard it is to find qualified people.' He lowers his voice to a stage whisper. 'And how hard it is to keep 'em around.' He straightens up. 'But you won't need to concern yourself with that. We will simply keep you here as long as you're needed. Yes, we have a very important project for you to work on. Once you help us complete it, there are a few...oh...options we can discuss for your next steps? Sound good?' He smiles and nods to himself, as if answering his own question. The screen goes black and the room returns to silence.";
-	pause the game;
-	now the steel door is locked;
-	move the player to The Breakroom.
+	try going east.
 
 After going to The Breakroom for the first time:
 	say "You enter the sub-basement and notice a faint mechanical whirring noise. Somethings clicks, and you hear a dull metallic thud behind you. You're blinded by a bright light as a monitor blinks on in front of you. As you adjust to the sudden light, you see an oddly familiar face. Darwen?[paragraph break]";
@@ -560,17 +556,54 @@ Section 6 The Breakroom
 The Breakroom is a room. "This room is dimly lit and smells of fear and desperation. The place is furnished with a sofa, numerous arm chairs, and some video games from a by-gone era. A pile of National Geographic magazines from 15 years ago are piled on a table in the center of the room. A hallway to the north seems to lead to a kitchen. To passage to the south has a red ominous glow. To the east you hear the sounds of typing".
 The sofa is in the Breakroom.
 The sofa is scenery.
+The description of the sofa is "Duct tape seems to be the primary material holding this couch together. You're not sure if it could even withstand the weight of a person any more.".
 numerous arm chairs are in the Breakroom.
 the arm chairs are scenery.
+The description of the arm chairs is "These chairs have seen better days. One is completely missing it's cushion and another has a spring poking out of the back.".
+The spring is a part of the arm chair.
+The description of the spring is "This hard spring would dig into the back of anyone foolish enough to try to sit in this chair. You're also pretty sure it would give you tetnus".
 video games are in the Breakroom.
 video games are scenery.
+The description of the video games is "The selection of games is pretty depressing. 'Deer Wresting', 'Portalis, the world of a million doors', and 'It's a Small Game: The Neverending game companion to the 'It's a small world' experience'.".
 Some magazines are in the Breakroom.
 The magazines are scenery.
+The description of the magazines is "Old issues of National Geographic lay on the coffee table. One of them depicts an image of an overly sad child in South America. You're starting to understand this child's pain."
 The Kitchen is north of The Breakroom.
-Cubopolous is east of The Breakroom.
+Cubical Hell is east of The Breakroom.
 The Server Racks is south of The Breakroom
 
-Section 7 Grue
+Section 7 Kitchen
+
+The Kitchen is a room. "Dishes line every surface of this small galley kitchen. Open pizza boxes sit on top of those dishes, their contents emptied like the entrails of an antelope after a lion attack. The smell is overwhelming. A stove which looks like it might be a fire hazard sits on the north wall. On the east wall is a small mini-fridge".
+A mini-fridge is in the kitchen.
+Understand "fridge" as mini-fridge.
+The mini-fridge is scenery.
+The mini-fridge is a container.
+The mini-fridge is openable and closed.
+Red Bull is in the mini-fridge.
+Instead of drinking the Red Bull:
+	say "Delicious. You feel strength and vitality (or at least a buzz) running through you.";
+	increase the score by 5;
+	remove Red Bull from play.
+The description of the Red Bull is "A red and blue can, most prized among office workers.".
+	
+The description of the mini-fridge is "A small mini refrigerator stands in the corner, it's handle having been worn down by years of use. Still, it hums away performing it's chilling duty.".
+The stove is in the kitchen.
+the stove is scenery.
+Dishes are in the kitchen.
+Dishes are scenery.
+The description of the dishes is "Disgusting. You want to be no where near these things.".
+
+
+Section 8 Cubical Hell
+
+Cubical Hell is a room. "A maze of twisty cubicles that all look the same. It reminds you a of suberbia, but on a smaller scale. Just as soul draining however.".
+A pointy haired manager is in Cubical Hell.
+A pointy haired manager is a man.
+A code monkey is in Cubical Hell.
+A code monkey is an animal.
+
+Section 9 Grue
 [High Five Area]
 
 The Server Racks is a room.  "You are in a room full of computer servers. The noise is deafening and the heat almost unbearable. A huge mainframe sits in the center of the room with wires coming out and snaking along the floor like streams of life. At the far end of the room is a circular door with a bright red exit sign on it. Standing in front of the door with a hand raised, palm out in front of you is a Grue. To the north is the breakroom.".
@@ -578,6 +611,9 @@ The circular door is a door.
 The circular door is scenery.
 The circular door is south of The Server Racks and north of Fin.
 The circular door is lockable and locked.
+Servers are in the Server Racks.
+Servers are scenery.
+The description of Servers is "These servers have blinking lights and noisy fans. They're churning away at important number crunching such as finding the last digit of pi and hosting several rousing games of NetHack.".
 The Grue is in the Server Racks.
 The description of the Grue is "Your standard Grue is standing in the Server Racks[if the grue is sad] with his arm raised and hand open[end if].  In his other hand you see a coffee mug with '#1 Grue' written on it.  He's looking at you expectantly.".
 The Grue is a person.
@@ -601,11 +637,12 @@ After High Fiving:
 
 [End High Five Area]
 
-Section 8 The End
+Section 10 The End
 
 Fin is a room. "This is the end."
 
 Instead of going to Fin:
+	increase the score by 20;
 	end the story finally saying "You step outside cautiously, scanning the area for any further threats. You hear an exclamation of surprise inside and recognize the reedy voice of your client. Better get out of there while the getting's good. You toss your badge behind you and don't look back.[paragraph break]Knocking back a glass of scotch, you crumble up the papers of that fateful contract and toss them into your circular file. You shudder slightly as you contemplate the fate that nearly befell you. Next time: more research first. You take one last look at your computer before you shut it down for the night and among the People You May Know, you catch a glimpse of a face that makes you stop cold. www.linkedin.com/in/andrewrastus/".
 
 
