@@ -13,7 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
-The maximum score is 70.
+The maximum score is 65.
 
 Book 1 Setting up the World
 
@@ -237,11 +237,6 @@ After saying hello to the receptionist for the first time:
 say "The receptionist looks at you, puts on a giant fake smile and says 'Hello and welcome to Qwerty Fizzbuzz. If you need a visitor badge please let me know. How may I help you?'".
 After saying hello to the receptionist:
 say "The receptionist makes a soft sighing sound before saying 'Yes?'.  She looks a little irritated.".
-
-default ask-tell response for the player:
-	say "You're talking ot yourself again.. Maybe you should try talking to someone else.".
-default ask-for response for the player:
-	say "You want to ask yourself for something? Maybe you should ask someone else.".
 
 After saying goodbye to the receptionist:
 	say "The receptionist goes back to her computer.".
@@ -598,6 +593,9 @@ the stove is scenery.
 Dishes are in the kitchen.
 Dishes are scenery.
 The description of the dishes is "Disgusting. You want to be no where near these things.".
+Instead of Licking the dishes:
+	say "Ugh!  What were you thinking.  You don't feel so well… [paragraph break]You have died of dysentery.";
+	end the story.
 
 
 Section 8 Cubical Hell
@@ -649,7 +647,23 @@ After High Fiving:
 		say "After a nod indicating that he knows your true intention, the Grue turns around and presses a few buttons on a secret panel next to the circular door. After a moment you notice steel bars retract and the door unlocks.";
 		now the circular door is unlocked;
 	end if.
+	
+Instead of giving the cup to the grue:
+	if the cup is full:
+		if the grue is happy:
+			say "The Grue takes the cup of water, looks at it, shrugs and throws it over his shoulder.  The water splashes all over the server racks shooting sparks in every direction.  The smell of smoke rises from the server boxes before everything shuts down.  The grue seems completely unphased.";
+			Now the description of the servers is "Great job, these are completely wrecked and you're the only one to blame.";
+			increase the score by 15;
+		otherwise:
+			say "Since the Grue is holding one hand up and has a mug in the other, the cup ends up on the floor, spalshing the Grue's feet.  [Paragraph break]You have been eaten by a Grue.";
+			end the story.;
+	otherwise:
+		say "You have angered the Grue by giving him an empty cup.  [Paragraph Break]You have been eaten by a Grue.";
+		end the story.
+	
 		
+		
+				
 
 [End High Five Area]
 
@@ -674,9 +688,5 @@ Before going from The Elevator to The Fancy Hallway:
 Instead of pushing an elevator button:
 	try going the noun.
 
-Instead of pushing the Dance Button for the first time:
-	increase the score by 5;
-	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along.".
-	
 Instead of pushing the Dance Button:
 	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along."
