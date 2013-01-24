@@ -367,6 +367,12 @@ Section 2 Fancy Hallway
 
 The Fancy Hallway is a room. "This hallway is really fancy. You're not sure you're dressed appropriately for such a hallway. It appears that more craftsmanship went into the floor trim than was applied to the entire building that you grew up in. Pictures on the wall feature people and still life. The area is bathed in a soft yellow light. An elevator rests in the southern wall. The hallway continues to the east."
 
+A picture of people is in the Fancy Hallway.
+A picture of still life is in the Fancy Hallway.
+A picture of people and a picture of still life are scenery.
+The description of a picture of people is "Men and women in suits and business dresses sit at a large fancy table. Their eyes follow you as you move about the hallway. It's creepy.".
+The description of a picture of still life is "It's a portrait of a dead man composed of fruit and flowers. An interesting take on 'still life'.".
+
 The End Of The Hallway is a room. "The hallway ends at a large mahogany door on the eastern wall. A nameplate is attached to the wall beside it. In one corner, a janitor cart with rags, chemicals, brushes, and a garbage can has been left abandoned. The rest of the hallway is to the west."
 The End Of The Hallway is east of The Fancy Hallway.
 the nameplate is in The End Of The Hallway.
