@@ -238,6 +238,11 @@ say "The receptionist looks at you, puts on a giant fake smile and says 'Hello a
 After saying hello to the receptionist:
 say "The receptionist makes a soft sighing sound before saying 'Yes?'.  She looks a little irritated.".
 
+default ask-tell response for the player:
+	say "You're talking ot yourself again.. Maybe you should try talking to someone else.".
+default ask-for response for the player:
+	say "You want to ask yourself for something? Maybe you should ask someone else.".
+
 After saying goodbye to the receptionist:
 	say "The receptionist goes back to her computer.".
 default ask-tell response for the receptionist:
