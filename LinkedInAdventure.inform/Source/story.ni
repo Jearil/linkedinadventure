@@ -13,7 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
-The maximum score is 71.
+The maximum score is 76.
 
 Book 1 Setting up the World
 
@@ -472,7 +472,8 @@ Elevator button is always open.
 
 The Elevator is a room. "Before you is a pair of ominous silver metal sliding door sealed tightly. On the right hand side are two glowing buttons. A soft feminine voice says 'Please make your selection from the following menu.'".
 the panel is in The Elevator. "A metal panel with buttons".
-The description of the panel is "A metal panel contains tow glowing buttons. One is labeled 'Up', while the other is mysteriously labled 'Dance'. Below these buttons is a small square hole about 1 inch on each side and one half inch deep.".
+The description of the panel is "A metal panel contains two glowing buttons. One is labeled 'Up', while the other is mysteriously labled 'Dance'. Below these buttons is a small square hole about 1 inch on each side and one half inch deep.".
+Understand "buttons" as panel.
 the square hole is on the panel.
 The square hole is a container.
 The square hole is scenery.
