@@ -13,7 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
-The maximum score is 70.
+The maximum score is 71.
 
 Book 1 Setting up the World
 
@@ -104,7 +104,7 @@ a webdevice is usually off.
 Instead of examining a webcam:
 	if the webcam is on
 	begin;
-		say "The receptionist says 'Smile!  Ok, that's good.' and the printer starts printing before you have a chance to actually smile.".;
+		say "The receptionist says 'Smile!  Ok, that's good.' and the printer starts printing before you have a chance to actually smile. 'swipe this at the card reader to get in' the receptionist says.".;
 		now a webcam is off.;
 		say "The receptionist hands you a badge.".;
 		now the player is carrying a badge.;
@@ -315,7 +315,7 @@ After reading a command when the command prompt is "Person's name>":
 		now a webcam is on;
 		now the command prompt is ">";
 	otherwise if the player's command includes "marge";
-		say "'Ah, another one.' The receptionist chuckles lightly as she jots a note in the guest ledger. 'Good luck with your pitch.' Please look at the webcam.'".;
+		say "'Ah, another one.' The receptionist chuckles lightly as she jots a note in the guest ledger. 'Good luck with your pitch.' Please look at the webcam.".;
 		now a webcam is on;
 		now the command prompt is ">";
 	otherwise if the player's command includes "Darwen";
