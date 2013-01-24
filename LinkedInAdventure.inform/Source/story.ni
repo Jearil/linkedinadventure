@@ -13,7 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
-The maximum score is 65.
+The maximum score is 70.
 
 Book 1 Setting up the World
 
@@ -658,5 +658,9 @@ Before going from The Elevator to The Fancy Hallway:
 Instead of pushing an elevator button:
 	try going the noun.
 
+Instead of pushing the Dance Button for the first time:
+	increase the score by 5;
+	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along.".
+	
 Instead of pushing the Dance Button:
 	say "The elevator begins playing a muzak version of Gangnam Style. You half-heartedly dance in place and sing along."
