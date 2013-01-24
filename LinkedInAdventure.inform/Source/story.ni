@@ -609,7 +609,7 @@ The description of the dishes is "Disgusting. You want to be no where near these
 
 Section 8 Cubical Hell
 
-Cubical Hell is a room. "A maze of twisty cubicles that all look the same. It reminds you a of suberbia, but on a smaller scale. Just as soul draining however.".
+Cubical Hell is a room. "A maze of twisty cubicles that all look the same. It reminds you a of suberbia, but on a smaller scale. Just as soul draining however. To the west is the breakroom".
 A pointy haired manager is in Cubical Hell.
 A pointy haired manager is a man.
 The description of a pointy haired manager is "The pointy haired manager looks extremely busy, but after looking at him for a few moments you're pretty sure he's not actually doing much.".
