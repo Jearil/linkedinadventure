@@ -13,6 +13,7 @@ Release along with an interpreter and cover art.
 The display banner rule is not listed in the startup rulebook.
 
 The Reception Area is a room.
+The maximum score is 38.
 
 Book 1 Setting up the World
 
@@ -227,6 +228,7 @@ A card reader is in The Reception Area.
 A card reader is scenery.
 The description of A card reader is "It’s a black box with a glowing red light.  Red probably means the door is locked.".
 A badge is a thing.
+Understand "card" as badge.
 The description of a badge is "It's your temporary ID Badge.  It has your picture on it.".
 The receptionist is carrying the badge.
 
@@ -246,6 +248,17 @@ after quizzing the receptionist about the glass door:
 	say "The receptionist says 'You'll need a badge to get in'".
 after quizzing the receptionist about the card reader:
 	say "The receptionist says 'You need a badge to use the card reader'".
+
+after requesting the receptionist for a badge for the first time:
+	if the receptionist carries the badge and the webcam is not on
+	begin;
+		say "The receptionist asks 'Of course, a badge.  Who are you meeting with?'";
+		now the command prompt is "Person's name>";
+	otherwise if the webcam is on;
+		say "The receptionist says 'look into the webcam to get your badge'";
+	otherwise;
+		say "The receptionist says 'You already have a badge. What more do you want?'";
+	end if.
 	
 after quizzing the receptionist about a badge for the first time:
 	if the receptionist carries the badge and the webcam is not on
@@ -257,7 +270,18 @@ after quizzing the receptionist about a badge for the first time:
 	otherwise;
 		say "The receptionist says 'You already have a badge. What more do you want?'";
 	end if.
-	
+
+after requesting the receptionist for a badge:
+	if the receptionist carries the badge and the webcam is not on
+	begin;
+		say "The receptionist narrows her eyes at you and says 'Yes, yes a badge already.  You're clearly not just loitering around our reception area so you must have a meeting.  Who are you meeting?";
+		now the command prompt is "Person's name>";
+	otherwise if the webcam is on;
+		say "The receptionist says 'look into the webcam to get your badge'";
+	otherwise;
+		say "The receptionist says 'You already have a badge. What more do you want?'";
+	end if.
+	 
 after quizzing the receptionist about a badge:
 	if the receptionist carries the badge and the webcam is not on
 	begin;
@@ -280,17 +304,25 @@ after telling the receptionist about "Darwen Straus":
 	now a webcam is off.
 
 After reading a command when the command prompt is "Person's name>":
-	if the player's command matches "max"
+	if the player's command includes "max" or the player's command includes "maximillion"
 	begin;
-		say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+		say "'Right.' The receptionist takes a side glance at your wardrobe as she jots a note in the guest ledger. 'The dress code is a bit more casual out here, eh?' Please look at the webcam.".;
 		now a webcam is on;
 		now the command prompt is ">";
-	otherwise if the player's command matches "marge";
-		say "The receptionist looks at you for a moment and says 'Sure, let me get you a temp badge.  Please look at the webcam.'".;
+	otherwise if the player's command includes "marge";
+		say "'Ah, another one.' The receptionist chuckles lightly as she jots a note in the guest ledger. 'Good luck with your pitch.' Please look at the webcam.'".;
 		now a webcam is on;
 		now the command prompt is ">";
-	otherwise if the player's command matches "Darwen";
-		say "The receptionist gives you a once over followed by the evil eye and says 'He's not here right now.";
+	otherwise if the player's command includes "Darwen";
+		say "The receptionist gives a slight start and attempts to pass it off as a hiccup. In a measuredly detached voice she responds 'I'm afraid Mr. Straus is on leave. I do not believe he will be back for some time.'";
+		now the command prompt is ">";
+	otherwise if the player's command includes "edward";
+		say "The receptionist's droll expression suddenly becomes more serious, and she sits a little straighter in her chair. She silently jots a note in the guest ledger. Please look at the webcam.";
+		now a webcam is on;
+		now the command prompt is ">";
+	otherwise if the player's command includes "grue";
+		say "'Oh?' The receptionist looks curious and looks like she is about to ask you a question, and then thinks better of it. 'All righty, just a minute.' She jots a note in the guest ledger. Please look at the webcam.";
+		now a webcam is on;
 		now the command prompt is ">";
 	otherwise;
 		say "The receptionist looks at you confused and says 'I don't think they work here.'";
@@ -510,13 +542,18 @@ The description of the push bar is "It's a push bar. It's umm.. used to open a d
 Instead of pushing the push bar:
 	say "You push on the bar, fulfilling it's ultimate purpose";
 	increase the score by 5;
+	say "You enter the sub-basement and notice a faint mechanical whirring noise. Somethings clicks, and you hear a dull metallic thud behind you. You're blinded by a bright light as a monitor blinks on in front of you. As you adjust to the sudden light, you see an oddly familiar face. Darwen?[paragraph break]";
+	say "'Excellent! You passed with flying colors.' He steps back from the camera a bit, and waves dismissively. 'Pardon the ruse. This was your...um...interview, in a manner of speaking. It's a little unorthodox, I know, but you know how hard it is to find qualified people.' He lowers his voice to a stage whisper. 'And how hard it is to keep 'em around.' He straightens up. 'But you won't need to concern yourself with that. We will simply keep you here as long as you're needed. Yes, we have a very important project for you to work on. Once you help us complete it, there are a few...oh...options we can discuss for your next steps? Sound good?' He smiles and nods to himself, as if answering his own question. The screen goes black and the room returns to silence.";
+	pause the game;
+	now the steel door is locked;
 	move the player to The Breakroom.
 
 After going to The Breakroom for the first time:
 	say "You enter the sub-basement and notice a faint mechanical whirring noise. Somethings clicks, and you hear a dull metallic thud behind you. You're blinded by a bright light as a monitor blinks on in front of you. As you adjust to the sudden light, you see an oddly familiar face. Darwen?[paragraph break]";
 	say "'Excellent! You passed with flying colors.' He steps back from the camera a bit, and waves dismissively. 'Pardon the ruse. This was your...um...interview, in a manner of speaking. It's a little unorthodox, I know, but you know how hard it is to find qualified people.' He lowers his voice to a stage whisper. 'And how hard it is to keep 'em around.' He straightens up. 'But you won't need to concern yourself with that. We will simply keep you here as long as you're needed. Yes, we have a very important project for you to work on. Once you help us complete it, there are a few...oh...options we can discuss for your next steps? Sound good?' He smiles and nods to himself, as if answering his own question. The screen goes black and the room returns to silence.";
 	pause the game;
-	now the steel door is locked.
+	now the steel door is locked;
+	try looking.
 
 Section 6 The Breakroom
 
@@ -568,8 +605,8 @@ Section 8 The End
 
 Fin is a room. "This is the end."
 
-Instead of entering Fin:
-	end the story finally saying "You have completed the story".
+Instead of going to Fin:
+	end the story finally saying "You step outside cautiously, scanning the area for any further threats. You hear an exclamation of surprise inside and recognize the reedy voice of your client. Better get out of there while the getting's good. You toss your badge behind you and don't look back.[paragraph break]Knocking back a glass of scotch, you crumble up the papers of that fateful contract and toss them into your circular file. You shudder slightly as you contemplate the fate that nearly befell you. Next time: more research first. You take one last look at your computer before you shut it down for the night and among the People You May Know, you catch a glimpse of a face that makes you stop cold. www.linkedin.com/in/andrewrastus/".
 
 
 [rules for cube]
